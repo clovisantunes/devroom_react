@@ -1,0 +1,192 @@
+{
+    "hello": "Ola mundo!",
+    "init": "inicio",
+    "port": "portifolio",
+    "services": "serviços",
+    "contact": "contato",
+    "servicesMain": "CRIAÇÃO DE SITES | MARKETING DIGITAL | DESIGN | HOSPEDAGEM",
+    "textTitle":"DevRoom",
+    "whats": "Entre em contato",
+    "text": "Ficou com alguma duvida sobre nosso site?",
+    "textContact": "Entre em contato que nos iremos lhe auxiliar.",
+    "aboutTitle": "Um Pouco Sobre Nós",
+    "subAboutText": "Seja bem-vindo à nossa equipe dedicada à transformação de ideias em realidade digital. Com profundo conhecimento em HTML, CSS, e JavaScript, construímos bases sólidas, elevando a experiência do usuário. Utilizando tecnologias modernas como TypeScript, ReactJS, Next.js e Node.js, desenvolvemos soluções eficientes e escaláveis, proporcionando consistência e desempenho excepcionais de ponta a ponta. Estendemos nossa expertise ao mobile, destacando-nos em React Native, Firebase, Sass e Styled Components. Do frontend ao backend, cada linha de código reflete nosso compromisso com a inovação e qualidade. Junte-se a nós nesta jornada, onde a excelência é a norma e cada aplicação é uma experiência marcante.",
+    "textButton": "Contate aqui",
+    "subMainText": "Do papel à prática.",
+    "projectTitle": "Bem vindo a DevRoom",
+    "buttonProject": "Veja mais",
+    "addresstTitle": "Endereço",
+    "phoneTitle": "Contato",
+    "reminder": "Somente um lembrete!" ,
+    "remindertext": "Os valores dos nossos planos são apenas uma base e são flexíveis, adaptando-se perfeitamente às suas necessidades. Levamos em consideração a complexidade e o tempo necessários para criar soluções personalizadas, garantindo que você obtenha precisamente o que precisa a um preço acessível.",
+    "subcontact": "Sapiranga - RS",
+    "subphone": "(51) 98139-9275",
+    "emailsub": "contato@devroom.tech",
+    "copyright": "©copyringht: Todos os direitos reservados. Devroom-2024",
+    "buy": "Eu gostaria de contratar o serviço de",
+    "enterName": "Digite seu nome",
+    "enterEmail": "Digite seu email",
+    "enterPhone": "Digite seu telefone",
+    "enterContact": "Entre em contato",
+    "enterMessage": "Digite sua mensagem",
+    "name": "Prazer me chamo, ",
+    "email":  "meu email para contato seria ",
+    "message": "Mensagem:",
+    "submit": "Enviar",
+    "follow": "Siga-nos",
+    "deploy": "Acessar projeto",
+    "git": "GitHub",
+    "see": "Veja nossos projetos",
+    "textModal": "Este projeto foi desenvolvido com as seguintes tecnologias:",
+    "technologies": "Tecnologias",
+    "frontI": {
+      "spanI":
+        "A Renova Advocacia é uma página única e simples, porém eficaz, dedicada a advogados com diversas especializações em áreas do direito, como civil, comercial, trabalhista e penal.",
+      "spanII":
+        "Esta pagina foi feita em uma landingpage unica podendo ser ajustada para o gosto e o segmento do seu negocio."
+    },
+    "frontII": {
+      "spanI":
+        "PetVida Centro Veterinário é uma landing page completa, com várias páginas dedicadas ao centro veterinário.",
+      "spanII":
+        "Sendo assim uma landing page multpages que possa estar na sua lista de procura e sendo ajustada no seu gosto."
+    },
+    "frontIII": {
+      "spanI":
+        "Decoração e Design de Interiores é um blog que oferece inspirações e dicas para transformar sua casa em um espaço ainda mais bonito e funcional. ",
+      "spanII":
+        "Sendo assim um ótimo exemplo para o seu blog oferecendo diversos tipos de páginas e opções de gerenciamentos de postagens. "
+    },
+    "frontIIII": {
+      "spanI":
+        "Electro E-commerce e uma solução versátil e adaptável para personalizar sua loja online, refletindo fielmente a identidade da sua marca.",
+      "spanII":
+        "Com recursos simples e interface intuitiva, crie uma experiência de compra única e memorável para seus clientes. Experimente hoje e leve seu negócio para o próximo nível!"
+    },
+    "backI": {
+      "spanI": "Um backend simples focado no envio e recebimento de mensagens, podendo ser ajustado para ter um front-end e uma base de dados para um chat, sem registro de usuários.",
+      "spanII": "Além de ter a opção de ser ajustado para aplicações móveis."
+    },
+    "backII": {
+      "spanI": "O WorkTimeManager trata-se de um backend para gestão e controle de ponto. Possuindo opções de cadastro de usuário padrão e administrador. Contendo opções de registro de ponto e alteração de horários.",
+      "spanII": "Além de ser adaptável para ser utilizado tanto na web como no mobile."
+    },
+    "backIII": {
+      "spanI": "Trata-se de um backend que possui diversas utilizações. Contendo opções de registro de usuários, postagens de itens e gerenciamento de rotas para usuários autenticados e usuários sem registro.",
+      "spanII": "Além de ser compatível com front-end e mobile. Pode ser utilizado em blogs, sistemas de lancherias ou sites de notícias."
+    },
+    "backIIII": {
+      "spanI": "Market API trata-se de uma API para gerenciamento de vendas, possuindo opções de cadastro de itens e gerenciamento de estoque. Além de possuir diversas opções de informações e descrições de produtos.",
+      "spanII": "Podendo ser utilizada na web e mobile, para assim ter o melhor controle de estoque e gerenciamento de vendas. Possuindo opções de cadastro de usuários, favoritos e pedidos."
+    },
+
+
+
+  "projects": {
+    "titleProjectsFront": "Desenvolvimento Web",
+    "titleProjectsBack": "Desenvolvimento de Api",
+    "titleProjectsMobile": "Desenvolvimento Mobile",
+    "subtTextProjectFront": "Com uma arquitetura robusta e um design inovador, estamos empenhados em realçar a identidade única do seu negócio, transmitindo confiança aos visitantes.Nosso foco principal é proporcionar uma experiência de navegação envolvente, que não só mantenha os usuários interessados e passe a credibilidade de seu negocio. Estamos aqui para ajudar na divulgação eficaz da sua marca, atraindo um público mais amplo e consolidando sua presença online de forma memorável.",
+    "subtTextProjectBack": "Com uma estrutura sólida e funcionalidades avançadas, nosso foco é potencializar a eficiência e o priorizarmos o segurança do seu sistema. Com o desenvolvimento de Api's robustas, visamos a sustentação técnica e otimização processos internos, proporcionando uma base confiável para o funcionamento do seu negócio.",
+    "subtTextProjectMobile": "Com uma estrutura eficiente e recursos inovadores, nosso objetivo é proporcionar uma experiência de usuário otimizada em dispositivos móveis. Buscamos criar aplicativos que ofereçam navegação intuitiva e eficaz, almejando ampliar a presença e a acessibilidade do seu negócio para o público mobile."
+  },
+  "products": {
+    "select": "Gostei deste plano",
+    "coin": "R$",
+    "text": "até",
+    "session": "seções",
+    "web": {
+      "title": "Website Profissional",
+      "descriptionTitle": "Sua Marca, Seu Espaço Online",
+      "descriptionSubTitle": "Fale com um desenvolvedor",
+      "descriptionText": "Cada site é único. Somos desenvolvedores especializados e prontos para criar soluções personalizadas que atendam às suas necessidades específicas. Desde plataformas interativas até aplicativos inovadores, para transformar sua visão em uma experiência digital única.",
+      "details": {
+        "plan": {
+          "title": "Plano",
+          "subTitle": {
+            "landing": "Landing Page Simples",
+            "landingPers": "Landing Page Personalizada",
+            "multi": "Multipaginas + blog",
+            "ecommerce": "E-commerce"
+          },
+          "value": {
+            "initial": "200",
+            "mid": "500",
+            "blog": "900",
+            "ecommerce": "3.000"
+          },
+          "utils": {
+            "landing": "Landing Page",
+            "template": "Template Profissional",
+            "responsive": "Site adaptado para celular",
+            "domain": "Registro de dominio (1 ano)",
+            "blog": "Site de noticias, Blog",
+            "ecommerce": "Plataforma de vendas E-commerce"
+          }
+        }
+      }
+    },
+    "backend": {
+      "title": "Desenvolvimento Backend",
+      "descriptionTitle": "A segurança para seu sistema.",
+      "descriptionSubTitle": "Fale com um desenvolvedor",
+      "descriptionText": "A agilidade é a chave no mundo digital em constante evolução. Adotamos metodologias ágeis para garantir que o desenvolvimento do seu backend seja rápido e eficaz. ",
+      "details": {
+        "plan": {
+          "title": "Plano",
+          "subTitle": {
+            "api": "Node.js",
+            "multi": "Gerenciamento de usuarios",
+            "blog": "Backend para site de noticias Blog",
+            "ecommerce": "Back end para E-commerce"
+          },
+          "value": {
+            "initial": "200",
+            "mid": "500",
+            "blog": "900",
+            "ecommerce": "3.000"
+          },
+          "utils": {
+            "database": "Prisma",
+            "customization": "Customizações Específicas do Projeto",
+            "databaseCommunication": "Comunicação com Banco de Dados",
+            "userManagement": "Gerenciamento de Usuários",
+            "blogPosting": "Gerenciamento de Blogs Dinâmicos",
+            "ecommerce": "Plataforma de E-commerce"
+          }
+        }
+      }
+    },
+    "mobile": {
+      "title": "Desenvolvimento Mobile",
+      "descriptionTitle": "Seu sistema na palma da sua mâo",
+      "descriptionSubTitle": "Fale com um desenvolvedor",
+      "descriptionText": "Oferecemos sistemas personalizados que se adaptam às necessidades únicas do seu negócio, indo desde eficiência operacional com aplicativos de gestão interna até soluções centradas no cliente. Em um mundo cada vez mais mobile, nossa expertise se destaca na criação de experiências excepcionais para seus clientes e na maximização dos resultados na era mobile. Transforme seus processos internos e surpreenda seus clientes com soluções customizadas que garantem flexibilidade e inovação em todos os aspectos do seu empreendimento. Conte conosco para liderar sua jornada digital e posicionar seu negócio na vanguarda do sucesso na mobilidade.",
+      "details": {
+        "plan": {
+          "title": "Plano",
+          "subTitle": {
+            "aplicationI": "Aplicativo simples",
+            "aplicationII": "Aplicativo + Firebase",
+            "aplicationIII": "Aplicativo + Firebase + Controle de usuarios",
+            "aplicationIV": "Aplicativo E-Commerce"
+          },
+          "value": {
+            "initial": "500",
+            "mid": "1000",
+            "blog": "1.500",
+            "ecommerce": "7.000"
+          },
+          "utils": {
+            "framework": "Framework React Native",
+            "customization": "Customizações Específicas do Projeto",
+            "responsive": "Adptado para diversas telas",
+            "integrationFirebase": "Integração com Firebase",
+            "blogPosting": "Controle de usuarios",
+            "ecommerce": "Funcionalidades de E-commerce"
+        }
+      }
+      }
+    }
+  }
+}

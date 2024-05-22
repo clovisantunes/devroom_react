@@ -1,0 +1,86 @@
+.carouselContainer {
+    width: 100%;
+    height: 12em;
+    background-color: #0C0C0C;
+    padding: 16px;
+    overflow: hidden;
+    position: relative;
+    padding-left: 16em;
+    h1 {
+      font-size: 24px;
+     
+    }
+    .carouselCard {
+      display: flex;
+      animation: scrollIcons 15s linear infinite;
+      transition: transform 0.5s ease;
+      position: absolute;
+    }
+  }
+  .line {
+    width: 6%;
+    height: 2px;
+    background-color: #4200ff;
+    top: 12%;
+  }
+  .carouselItems{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .carouselCardAfter{
+      display: flex;
+      position: absolute;
+      animation: scrollIconsAfter 15s linear infinite;
+      transition: transform 0.5s ease;
+      svg {
+        width: 128px;
+        height: 128px;
+        margin-right: 16px;
+        color: var(--colors-secondary-300);
+        transition: all .5s ease;
+      }
+  }
+  .carouselCard svg:hover{
+    transform: scale(1.1);
+  }
+  .carouselCardAfter svg:hover{
+    transform: scale(1.1);
+  }
+  @keyframes scrollIcons {
+    0% {
+      transform: translateX(0%);
+    }
+  
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes scrollIconsAfter {
+    0% {
+      transform: translateX(100%);
+    }  
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  
+  .carouselCard svg {
+    width: 128px;
+    height: 128px;
+    margin-right: 16px;
+    color: var(--colors-secondary-300);
+    transition: all .5s ease;
+  }
+  @media (max-width:980px) {
+    .carouselCard svg {
+        min-width: 36px;
+     
+      }
+    .carouselCardAfter svg {
+        min-width: 36px;
+     
+      }
+  }

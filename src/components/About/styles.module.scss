@@ -1,0 +1,118 @@
+.about_container{
+    width: 100%;
+    height: 32em;
+    background-color: var(--colors-secondary-200);
+    display: flex;
+    flex-direction: row;
+    padding: 4em;
+    overflow: hidden;
+    transition: all .8s ease-in-out;
+    .aboutCard{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        padding: 16px;
+        .imgCard{
+            width: 50%;
+            border-radius: 8px;
+        }
+        .aboutTextContainer{
+            margin-left: 4em;
+            width: 50%;
+            h1{
+                font-size: 36px;
+            }
+            h2{
+                font-size: 18px;
+            }
+        }
+    }
+
+
+}
+@keyframes zoomIn{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.02);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+@media (max-width:1080px) {
+    .about_container{
+        height: 100%;
+        .aboutCard{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 48px;
+            .imgCard{
+                width: 100%;
+            }
+            .aboutTextContainer{
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+        .aboutTextContainer{
+            padding: .5em;
+            .titleText{
+                margin-top: 1em;  
+            }
+            .aboutText{
+                margin-top: 2em;
+                width: 85%;
+                h2{
+                    font-size: 8px;
+                    font-weight: 300;
+                }
+            }
+        }
+        .imgContainer{
+            width: 60%;
+        }
+    }
+
+}
+@media (max-width:768px) {
+    .about_container{
+        justify-content: center;
+        .aboutTextContainer{
+            width: 100%;
+            padding: 1em;
+            .titleText{
+                margin-top: 2em;
+            }
+            .aboutText{
+                margin-top: 2em;
+                width: 85%;
+                h2{
+                    font-weight: 500;
+                }
+            }
+        }
+        .imgContainer{
+            display: none;
+        }
+    }
+}
+@media (max-width:420px) {
+    .about_container{
+        height: 100%;
+        .aboutCard{
+            padding: 1px;
+            .aboutTextContainer{
+                h1{
+                    font-size: 18px;
+                }
+                h2{
+                    font-size: 12px;
+                }
+            }
+
+        }
+    }
+}

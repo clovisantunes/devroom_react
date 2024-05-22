@@ -1,0 +1,136 @@
+.contactContainer{
+    width: 100%;
+    height: 100%;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    form{
+        padding: 8px;
+        width: 100%;
+    }
+}
+.titleText{
+    width: 100%;
+    margin-bottom: 2em;
+    h1{
+        font-size: 36px;
+        font-weight: 400;
+    }
+}
+
+.dadosComponent{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    input{
+        padding: 16px;
+        margin-bottom: 2em;
+        width: 100%;
+        height: 3em;
+        border: 1px solid;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        outline: 0;
+        font-weight: 700;
+        border-radius: 4px;
+    }
+}
+
+.textAreaCard{
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    overflow: visible;
+    textarea{
+        width: 100%;
+        height: 12em;
+        padding: 8px;
+        font-weight: 700;
+        font-size: 16px;
+        outline: 0;
+        border-radius: 4px;
+        resize: none;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+    }
+}
+.buttonFormCard{
+    width: 100%;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width:768px) {
+    .contactContainer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        form{
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .titleText{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 16px;
+        h1{
+            font-size: 24px;
+        }
+    }
+    .subTexts{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h2{
+          font-size: 18px;
+          margin-bottom: 8px;
+        }
+    }
+    .dadosComponent{
+        width: 80%;
+    }
+    .textAreaCard{
+        width: 80%;
+    }
+}
+@media (max-width:480px) {
+    .contactContainer{
+        form{
+            width: 100%;
+        }
+
+    }
+    .titleText{
+        h1{
+            font-size: 16px;
+        }
+    }
+    .subTexts{
+
+        h2{
+          font-size: 16px;
+     
+        }
+    }
+    .dadosComponent{
+        display: flex;
+        flex-direction: column;
+        .formItems{
+            width: 100%;
+            margin-bottom: 16px;
+        }
+    }
+    .buttonFormCard{
+        width: 100%;
+    }
+}

@@ -1,0 +1,183 @@
+{
+  "hello": "Hello, world!",
+  "init": "Home",
+  "port": "Portfolio",
+  "services": "Services",
+  "contact": "Contact",
+  "servicesMain": "CRIAÇÃO DE SITES | MARKETING DIGITAL | DESIGN | HOSPEDAGEM",
+  "textTitle": "DevRoom",
+  "aboutTitle": "A little about us",
+  "subAboutText": "Welcome to our team dedicated to turning ideas into digital reality. With deep knowledge in HTML, CSS, and JavaScript, we build solid foundations, elevating the user experience. Using modern technologies like TypeScript, ReactJS, Next.js, and Node.js, we develop efficient and scalable solutions, providing exceptional end-to-end consistency and performance. We extend our expertise to mobile, excelling in React Native, Firebase, Sass, and Styled Components. From frontend to backend, every line of code reflects our commitment to innovation and quality. Join us on this journey where excellence is the norm, and each application is a remarkable experience.",
+  "textButton": "Contact us here",
+  "subMainText": "From paper to practice.",
+  "projectTitle": "Welcome to DevRoom",
+  "buttonProject": "See more",
+  "addresstTitle": "Address:",
+  "reminder": "Just a reminder!" ,
+  "remindertext": "The prices of our plans serve merely as a baseline and are flexible, seamlessly adjusting to your needs. We take into account the complexity and time required to develop customized solutions, ensuring that you get exactly what you need at an affordable price.",
+  "phoneTitle": "Contact:",
+  "subcontact": "Sapiranga - RS",
+  "subphone": "Tel (51) 98139-9275",
+  "emailsub": "contato@devroom.tech",
+  "copyright": "© copyright: All rights reserved. Devroom-2024",
+  "buy": "I would like to hire the service of",
+  "enterName": "Enter your name",
+  "enterEmail": "Enter your email",
+  "enterContact": "Contact us",
+  "textContact": "Get in touch, and we will assist you.",
+  "enterMessage": "Write your message",
+  "enterPhone": "Enter your number",
+  "message": "Message:",
+  "name": "Hello my name is, ",
+  "email":  "my email for contact would be",
+  "submit" : "Submit",
+  "emailTitle": "Email",
+  "follow": "Follow-Us",
+  "see": "See our projects",
+  "subemail": "Enter your email",
+  "deploy": "Access project",
+  "git": "GitHub",
+  "technologies": "technologies",
+  "textModal": "This project was developed with the following technologies:",
+  "frontI": {
+    "spanI": "Renova Advocacia is a unique and simple, yet effective, page dedicated to lawyers with various specializations in areas of law such as civil, commercial, labor, and criminal.",
+    "spanII": "This page was made on a single landing page and can be adjusted to the taste and segment of your business."
+  },
+  "frontII": {
+    "spanI": "PetVida Veterinary Center is a comprehensive landing page, with multiple pages dedicated to the veterinary center.",
+    "spanII": "Thus being a multi-page landing page that can be on your search list and adjusted to your liking."
+  },
+  "frontIII": {
+    "spanI": "Decoration and Interior Design is a blog that offers inspirations and tips to transform your home into an even more beautiful and functional space.",
+    "spanII": "Thus being a great example for your blog offering various types of pages and post management options."
+  },
+  "frontIIII": {
+    "spanI": "Electro E-commerce is a versatile and adaptable solution to customize your online store, faithfully reflecting your brand's identity.",
+    "spanII": "With simple features and an intuitive interface, create a unique and memorable shopping experience for your customers. Try it today and take your business to the next level!"
+  },
+
+  "backI": {
+    "spanI": "A simple backend focused on sending and receiving messages, which can be adjusted to have a front-end and a database for a chat, without user registration.",
+    "spanII": "Besides, it has the option to be adjusted for mobile applications."
+  },
+  "backII": {
+    "spanI": "WorkTimeManager is a backend for time management and control. It has options for standard user and administrator registration. It includes options for time logging and schedule changes.",
+    "spanII": "It is also adaptable for use on both web and mobile platforms."
+  },
+  "backIII": {
+    "spanI": "This is a backend with various uses. It includes options for user registration, item posting, and route management for authenticated and unregistered users.",
+    "spanII": "Besides being compatible with front-end and mobile, it can be used in blogs, cafeteria systems, or news websites."
+  },
+  "backIV": {
+    "spanI": "Market API is an API for sales management, featuring options for item registration and inventory management. It also offers various options for product information and descriptions.",
+    "spanII": "It can be used on the web and mobile to achieve the best inventory control and sales management. It includes options for user registration, favorites, and orders."
+  },
+
+  "projects": {
+      "titleProjectsFront": "Web Development",
+      "titleProjectsBack": "Api Development",
+      "titleProjectsMobile": "Mobile Development",
+      "subtTextProjectFront": "With a robust architecture and innovative design, we are committed to enhancing the unique identity of your business, instilling confidence in visitors. Our main focus is to provide an engaging browsing experience that not only keeps users interested but also conveys the credibility of your business. We are here to assist in the effective promotion of your brand, attracting a wider audience and solidifying your online presence in a memorable way.",
+      "subtTextProjectBack": "With a solid backend structure and advanced features, our focus is to enhance efficiency and prioritize the security of your system. Through robust backend development, we aim to provide technical support and optimize internal processes, delivering a reliable foundation for the operation of your business.",
+      "subtTextProjectMobile": "Technologies used in mobile development: React Native, Styled Components, Firebase."
+  },
+  "products": {
+      "select": "I like this plan",
+      "coin": "USD",
+      "text": "up to",
+      "session": "sessions",
+      "web": {
+          "title": "Professional Website",
+          "descriptionTitle": "Your Brand, Your Online Space",
+          "descriptionSubTitle": "Talk to a developer",
+          "descriptionText": "Every website is unique. We are specialized developers ready to create custom solutions that meet your specific needs. From interactive platforms to innovative applications, we transform your vision into a unique digital experience.",
+          "details": {
+              "plan": {
+                  "title": "Plan",
+                  "subTitle": {
+                      "landing": "Simple Landing Page",
+                      "landingPers": "Customized Landing Page",
+                      "multi": "Multi-pages + blog",
+                      "ecommerce": "E-commerce"
+                  },
+                  "value": {
+                      "initial": "70",
+                      "mid": "130",
+                      "blog": "220",
+                      "ecommerce": "1.009"
+                  },
+                  "utils": {
+                      "landing": "Landing Page",
+                      "template": "Professional Template",
+                      "responsive": "Mobile-optimized site",
+                      "domain": "Domain registration (1 year)",
+                      "blog": "News, Blog Site",
+                      "ecommerce": "E-commerce Sales Platform"
+                  }
+              }
+          }
+      },
+      "backend": {
+          "title": "Backend Development",
+          "descriptionTitle": "Security for Your System",
+          "descriptionSubTitle": "Talk to a developer",
+          "descriptionText": "Agility is the key in the constantly evolving digital world. We adopt agile methodologies to ensure that your backend development is fast and effective.",
+          "details": {
+              "plan": {
+                  "title": "Plan",
+                  "subTitle": {
+                      "api": "Node.js",
+                      "multi": "User Management",
+                      "blog": "Backend for News Blog Site",
+                      "ecommerce": "Backend for E-commerce"
+                  },
+                  "value": {
+                      "initial": "70",
+                      "mid": "130",
+                      "blog": "220",
+                      "ecommerce": "1.009"
+                  },
+                  "utils": {
+                      "database": "Prisma",
+                      "customization": "Project-Specific Customizations",
+                      "databaseCommunication": "Database Communication",
+                      "userManagement": "User Management",
+                      "blogPosting": "Dynamic Blog Management",
+                      "ecommerce": "E-commerce Platform"
+                  }
+              }
+          }
+      },
+      "mobile": {
+          "title": "Mobile Development",
+          "descriptionTitle": "Your System in the Palm of Your Hand",
+          "descriptionSubTitle": "Talk to a developer",
+          "descriptionText": "We offer customized systems that adapt to the unique needs of your business, ranging from operational efficiency with internal management apps to customer-centric solutions. In an increasingly mobile world, our expertise stands out in creating exceptional experiences for your customers and maximizing results in the mobile era. Transform your internal processes and delight your customers with customized solutions that ensure flexibility and innovation in all aspects of your business. Count on us to lead your digital journey and position your business at the forefront of mobile success.",
+          "details": {
+              "plan": {
+                  "title": "Plan",
+                  "subTitle": {
+                      "aplicationI": "Simple Application",
+                      "aplicationII": "Application + Firebase",
+                      "aplicationIII": "Application + Firebase + User Control",
+                      "aplicationIV": "E-Commerce Application"
+                  },
+                  "value": {
+                      "initial": "70",
+                      "mid": "150",
+                      "blog": "180",
+                      "ecommerce": "1.200"
+                  },
+                  "utils": {
+                      "framework": "React Native Framework",
+                      "customization": "Project-Specific Customizations",
+                      "responsive": "Adapted for various screens",
+                      "integrationFirebase": "Firebase Integration",
+                      "blogPosting": "User Control",
+                      "ecommerce": "E-commerce Features"
+                  }
+              }
+          }
+      }
+  }
+}

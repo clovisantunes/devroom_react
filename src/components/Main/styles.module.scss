@@ -1,0 +1,77 @@
+.main_container {
+  width: 100%;
+  height: 42em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .8s ease-in-out;
+}
+
+.main {
+  width: 100%;
+  height: 42em;
+  background-image: url('../../assets/images/background-main.jpg');
+  opacity: .3;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;
+}
+
+.main_box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.main_box h1, .main_box h2, .main_box span {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.typewriter{
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  border-right: 0.15em solid white;
+}
+.main_box h1 {
+  font-size: 48px;
+  color: white;
+  font-weight: 700;
+  font-family: jaldi;
+}
+
+.main_box h2 {
+  color: white;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.main_box span {
+  font-size: 16px;
+  color: white;
+  margin-top: 8px;
+}
+
+.buttonCard {
+  width: 80%;
+  height: 2em;
+  margin-top: 8px;
+}
+
+@media (max-width: 480px) {
+  .main_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: white; }
+}

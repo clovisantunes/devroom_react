@@ -1,0 +1,24 @@
+.whatsContainer{
+    width: 3em;
+    height: 3em;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 92%;
+    right: 2%;
+    background-color: #075e54;
+    border-radius: 100%;
+    transition: all .3s ease-in-out;
+    z-index: 5;
+    svg{
+        width: 24px;
+        height: 24px;
+        margin: 0;
+        color: var(--colors-secondary-400);
+    }
+}
+.whatsContainer:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}

@@ -6,9 +6,23 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@types/node": "^20.12.5",
+    "@types/react": "^18.2.74",
+    "@types/react-dom": "^18.2.24",
+    "aos": "^2.3.4",
+    "axios": "^1.6.8",
+    "i18n": "^0.15.1",
+    "i18next": "^23.10.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^14.1.0",
+    "react-icons": "^5.0.1",
+    "react-modal": "^3.16.1",
+    "react-router-dom": "^6.22.3",
     "react-scripts": "5.0.1",
+    "react-toastify": "^10.0.5",
+    "sass": "^1.74.1",
+    "typescript": "^5.4.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -34,5 +48,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/aos": "^3.0.7",
+    "@types/react-modal": "^3.16.3",
+    "@types/react-router-dom": "^5.3.3"
   }
 }

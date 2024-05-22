@@ -1,0 +1,280 @@
+.nav_container{
+    width: 100%;
+    height: 5em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    transition: all .4s ease-in-out;
+    position: fixed;
+    z-index: 99;
+    background-color: var(--colors-secondary-900);
+    top: 0;
+}
+.logoCard{
+    width: 20%;
+    height: 5em;
+    
+}
+.itemsContainer {
+        display: flex;
+        width: 25%;
+        
+    ul{
+        display: flex;
+        flex-direction: row;
+        color: var(--colors-secondary-50);
+        list-style: none;
+        margin-bottom: 0;
+        li{
+            width: 100%;
+            a{  
+                margin: 0 24px 0 24px;
+                margin-right: 8px;
+                font-size: 16px;
+                font-weight: 600;
+                transition: all .3s ease-in-out;
+                z-index: 2;
+            }
+        }
+        li :hover{
+            color: var(--colors-neutral-900);
+            text-shadow: 0px 0px 10px blue;
+        }
+}
+}
+.navBurger{
+    display: none;
+}
+.burgerClicked{
+    display: none;
+    transition: all .8s ease-in-out;
+}
+.instaCard{
+    svg{
+        width: 28px;
+        height: 28px;
+        color: var(--colors-neutral-50);
+        margin-left: 16px;
+        transition: all .3s ease-in-out;
+    }
+    svg:hover{
+            color: var(--colors-neutral-900);
+            cursor: pointer;
+    }
+}
+
+.coverScreen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 5em;
+    background-color: var(--colors-secondary-900);
+    animation: recover .8s forwards;
+    overflow: hidden;
+    &.coverScreenVisible {
+        display: flex;
+        animation: expand .8s forwards;
+    }
+  }
+  .itemsContainerBurber{
+    display: none;
+    width: 100%;
+    height: 9em;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    ul{
+        display: flex;
+        flex-direction: column;
+        color: var(--colors-secondary-50);
+        list-style: none;
+        margin-bottom: 0;
+        li{
+            width: 100%;
+            
+            a{
+                margin-right: 8px;
+                font-size: 24px;
+                font-weight: 600;
+                transition: all .3s ease-in-out;
+            }
+        }
+        li :hover{
+            color: var(--colors-neutral-900);
+            text-shadow: 0px 0px 10px blue;
+        }
+    }
+  }
+
+@media (max-width:1360px) {
+    .nav_container{
+        overflow: visible;
+    }
+    .logoCard{
+        width: 40%;
+        img{
+            width: 150px;
+            height: 80px;
+        }
+    }
+    .instaCardHamburger{
+        width: 10%;
+        height: 2em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg{
+            width: 100%;
+            height: 100%;
+            color: var(--colors-neutral-50);
+        }
+        svg:hover{
+            color: var(--colors-neutral-900);
+        }
+    }
+    .itemsContainer{
+        display: none;
+    }
+    .itemsContainerBurber{
+        display: flex;
+    }
+    .instaCard{
+        display: none;
+    }
+    .navBurgerCard{
+        display: flex;
+        flex-direction: column;
+        width: 4%;
+        height: 60%;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .navBurger1{
+        display: flex;
+        background-color: white;
+        width: 100%;
+        height: 2px;
+        margin-bottom: 8px;
+        animation: reverseBurger1 .8s forwards;
+    }
+    .navBurger2{
+        display: flex;
+        background-color: white;
+        width: 100%;
+        height: 2px;
+        margin-bottom: 8px;
+        animation: reverseBurger2 .8s forwards;
+    }
+    .navBurger3{
+        display: flex;
+        background-color: white;
+        width: 100%;
+        height: 2px;
+        margin-bottom: 8px;
+        animation: reverseBurger3 .8s forwards;
+    }
+    
+    .burgerClicked{
+        display: flex;
+        overflow: hidden;
+        z-index: 2;
+        .navBurger1{
+            display: flex;
+            background-color: white;
+            width: 100%;
+            height: 2px;
+            margin-bottom: 8px;
+           animation: rotateBurger1 .8s forwards;
+        }
+        .navBurger2{
+            display: flex;
+            background-color: white;
+            width: 100%;
+            height: 2px;
+            margin-bottom: 8px;
+            animation: rotateBurger2 .8s forwards;
+        }
+        .navBurger3{
+            display: flex;
+            background-color: white;
+            width: 100%;
+            height: 2px;
+            margin-bottom: 8px;
+            animation: rotateBurger3 .8s forwards;
+        }
+        
+    }
+}
+
+@keyframes rotateBurger1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+}
+@keyframes rotateBurger2 {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: 200%;
+    }
+}
+
+@keyframes rotateBurger3 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(45deg) translate(-8px, -9px);
+    }
+}
+@keyframes reverseBurger1 {
+    0% {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes reverseBurger2 {
+    0% {
+        margin-left: 200%;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+
+@keyframes reverseBurger3 {
+    0% {
+        transform: rotate(45deg) translate(-8px, -9px);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+@keyframes expand {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 10em;
+    }
+}
+@keyframes recover {
+    0% {
+        height: 10em;
+    }
+    100% {
+        height: 0;
+    }
+}
