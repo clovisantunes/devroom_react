@@ -22,7 +22,7 @@ export default function About({  id }: AboutProps) {
     return (
         <div className={styles.about_container} id={id}>
             <div className={styles.aboutCard}>
-                <div className={styles.imgCard}>
+                <div className={styles.imgCard} data-aos="fade-right">
                 <ImageUi
                         alt='Imagem lateral texto'
                         height={1980}
@@ -30,13 +30,13 @@ export default function About({  id }: AboutProps) {
                         path={imgPath}
                     />
                 </div>
-                <div className={styles.aboutTextContainer} data-aos="fade-right">
+                <div className={styles.aboutTextContainer} data-aos="fade-left">
                 <TitleText
-                        colorText='black'
+                        colorText='#FFFFFF'
                         text={t('aboutTitle')}
                     />
                      <SubTexts
-                        colorText='black'
+                        colorText='#FFFFFF'
                         text={t('subAboutText')}
                     />
                 </div>

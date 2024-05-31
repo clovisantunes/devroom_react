@@ -7,6 +7,7 @@ import styles from './styles.module.scss';
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useTranslation } from 'react-i18next';
+import ServicesItems from './ServicesItems';
 
 interface ServicesProps {
   id: string;
@@ -80,7 +81,9 @@ export default function Services({ id }: ServicesProps) {
             </span>
           </div>
           <div className={styles.servicesContainer}>
-            <div className={styles.servicesCard}></div>
+            <div className={styles.servicesCard}>
+              <ServicesItems />
+            </div>
             <div className={styles.servicesImage}>
               <div className={styles.imageDev}>
                 <ImageUi alt='Developers image' path={imgDevelopers} height={100} width={100} />

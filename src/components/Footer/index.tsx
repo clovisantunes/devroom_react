@@ -55,8 +55,10 @@ export default function Footer({
             colorText="white"
             text={t('services')}
           />
-          <span>Front-End</span>
-          <span>Back-End</span>
+          <span>Desenvolvimento Web</span>
+          <span>Hospedagem</span>
+          <span>Marketing Digital</span>
+          <span>Design</span>
         </div>
         <div className={styles.socialCards}>
           <SubTexts colorText="#d9d9d9" text={t('follow')} />

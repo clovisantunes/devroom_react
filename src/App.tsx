@@ -13,6 +13,7 @@ import WhatsContact from './components/UI/WhatsContact';
 import ButtonNavigation from './components/UI/ButtonNavigation';
 import GoogleTagManager from './GoogleAnalitycs';
 import Banner from './components/Banner';
+import Phases from './components/Phases';
 
 export default function App() {
   return (
@@ -30,8 +31,9 @@ export default function App() {
       <Banner />
       <Services id='services' />
       <Carousel />
-      <Portfolio id="about" />
       <About id="about" />
+      <Phases />
+      <Portfolio id="about" />
       <WhatsContact />
       <Footer  id='footer'  textColor="#d9d9d9" iconColor="#d9d9d9"/>
     </I18nextProvider>
