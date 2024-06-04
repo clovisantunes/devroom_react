@@ -69,7 +69,7 @@ export default function Services({ id }: ServicesProps) {
           />
           <div className={styles.line} />
         </div>
-        <div className={styles.projectsCard}>
+        <div className={styles.projectsCard}> 
           <div className={styles.spanText}>
             <span className={styles.span1}>
               Uma empresa criativa e pronta para tirar seu sonho do papel.

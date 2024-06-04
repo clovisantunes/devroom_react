@@ -14,8 +14,6 @@ interface modalProps {
   modalItem: {
     name: string;
     deploy: string;
-    repository: string;
-    tecnologies: Technology[];
     descriptions: {
       title: string;
       spanI: string;
@@ -71,7 +69,7 @@ export function ModalItem({
                 fontSize="12px"
                 height="100%"
                 width="100%"
-                localPath={modalItem.repository}
+                localPath={"modalItem.repository"}
                 text={t('git')}
                 target="__blank"
               />
@@ -97,14 +95,7 @@ export function ModalItem({
             <span>{modalItem.descriptions.spanII}</span>
           </div>
           <div className={styles.techCard}>
-            <SubTexts colorText="white" text={t('textModal')} />
             <div className={styles.techItems}>
-              {modalItem.tecnologies.map((tech, index) => (
-                <div key={index} className={styles.techItem}>
-                  {tech.icon}
-                  <span>{tech.name}</span>
-                </div>
-              ))}
             </div>
           </div>
         </div>
