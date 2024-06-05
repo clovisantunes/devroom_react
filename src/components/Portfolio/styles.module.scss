@@ -25,11 +25,16 @@
   
   .portfolioComponent {
     width: 60%;
-    height: 28em;
+  
     overflow: hidden;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap;  height: 28em;
+    transition: height 0.3s ease;
+  
+    &.expanded {
+      height: 48em;
+    }
   }
   
   .portCard {
@@ -85,7 +90,17 @@
     display: block;
     animation: cardDownDescription .65s forwards;
   }
-  
+  .loadingButton{
+    width: 8%;
+    height: 2em;
+    a{
+      svg{
+        width: 24px;
+        height: 24px;
+      }
+
+    }
+  }
   @keyframes backgroundMove {
     0% {
       top: 0%;
