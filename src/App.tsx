@@ -26,7 +26,6 @@ export default function App() {
       contact="/contact"
       services="#services"  
     />
-      <ButtonNavigation path='' />
       <Main  id="home"/>
       <Banner />
       <Services id='services' />

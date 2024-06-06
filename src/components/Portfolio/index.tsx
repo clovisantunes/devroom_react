@@ -4,7 +4,7 @@ import "../../styles/assets/dist/css/bootstrap.min.css";
 import styles from "./styles.module.scss";
 import TitleText from "../UI/TitleText";
 import { ButtonIcon } from "../UI/ButtonUi";
-import { MdKeyboardArrowDown } from "react-icons/md";
+import { MdKeyboardArrowDown, MdOutlineKeyboardArrowUp } from "react-icons/md";
 import Cover from "../UI/cover";
 import { ModalItem } from "../Modal";
 import { useTranslation } from "react-i18next";
@@ -57,8 +57,63 @@ const projects = {
       spanI: "frontIIII.spanI",
       spanII: "frontIIII.spanII"
     }
-  }
-};
+  },
+  frontIIIaI: {
+    name: "E-commerce Electro",
+    deploy: "https://ecommerce-phi-eight-92.vercel.app/",
+    backgroundImage: "https://i.ibb.co/znk9Rdz/ecommerce.png",
+    backgroundVideo: "https://streamable.com/e/uds8v6?autoplay=1&muted=1",
+    descriptions: {
+      title: "E-commerce Electro",
+      spanI: "frontIIII.spanI",
+      spanII: "frontIIII.spanII"
+    }
+  },
+  frontIIIjI: {
+    name: "E-commerce Electro",
+    deploy: "https://ecommerce-phi-eight-92.vercel.app/",
+    backgroundImage: "https://i.ibb.co/znk9Rdz/ecommerce.png",
+    backgroundVideo: "https://streamable.com/e/uds8v6?autoplay=1&muted=1",
+    descriptions: {
+      title: "E-commerce Electro",
+      spanI: "frontIIII.spanI",
+      spanII: "frontIIII.spanII"
+    }
+  },
+  frontIhIII: {
+    name: "E-commerce Electro",
+    deploy: "https://ecommerce-phi-eight-92.vercel.app/",
+    backgroundImage: "https://i.ibb.co/znk9Rdz/ecommerce.png",
+    backgroundVideo: "https://streamable.com/e/uds8v6?autoplay=1&muted=1",
+    descriptions: {
+      title: "E-commerce Electro",
+      spanI: "frontIIII.spanI",
+      spanII: "frontIIII.spanII"
+    }
+  },
+  frontIIjII: {
+    name: "E-commerce Electro",
+    deploy: "https://ecommerce-phi-eight-92.vercel.app/",
+    backgroundImage: "https://i.ibb.co/znk9Rdz/ecommerce.png",
+    backgroundVideo: "https://streamable.com/e/uds8v6?autoplay=1&muted=1",
+    descriptions: {
+      title: "E-commerce Electro",
+      spanI: "frontIIII.spanI",
+      spanII: "frontIIII.spanII"
+    }
+  },
+  frontIIkII: {
+    name: "E-commerce Electro",
+    deploy: "https://ecommerce-phi-eight-92.vercel.app/",
+    backgroundImage: "https://i.ibb.co/znk9Rdz/ecommerce.png",
+    backgroundVideo: "https://streamable.com/e/uds8v6?autoplay=1&muted=1",
+    descriptions: {
+      title: "E-commerce Electro",
+      spanI: "frontIIII.spanI",
+      spanII: "frontIIII.spanII"
+    }
+}
+}
 
 const Portfolio = ({ id }: PortfolioProps) => {
   const { t } = useTranslation();
@@ -66,6 +121,8 @@ const Portfolio = ({ id }: PortfolioProps) => {
   const [modalVisible, setModalVisible] = useState(false);
   const [hoveredIndex, setHoveredIndex] = useState(null);
   const [expanded, setExpanded] = useState(false);
+  const [TextButton, setTextButton] = useState("Veja mais");
+  const [svgButton, setSvgButton] = useState(<MdKeyboardArrowDown />);
 
   const handleOpenModal = (project) => {
     setModalItem(project);
@@ -77,11 +134,19 @@ const Portfolio = ({ id }: PortfolioProps) => {
   };
 
   const handleExpand = () => {
-    setExpanded(true);
+    setExpanded(!expanded);
+    if (expanded) {
+      setSvgButton(<MdKeyboardArrowDown />);
+      setTextButton("Veja mais");
+    } else {
+      setSvgButton(<MdOutlineKeyboardArrowUp />);
+      setTextButton("Ver menos");
+    }
   };
 
   return (
     <div className={styles.portfolioContainer} id={id}>
+      <div className={styles.shadowBox} />
       <div className={styles.titleItem}>
         <TitleText colorText="white" text={t("see")} />
         <span>:</span>
@@ -129,8 +194,8 @@ const Portfolio = ({ id }: PortfolioProps) => {
           click={handleExpand}
           width="100%"
           localPath="#"
-          text="Veja mais"
-          icon={<MdKeyboardArrowDown />}
+          text={TextButton}
+          icon={svgButton}
         />
       </div>
     </div>

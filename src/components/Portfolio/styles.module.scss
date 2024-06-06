@@ -1,187 +1,217 @@
 .portfolioContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: all 2s ease-in-out;
+  background-image: url('../../assets/images/teclado.png');
+}
+
+.shadowBox{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: .9;
+  background-color: #1D1D1D;
+}
+.portfolioContainer .titleItem {
+  display: flex;
+  flex-direction: row;
+  z-index: 5;
+}
+
+.portfolioContainer .titleItem span {
+  color: var(--colors-neutral-900);
+  font-size: 36px;
+  margin: 28px 4px;
+}
+
+.portfolioContainer h1 {
+  margin: 36px 0 36px 0;
+  font-size: 36px;
+}
+
+.portfolioComponent {
+  width: 60%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 28em;
+  transition: 3s ease-in-out;
+  animation: heightTransitionReverse .8s forwards;
+}
+
+.portfolioComponent.expanded {
+  animation: heightTransition .8s forwards;
+}
+@keyframes heightTransition{
+  from{
+    height: 28em;
+  }
+  to{
+    height: 42em;
+  }
+}
+@keyframes heightTransitionReverse{
+  from{
+    height: 48em;
+  }
+  to{
+    height: 28em;
+  }
+}
+.portCard {
+  position: relative;
+  width: 20em;
+  height: 12em;
+  background-size: cover;
+  margin: 16px;
+  overflow: hidden;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  transition: all .4s ease-in-out;
+  z-index: 1;
+}
+
+.portCard img {
+  position: absolute;
+  top: 0;
+  margin: 16px;
+}
+
+.portCard .titleText {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #353535;
+}
+
+.portCard .titleText h1 {
+  font-size: 12px;
+}
+
+.portCard:hover {
+  transform: scale(1.2);
+  position: unset;
+  z-index: 5;
+}
+
+.portCard:hover .titleText {
+  position: absolute;
+  animation: cardDown .8s forwards;
+  padding: 8px;
+  transition: all .3s ease-in-out;
+}
+
+.portCard:hover .portCardDescription {
+  display: block;
+  animation: cardDownDescription .65s forwards;
+}
+
+.loadingButton {
+  width: 16%;
+  height: 2em;
+  background-color: var(--colors-neutral-900);
+  color: #FFFF;
+  border-radius: 16px;
+  z-index: 5;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.loadingButton a svg {
+  width: 24px;
+  height: 24px;
+}
+
+@keyframes backgroundMove {
+  0% {
+    top: 0%;
+  }
+  15% {
+    top: 0%;
+  }
+  75% {
+    top: -250%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+@keyframes cardDown {
+  0% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 25%;
+  }
+}
+
+@keyframes cardDownDescription {
+  0% {
+    bottom: 0%;
+    height: 0;
+  }
+  100% {
+    height: 48px;
+    bottom: -3%;
+  }
+}
+
+@keyframes cardDownResponsive {
+  0% {
+    bottom: 0%;
+  }
+  100% {
+    bottom: 34%;
+  }
+}
+
+@media (max-width: 1366px) {
+  .portfolioContainer .portfolioComponent .portifolioCard .portItens {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .portfolioContainer .portfolioComponent .portifolioCard .portItens {
+    width: 100%;
+  }
+}
+
+@media (max-width: 980px) {
+  .portfolioContainer .portfolioComponent .portifolioCard {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    background-color: #1D1D1D;
   }
-  
-  .portfolioContainer .titleItem {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .portfolioContainer .titleItem span {
-    color: var(--colors-neutral-900);
-    font-size: 36px;
-    margin: 28px 4px;
-  }
-  
-  .portfolioContainer h1 {
-    margin: 36px 0 36px 0;
-    font-size: 36px;
-  }
-  
-  .portfolioComponent {
-    width: 60%;
-  
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;  height: 28em;
-    transition: height 0.3s ease;
-  
-    &.expanded {
-      height: 48em;
-    }
-  }
-  
-  .portCard {
-    position: relative;
-    width: 20em;
-    height: 12em;
-    background-size: cover;
-    margin: 16px;
-    overflow: hidden;
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    transition: all .4s ease-in-out;
-    z-index: 1;
-  }
-  
-  .portCard img {
-    position: absolute;
-    top: 0;
-    margin: 16px; 
 
-  }
-  
-  .portCard .titleText {
+  .portfolioContainer .portfolioComponent .portifolioCard .portItens {
     width: 100%;
-    height: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #353535;
+    flex-wrap: wrap;
+    padding: 24px;
   }
-  
-  .portCard .titleText h1 {
-    font-size: 12px;
-  }
-  
 
-  
-  .portCard:hover {
-    transform: scale(1.2);
-    position: unset;
-    z-index: 5;
+  .portfolioContainer .portfolioComponent .portifolioCard .portCard {
+    width: 12em;
+    height: 8em;
+    margin: 8px 16px;
   }
-  
-  .portCard:hover .titleText {
+
+  .portfolioContainer .portfolioComponent .portifolioCard .portCard:hover .titleText {
     position: absolute;
-    animation: cardDown .8s forwards;
-    padding: 8px;
-    transition: all .3s ease-in-out;
+    animation: cardDownResponsive .8s forwards;
   }
-  
-  .portCard:hover .portCardDescription {
-    display: block;
-    animation: cardDownDescription .65s forwards;
-  }
-  .loadingButton{
-    width: 8%;
-    height: 2em;
-    a{
-      svg{
-        width: 24px;
-        height: 24px;
-      }
-
-    }
-  }
-  @keyframes backgroundMove {
-    0% {
-      top: 0%;
-    }
-    15% {
-      top: 0%;
-    }
-    75% {
-      top: -250%;
-    }
-    100% {
-      top: 0%;
-    }
-  }
-  
-  @keyframes cardDown {
-    0% {
-      bottom: 0;
-    }
-    100% {
-      bottom: 25%;
-    }
-  }
-  
-  @keyframes cardDownDescription {
-    0% {
-      bottom: 0%;
-      height: 0;
-    }
-    100% {
-      height: 48px;
-      bottom: -3%;
-    }
-  }
-  
-  @keyframes cardDownResponsive {
-    0% {
-      bottom: 0%;
-    }
-    100% {
-      bottom: 34%;
-    }
-  }
-  
-  @media (max-width:1366px) {
-    .portfolioContainer .portifolioComponent .portifolioCard .portItens {
-      width: 100%;
-    }
-  }
-  
-  @media (max-width:1100px) {
-    .portfolioContainer .portifolioComponent .portifolioCard .portItens {
-      width: 100%;
-    }
-  }
-  
-  @media (max-width:980px) {
-    .portfolioContainer .portifolioComponent .portifolioCard {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-  
-    .portfolioContainer .portifolioComponent .portifolioCard .portItens {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 24px;
-    }
-  
-    .portfolioContainer .portifolioComponent .portifolioCard .portCard {
-      width: 12em;
-      height: 8em;
-      margin: 8px 16px;
-    }
-  
-    .portfolioContainer .portifolioComponent .portifolioCard .portCard:hover .titleText {
-      position: absolute;
-      animation: cardDownResponsive .8s forwards;
-    }
-  }
-  
+}
