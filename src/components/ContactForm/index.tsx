@@ -8,6 +8,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import LogoUi from '../UI/LogoUi';
 
 interface ContactProps {
     title: string;
@@ -68,14 +69,29 @@ export default function ContactForm({ title, service,  id }: ContactProps) {
             <div className={styles.contactContainer} id='contact'>
                 <div className={styles.contactForm}>
                     <div className={styles.textContactForm}>
+                        <div className={styles.logoCard}>
+                        <LogoUi 
+                            alt='logo DevRoom'
+                            height={100}
+                            width={100}
+                            priority
+                        />
+                            
+                        </div>
+                        <div className={styles.textTitle}>
                         <TitleText
                             colorText='white'
                             text={t('reminder')}
+                            span={"!"}
                         />
+                        </div>
+                        <div className={styles.textSubTitle}>
                         <SubTexts
-                            colorText='white'
+                            colorText='#ABA9AB'
                             text={t('remindertext')}
+                            span={"."}
                         />
+                        </div>
                     </div>
                     <form className={styles.formContainer} action="#">
                         <TitleText

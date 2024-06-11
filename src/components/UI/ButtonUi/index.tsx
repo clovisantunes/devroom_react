@@ -18,7 +18,8 @@ interface ButtonServiceProps {
   width: string;
   height: string;
   click?: any;
-  contact: string;
+  contact?: string;
+  localPath?: string;
   icon?: ReactNode;
 }
 
@@ -48,12 +49,12 @@ const ButtonServices: React.FC<ButtonServiceProps> = ({ fontSize, height, width,
     </div>
   );
 }
-const ButtonContact: React.FC<ButtonServiceProps> = ({ fontSize, height, width, click, text, contact, icon }: ButtonServiceProps) => {
+const ButtonContact: React.FC<ButtonServiceProps> = ({ fontSize, height, width, click, text, localPath, icon }: ButtonServiceProps) => {
   return(
     <div className={styles.buttonContact} style={{ fontSize, width, height }} onClick={click}>
-      <a href={contact} target="blank">
+      <Link to={localPath}>
         {text}{icon}
-      </a>
+        </Link>
     </div>
   );
 }

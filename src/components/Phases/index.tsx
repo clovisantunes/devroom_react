@@ -105,7 +105,7 @@ export default function Phases() {
               <div className={styles.buttonPhases}>
                 <ButtonContact
                   text="Faça um orçamento"
-                  contact="#"
+                  localPath="/services"
                   fontSize="16px"
                   width="100%"
                   height="100%"

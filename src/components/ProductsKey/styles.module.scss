@@ -19,7 +19,7 @@
     align-items: center;
     width: 80%;
     height: 8em;
-    border-bottom: solid 2px var(--colors-neutral-100);
+    border-bottom: solid 2px var(--colors-neutral-900);
     border-radius: 2px;
     h1{
       font-size: 28px;
@@ -37,7 +37,7 @@
     justify-content: space-between;
     padding: 2em;
     .imageCard {
-      width: 28%;
+      width: 18%;
     }
     .descriptionCard {
       display: flex;

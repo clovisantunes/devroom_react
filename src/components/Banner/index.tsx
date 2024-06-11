@@ -18,7 +18,7 @@ export default function Banner(){
                     <TitleText  colorText='white' text='INVISTA SEU TEMPO NO CRESCIMENTO DO SEU NEGÓCIO E DEIXE A CRIAÇÃO DO SITE COM A GENTE'/>
                     <SubTexts colorText='white' text='CRIAÇÃO DE SITE PROFISSIONAL APARTIR DE R$ 200,00 EM ATÉ 12X.'/>
                     <div className={styles.bannerButton} data-aos="fade-up">
-                        <ButtonUI   fontSize='24px' height='100%'  localPath=''  text='Contrate agora!'  width='100%'/>
+                        <ButtonUI   fontSize='24px' height='100%'  localPath='services'  text='Contrate agora!'  width='100%'/>
                     </div>
                 </div>
             </div>

@@ -49,6 +49,7 @@
 .portfolioComponent.expanded {
   animation: heightTransition .8s forwards;
 }
+
 @keyframes heightTransition{
   from{
     height: 28em;

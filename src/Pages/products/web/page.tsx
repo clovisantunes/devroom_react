@@ -39,17 +39,13 @@ export default  function Web({ params }: webProps) {
   const textDescription  = t('products.web.descriptionText');
   const descriptionTitle = t('products.web.descriptionTitle');
   const imgPath = "https://freepngimg.com/thumb/web_development/3-2-web-development-png-hd.png";
+  
   return (
     <div>
       <ToastContainer />
       <ProdutsKey 
         titleMain={titleMain}
-        select={select}
         title={title}
-        subTitles={Object.values(subTitle)}
-        values = {Object.values(value)}
-        coin = {coin}
-        utils = {Object.values(utils)}
         buttonLang = {buttonLang}
         textDescription = { textDescription }
         descriptionTitle = { descriptionTitle }
