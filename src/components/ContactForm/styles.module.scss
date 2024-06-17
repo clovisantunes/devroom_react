@@ -2,17 +2,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     height: 100%;
     padding: 2em;
     transition: all .8s ease-in-out;
     background-color: #161616;
+    span{
+        color: var(--colors-neutral-900);
+    }
     .contactForm{
         display: flex;
         flex-direction: row;
         width: 100%;
         height: 100%;
+        justify-content: space-around;
         .logoCard{
             width: 30em;
             height: 16em;
@@ -54,23 +58,55 @@
         }
         h2{
             font-size: 16px;
-            
         }
+        
     }
     form{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        width: 60%;
+        width: 40%;
+        .buttonContainer{
+            .textButons{
+                display: flex;
+                flex-direction: row;
+            }
+            h1{
+                font-size: 24px;
+                font-weight: 700;
+                text-align: left;
+                font-family: jaldi;
+            }
+            h2{
+                font-size: 14px;
+                font-weight: 500;
+                margin-top: 8px;
+                margin-left: 8px;
+                text-align: left;
+                font-family: jaldi;
+            
+            }
+            .buttonsCard{
+                display: flex;
+                flex-wrap: wrap;
+                padding: 16px;
+                gap: 10px;
+
+                .buttonCard{
+                    width: 24%;
+                    height: 4em;
+                }
+            }
+                
+        }
     }
     .card{
-        width: 60%;
+        width: 80%;
         height: 6em;
     }
     .textareaCard{
         display: flex;
         flex-direction: column;
-        width: 60%;
+        width: 80%;
         height: 6em;
         label{
             color: var(--colors-neutral-100);
@@ -121,6 +157,8 @@
         }
     }
 }
+
+
 
 @media (max-width:768px) {
     .contactContainer{

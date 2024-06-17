@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect, useState } from 'react';
 import InputUi from '../UI/InputUi/index';
 import TitleText from '../UI/TitleText';
@@ -9,6 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import LogoUi from '../UI/LogoUi';
+import { ButtonContact, ButtonServices, ButtonUI } from '../UI/ButtonUi';
 
 interface ContactProps {
     title: string;
@@ -16,18 +17,19 @@ interface ContactProps {
     id: string;
 }
 
-export default function ContactForm({ title, service,  id }: ContactProps) {
+export default function ContactForm({ title, service, id }: ContactProps) {
     const { t, i18n } = useTranslation();
     const [message, setMessage] = useState(`${t('buy')} ${service}-${title}.`);
 
     useEffect(() => {
-      setMessage(`${t('buy')} ${service}-${title}.`);
+        setMessage(`${t('buy')} ${service}-${title}.`);
     }, [service, title, t]);
-  
+
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
     const [isFormValid, setIsFormValid] = useState(false);
+
     useEffect(() => {
         setMessage(`${t('buy')} ${service}-${title}!`);
     }, [title]);
@@ -56,11 +58,35 @@ export default function ContactForm({ title, service,  id }: ContactProps) {
                 pauseOnHover: true,
                 draggable: true,
                 progress: undefined,
-              });
+            });
         } else {
             window.open(whatsappLink, '_blank');
             window.location.href = '/';
         }
+    };
+
+    const buttons = [
+        { text: 'Website' },
+        { text: 'Blogs' },
+        { text: 'E-commerce' },
+        { text: 'Design' },
+        { text: 'Marketing Digital' },
+        { text: 'SEO/Google Ads' }
+    ];
+
+    const [buttonStyles, setButtonStyles] = useState(buttons.map(() => ({ background: '#FFFFFF', color: 'black' })));
+
+    const toggleButtonStyle = (index: number) => {
+        setButtonStyles(prevStyles =>
+            prevStyles.map((style, i) =>
+                i === index 
+                ? { 
+                    background: style.background === '#FFFFFF' ? 'var(--colors-neutral-900)' : '#FFFFFF',
+                    color: style.color === 'black' ? 'white' : 'black'
+                } 
+                : style
+            )
+        );
     };
 
     return (
@@ -70,34 +96,60 @@ export default function ContactForm({ title, service,  id }: ContactProps) {
                 <div className={styles.contactForm}>
                     <div className={styles.textContactForm}>
                         <div className={styles.logoCard}>
-                        <LogoUi 
-                            alt='logo DevRoom'
-                            height={100}
-                            width={100}
-                            priority
-                        />
-                            
+                            <LogoUi
+                                alt='logo DevRoom'
+                                height={100}
+                                width={100}
+                                priority
+                            />
                         </div>
                         <div className={styles.textTitle}>
-                        <TitleText
-                            colorText='white'
-                            text={t('reminder')}
-                            span={"!"}
-                        />
+                            <TitleText
+                                colorText='white'
+                                text={t('reminder')}
+                                span={"!"}
+                            />
                         </div>
                         <div className={styles.textSubTitle}>
-                        <SubTexts
-                            colorText='#ABA9AB'
-                            text={t('remindertext')}
-                            span={"."}
-                        />
+                            <SubTexts
+                                colorText='#ABA9AB'
+                                text={t('remindertext')}
+                                span={"."}
+                            />
                         </div>
                     </div>
+
                     <form className={styles.formContainer} action="#">
-                        <TitleText
-                            colorText='white'
-                            text={t('enterContact')}
-                        />
+                        <div className={styles.buttonContainer}>
+                            <div className={styles.textButons}>
+                                <TitleText
+                                    colorText='white'
+                                    text={t('enterContact')}
+                                    span='?'
+                                />
+                                <SubTexts
+                                    colorText='#ABA9AB'
+                                    text='Você poderá selecionar mais que uma opção'
+                                />
+                            </div>
+                            <div className={styles.buttonsCard}>
+                                {buttons.map((button, index) => (
+                                    <div className={styles.buttonCard} key={index} onClick={() => toggleButtonStyle(index)}>
+                                        <ButtonServices
+                                            key={index}
+                                            background={buttonStyles[index].background}
+                                            color={buttonStyles[index].color}
+                                            text={button.text}
+                                            fontSize='16px'
+                                            height='40px'
+                                            localPath=''
+                                            width='100%'
+                                        />
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+
                         <div className={styles.card}>
                             <InputUi
                                 id='name'

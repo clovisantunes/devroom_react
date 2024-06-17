@@ -24,27 +24,24 @@
     background-color: var(--colors-secondary-800);
     border: 1px solid var(--colors-secondary-50);
 }
-.buttonServices a{
+.buttonServices{
   
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
         height: 100%;
-        color: var(--colors-secondary-800);
+        font-weight: 700;
         background-color: var(--colors-secondary-50);
         border-radius: 2px;
-        border: none;
+        border: 2px solid var(--colors-neutral-900);
         cursor: pointer;
+        border-radius: 16px;
         transition: all .5s;
         text-decoration: none;
     
 }
-.buttonServices:hover a{
-    color: var(--colors-secondary-50);
-    background-color: var(--colors-secondary-800);
-    border: 1px solid var(--colors-secondary-50);
-}
+
 .buttonContact{
     display: flex;
     transition: all .3s;
