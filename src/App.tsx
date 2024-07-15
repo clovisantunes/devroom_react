@@ -21,7 +21,7 @@ export default function App() {
     <I18nextProvider i18n={i18n}>
        <GoogleTagManager />
          <Navbar 
-      home="#home"
+      home="/"
       about="#about"
       contact="/contact"
       services="#services"  

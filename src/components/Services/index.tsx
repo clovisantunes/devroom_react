@@ -72,12 +72,12 @@ export default function Services({ id }: ServicesProps) {
         <div className={styles.projectsCard}> 
           <div className={styles.spanText}>
             <span className={styles.span1}>
-              Uma empresa criativa e pronta para tirar seu sonho do papel.
+              {t('serviceText')}
             </span>
           </div>
           <div className={styles.spanText2}>
             <span className={styles.span2}>
-              Somos responsáveis por transformar ideias em realidade digital, proporcionando consistência e desempenho excepcionais de ponta a ponta. Junte-se a nós nesta jornada, onde a excelência é a norma e cada aplicação é uma experiência marcante.
+              {t("serviceFullText")}
             </span>
           </div>
           <div className={styles.servicesContainer}>

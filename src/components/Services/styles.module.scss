@@ -117,14 +117,38 @@
         height: 100%;
     }
   }
-  
+
+  @media (max-width: 1366px){
+    .servicesContainer .servicesCard{
+      width: 100%;
+    }
+    .servicesContainer .servicesImage{
+      display: none;
+    }
+   .imageDev{
+      display: none;
+      img{
+        display: none;
+      }
+}
+  }
+
   @media (max-width: 950px) {
     .projectsContainer {
       height: 100%;
     }
-  
+    .servicesContainer .servicesCard{
+      height: 100%;
+    }
     .servicesCard {
       padding: 8px;
+      width: 100%;
+      .spanText{
+        width: 90%;
+      }
+      .spanText2{
+        width: 90%;
+      }
     }
   
     .textTitle .line {

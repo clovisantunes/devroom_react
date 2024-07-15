@@ -14,7 +14,7 @@ interface ButtonUIProps {
 }
 interface ButtonServiceProps {
   text: string;
-  fontSize: string;
+  fontSize?: string;
   width: string;
   background?: string;
   height: string;

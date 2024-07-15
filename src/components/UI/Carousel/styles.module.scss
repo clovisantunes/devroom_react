@@ -75,6 +75,13 @@
     transition: all .5s ease;
   }
   @media (max-width:980px) {
+    .carouselContainer {
+      padding-left: 20px;
+      h1 {
+        font-size: 20px;
+       
+      }
+    }
     .carouselCard svg {
         min-width: 36px;
      

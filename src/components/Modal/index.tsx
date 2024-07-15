@@ -63,30 +63,6 @@ export function ModalItem({
         <div className={styles.modalApresentation}>
         
         {renderMedia(modalItem.backgroundVideo)}
-          <div className={styles.buttons}>
-            <div className={styles.buttonsItem}>
-              <ButtonUI
-                fontSize="12px"
-                height="100%"
-                width="100%"
-                localPath={"modalItem.repository"}
-                text={t('git')}
-                target="__blank"
-              />
-            </div>
-            <div className={styles.buttonsItem}>
-              {modalItem.deploy && (
-                <ButtonUI
-                  fontSize="12px"
-                  height="100%"
-                  width="100%"
-                  localPath={modalItem.deploy}
-                  text={t('deploy')}
-                  target="__blank"
-                />
-              )}
-            </div>
-          </div>
         </div>
         <div className={styles.description}>
           <TitleText colorText="white" text={modalItem.descriptions.title} />

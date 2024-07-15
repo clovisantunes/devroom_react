@@ -8,6 +8,7 @@
   background-position: center;
   background-size: cover;
   transition: all 2s ease-in-out;
+  background-attachment: fixed;
   background-image: url('../../assets/images/teclado.png');
 }
 
@@ -214,5 +215,20 @@
   .portfolioContainer .portfolioComponent .portifolioCard .portCard:hover .titleText {
     position: absolute;
     animation: cardDownResponsive .8s forwards;
+  }
+  .loadingButton{
+    width: 50%;
+  }
+  .portfolioComponent.expanded {
+    animation: heightTransitionResponsive .8s forwards;
+  }
+} 
+@keyframes heightTransitionResponsive{
+  from{
+    height: 28em;
+
+  }
+  to{
+    height: 130em;
   }
 }

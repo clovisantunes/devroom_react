@@ -59,13 +59,30 @@
 }
 
 @media (max-width: 480px) {
+
   .main_box {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+  .main_box h1 {
+    font-size: 24px;
+  }
+  .main_box h2 {
+    font-size: 18px;
+  }
+  .main_box span {
+    font-size: 12px;
+  }
+  .typewriter{
+    font-size: 12px;
+  }
 }
-
+@media (max-width: 400px) {
+  .main_box span {
+    font-size: 8px;
+  }
+}
 @keyframes typing {
   from { width: 0; }
   to { width: 100%; }

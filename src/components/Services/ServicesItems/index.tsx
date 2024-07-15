@@ -3,53 +3,55 @@ import { RiComputerLine } from "react-icons/ri";
 import { IoMdCloudDone } from "react-icons/io";
 import { IoIosRocket } from "react-icons/io";
 import { GiPaintBrush } from "react-icons/gi";
+import { useTranslation } from 'react-i18next';
 
 export default function ServicesItems() {
+    const {t} = useTranslation();
     const services: {
         title: string;
         logo?: JSX.Element;
         service: string[];
     }[] = [
         {
-            title: 'Desenvolvimento Web',
+            title: t("serviceWeb"),
             logo: <RiComputerLine size={30} />,
             service: [
-                "Criação de sites apartir de R$ 200,00",
-                "Criação de sites customizados",
-                "Criação de landing pages",
-                "Criação de Blogs de noticias",
-                "SEO e otimizações",
-                "Criação de sites em React ou Next"
+                t("serviceWebItem1"),
+                t("serviceWebItem2"),
+                t("serviceWebItem3"),
+                t("serviceWebItem4"),
+                t("serviceWebItem5"),
+                t("serviceWebItem6")
             ]
         },
         {
-            title: 'Hospedagem',
+            title: t("serviceHost"),
             logo: <IoMdCloudDone size={30} />,
             service: [
-                "Hospedagem de alta velocidade",
-                "Certificado de segurança SSL",
-                "Email corporativo",
-                "Registro de domínio",
-                "Suporte técnico continuo"
+                t("hostItem1"),
+                t("hostItem2"),
+                t("hostItem3"),
+                t("hostItem4"),
+                t("hostItem5")
             ]
         },
         {
-            title: 'Marketing Digital',
+            title: t("serviceMarketing"),
             logo: <IoIosRocket size={30} />,
             service: [
-                "Campanhas Google ADS",
-                "Campanhas Instagram ADS",
-                "Campanhas Facebook ADS",
-                "Tags de conversão"
+                t("digitalMarketingItem1"),
+                t("digitalMarketingItem2"),
+                t("digitalMarketingItem3"),
+                t("digitalMarketingItem4")
             ]
         },
         {
-            title: 'Design',
+            title: t("serviceDesign"),
             logo: <GiPaintBrush size={30} />,
             service: [
-                "Criação de Design’s",
-                "Identidade Visual",
-                "Prototipação",
+                t("designItem1"),
+                t("designItem2"),
+                t("designItem3")
             ]
         },
     ];

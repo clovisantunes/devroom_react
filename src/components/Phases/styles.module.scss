@@ -141,3 +141,59 @@
     height: 2em;
     color: var(--colors-neutral-900);
 }
+@media(max-width: 1366px){
+    .phases_TitleCard{
+        width: 90%;
+    }
+    .descriptionContent{
+        width: 100%;
+    }
+    .phasesItems{
+        width: 90%;
+    }
+    .phaseItem{
+        width: 100%;
+        padding: 16px;
+    }
+}
+@media(max-width: 768px){
+    .phases_TitleCard{
+        flex-direction: column;
+    }
+    .phases_Title{
+        width: 100%;
+    }
+    .titleContent{
+        padding: 0;
+        padding-top: 16px;
+        text-align: center;
+        margin-bottom: 2em;
+    }
+    .descriptionContent{
+        width: 100%;
+    }
+    .phasesItems{
+        overflow: scroll;
+    }
+    .phaseItem .phaseTitle h1{
+        font-size: 12px;
+    }
+    .phases_description{
+        width: 100%;
+        padding: 0;
+    }
+    .phaseIcon{
+        width: 2em;
+        height: 2em;
+    }
+    .phaseIcon svg {
+        width: 1em;
+        height: 1em;
+    }
+    .phaseItem .phaseDescription p{
+        font-size: 12px;
+    }
+    .linePhases {
+        top: 19%;
+    }
+}

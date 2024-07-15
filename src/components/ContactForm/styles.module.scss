@@ -1,194 +1,326 @@
-.contactContainer{
+.contactContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 100%;
+    height: auto; 
     padding: 2em;
-    transition: all .8s ease-in-out;
+    transition: height 0.5s ease-in-out; 
     background-color: #161616;
-    span{
+
+    span {
         color: var(--colors-neutral-900);
     }
-    .contactForm{
+
+    .contactForm {
         display: flex;
+        transition: all 1s ease-in-out;
         flex-direction: row;
         width: 100%;
-        height: 100%;
+        height: auto;
         justify-content: space-around;
-        .logoCard{
+
+        .logoCard {
             width: 30em;
             height: 16em;
         }
-        .textTitle{
+
+        .textTitle {
             display: flex;
             flex-direction: row;
             width: 45%;
             text-align: left;
-            span{
+
+            span {
                 font-size: 24px;
                 color: var(--colors-neutral-900);
                 font-weight: 800;
             }
         }
-        .textSubTitle{
+
+        .textSubTitle {
             display: flex;
             flex-direction: row;
             width: 55%;
             text-align: left;
-            span{
+
+            span {
                 font-size: 24px;
                 color: var(--colors-neutral-900);
                 font-weight: 600;
             }
         }
     }
-    .textContactForm{
+
+    .textContactForm {
         width: 36%;
-        height: 100%;
+        height: auto;
         display: flex;
         flex-direction: column;
         text-align: center;
         align-items: center;
-        h1{
+
+        h1 {
             margin-bottom: 2em;
             font-weight: 800;
             font-size: 28px;
         }
-        h2{
+
+        h2 {
             font-size: 16px;
         }
-        
     }
-    form{
+
+    form {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         width: 40%;
-        .buttonContainer{
-            .textButons{
+        overflow: hidden;
+        align-items: center;
+        label{
+            margin-top: 8px;
+        }
+        input{
+            border-radius: 8px;
+            border:solid 1px  #4200FF;
+            animation: fadeTop 1s ease-in-out;
+        }
+        .buttonContainer {
+
+            .textButons {
                 display: flex;
                 flex-direction: row;
             }
-            h1{
+
+            h1 {
                 font-size: 24px;
                 font-weight: 700;
                 text-align: left;
                 font-family: jaldi;
             }
-            h2{
+
+            h2 {
                 font-size: 14px;
                 font-weight: 500;
                 margin-top: 8px;
                 margin-left: 8px;
                 text-align: left;
                 font-family: jaldi;
-            
             }
-            .buttonsCard{
+
+            .buttonsCard {
                 display: flex;
                 flex-wrap: wrap;
                 padding: 16px;
                 gap: 10px;
-
-                .buttonCard{
-                    width: 24%;
+                justify-content: space-around;
+                .buttonCard {
+                    width: 28%;
                     height: 4em;
                 }
             }
-                
         }
     }
-    .card{
+
+    .card {
         width: 80%;
-        height: 6em;
+        height: auto;
+        margin-bottom: 8px;
+
+        .aboutTitle {
+            h1 {
+                font-size: 24px;
+                font-weight: 700;
+            }
+
+            span {
+                font-size: 24px;
+                font-weight: 700;
+            }
+        }
     }
-    .textareaCard{
+
+    .textareaCard {
         display: flex;
         flex-direction: column;
         width: 80%;
-        height: 6em;
-        label{
+        label {
             color: var(--colors-neutral-100);
         }
-        textarea{
+
+        textarea {
             width: 100%;
-            height: 100%;
             padding: 8px;
-            border: none;
+            border: 8px;
             font-size: 14px;
-            cursor: not-allowed;
-            background-color: rgb(196, 196, 196);
+            resize: none;
+            height: 10em;
+            border-radius: 8px;
+            border: solid 1px #4200FF;
         }
+
         textarea:focus {
             outline: none;
         }
     }
-    .submitContainer{
+
+    .submitContainer {
         width: 30%;
         height: 2em;
         margin: 1em;
         display: flex;
         justify-content: center;
-        .submitButton{
+        .submitButton {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 45%;
+            width: 80%;
             height: 100%;
             font-weight: 550;
-            color: var(--colors-secondary-800);
-            background-color: var(--colors-secondary-50);
-            border-radius: 2px;
+            background-color: var(--colors-neutral-900);
+            border-radius: 16px;
             border: none;
             cursor: pointer;
-            transition: all .5s;
+            transition: all 0.5s;
             text-decoration: none;
+
+            a {
+                color: #FFFF;
+            }
+        }
+        .submitButton:hover{
+            background-color: #FFFFFF;
             a{
-                color: black;
+                color: #000;
             }
         }
     }
-    .submitButton:hover{
+
+    .submitButton:hover {
         background-color: var(--colors-secondary-800);
         border: 1px solid var(--colors-secondary-50);
-        a{
+
+        a {
             color: var(--colors-secondary-50);
         }
     }
 }
-
-
-
-@media (max-width:768px) {
+.buttonCardContact{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 16px 0;
+    h2{
+        margin-top: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #FFFF;
+    }
+    .buttonOptions{
+        width: 30%;
+        margin-left: 8px;
+    }
+}
+@keyframes fadeTop{
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media(max-width: 1366px){
     .contactContainer{
         form{
-            width: 100%;
-            .card{
-                width: 80%;
-            }
-            .textareaCard{
-                width: 80%;
+            .buttonContainer{
+
+                .buttonsCard{
+                    gap: 4px;
+                    .buttonCard{
+                        width: 36%;
+                    }
+                }
             }
         }
+    }
+    .buttonCardContact{
+        flex-direction: column;
+        .buttonOptions{
+            width: 40%;
+            margin-top: 8px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .contactContainer {
         .contactForm{
+            .logoCard{
+                width: 100%;
+            }       
+            .textTitle{
+                width: 80%;
+            }
+            .textSubTitle{
+                width: 80%;
+                text-align: center;
+            }
+        }
+        form {
+            width: 100%;
+
+            .card {
+                width: 80%;
+            }
+
+            .textareaCard {
+                width: 80%;
+            }
+            .buttonContainer{
+                    .buttonsCard{
+                        .buttonCard{
+                            width: 48%;
+                        }
+                    }
+                h1{
+                    text-align: center;
+                }
+                h1{
+                    text-align: center;
+                }
+                .textButons{
+                    flex-direction: column;
+                }
+            }
+            
+        }
+
+        .contactForm {
             flex-direction: column;
         }
-        .textContactForm{
+
+        .textContactForm {
             width: 100%;
-            h1{
+
+            h1 {
                 margin-bottom: 1em;
             }
-            h2{
+
+            h2 {
                 font-size: 16px;
             }
         }
-        .submitContainer{
-       width: 50%;
-            .submitButton{
+
+        .submitContainer {
+            width: 50%;
+
+            .submitButton {
                 width: 100%;
             }
+        }
     }
-}
-
 }

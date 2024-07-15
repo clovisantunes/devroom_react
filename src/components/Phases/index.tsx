@@ -7,36 +7,53 @@ import { RiFilePaper2Line } from "react-icons/ri";
 import { FaFigma } from "react-icons/fa";
 import { IoCodeSlash } from "react-icons/io5";
 import { IoCalendarOutline } from "react-icons/io5";
+import { useTranslation } from "react-i18next";
+
+interface Phase {
+  id: string;
+  icon: JSX.Element;
+  title: string;
+  description: string;
+}
+
+interface Phases {
+  contract: Phase;
+  design: Phase;
+  development: Phase;
+  deploy: Phase;
+}
 
 export default function Phases() {
-  const phases = {
+  const { t } = useTranslation();
+  
+  const phases:Phases = {
     contract: {
       id: "01",
       icon: <RiFilePaper2Line />,
       title: "Contratação",
       description:
-        "Definição dos objetivos, coleta  de briefing e planejamento das funcionalidades e escopo do projeto.",
+        t('phasesSeccion')
     },
     design: {
       id: "02",
       icon: <FaFigma />,
       title: "Design",
       description:
-        "Criação do wireframe, identidade visual e da marca, criação do layout e apresentação.",
+        t('phasesSeccionII')
     },
     development: {
       id: "03",
       icon: <IoCodeSlash />,
       title: "Desenvolvimento",
       description:
-        "Programação e codificação  junto a estruturação das paginas e suas funcionalidades, além da otimização E SEO.",
+       t('phasesSeccionIII')
     },
     deploy: {
       id: "04",
       icon: <IoCalendarOutline />,
       title: "Entrega",
       description:
-        "Revisão final,  validações e publicação do projeto. Realizando o acompanhamento dos acessos  e desempenho.",
+        t('phasesSeccionIV')
     },
   };
 
@@ -90,21 +107,20 @@ export default function Phases() {
             <div className={styles.titleContent}>
               <TitleText
                 colorText="#FFFFFF"
-                text="Conheça as etapas de criação de seu site"
+                text={t('phasesTitle')}
+                span=":"
               />
-              <span>:</span>
             </div>
             <span className={styles.pass}>Passo a passo</span>
           </div>
           <div className={styles.phases_description}>
             <div className={styles.descriptionContent}>
               <p>
-                Veja e entenda o que engloba nossa metodologia e entenda como
-                funciona o nosso processo de desenvolvimento de sites.
+                {t('phasesText')}
               </p>
               <div className={styles.buttonPhases}>
                 <ButtonContact
-                  text="Faça um orçamento"
+                  text={t('phasesButton')}
                   localPath="/services"
                   fontSize="16px"
                   width="100%"
