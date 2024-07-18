@@ -111,7 +111,7 @@ export default function Phases() {
                 span=":"
               />
             </div>
-            <span className={styles.pass}>Passo a passo</span>
+            <span className={styles.pass}>{t('phasesToPhase')}</span>
           </div>
           <div className={styles.phases_description}>
             <div className={styles.descriptionContent}>
