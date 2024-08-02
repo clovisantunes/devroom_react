@@ -4,6 +4,8 @@
     justify-content: center;
     width: 100%;
     height: 100%;
+    margin-bottom: 16px;
+
     a{
         display: flex;
         align-items: center;
@@ -25,7 +27,7 @@
     border: 1px solid var(--colors-secondary-50);
 }
 .buttonServices{
-  
+        color: #fff;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -34,12 +36,19 @@
         font-weight: 700;
         background-color: var(--colors-secondary-50);
         border-radius: 2px;
-        border: 2px solid var(--colors-neutral-900);
         cursor: pointer;
         border-radius: 16px;
         transition: all .5s;
         text-decoration: none;
-    
+        svg{
+            width: 30px;
+            height: 30px;
+        }
+}
+.buttonServices:hover{
+    background-color: var(--colors-secondary-800);
+    border: 2px solid var(--colors-secondary-50);
+    transform: scale(1.1);
 }
 
 .buttonContact{

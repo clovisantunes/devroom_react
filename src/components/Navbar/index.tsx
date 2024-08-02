@@ -10,6 +10,7 @@ interface NavbarProps {
   about: string;
   services: string;
   contact: string;
+  portfolio?: string;
   color?: string;
 }
 
@@ -19,6 +20,7 @@ export default function NavBar({
   about,
   contact,
   services,
+  portfolio,
   color
 }: NavbarProps) {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -70,7 +72,7 @@ export default function NavBar({
         </a>
        
       </div>
-      <LanguageSelector />
+     
       <div
         className={`${styles.navBurgerCard} ${
           isMobileMenuOpen ? styles.burgerClicked : ""

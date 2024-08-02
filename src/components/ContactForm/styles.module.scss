@@ -44,12 +44,25 @@
             flex-direction: row;
             width: 55%;
             text-align: left;
-
+          
             span {
                 font-size: 24px;
                 color: var(--colors-neutral-900);
                 font-weight: 600;
             }
+        }
+    }
+    .phoneCard{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .DDDItem{
+            padding: 8px;
+            margin-top: 8px;
+            margin-right: 8px;
+            width: 10%;
+            height: 3em;
         }
     }
 
@@ -81,6 +94,7 @@
         align-items: center;
         label{
             margin-top: 8px;
+            color: #FFFF;
         }
         input{
             border-radius: 8px;
@@ -185,7 +199,7 @@
             cursor: pointer;
             transition: all 0.5s;
             text-decoration: none;
-
+            color: white;
             a {
                 color: #FFFF;
             }
@@ -321,6 +335,17 @@
             .submitButton {
                 width: 100%;
             }
+        }
+        .phoneCard{
+            .DDDItem{
+                width: 35%;
+            }
+        }
+    }
+    .buttonCardContact{
+        flex-direction: column;
+        .buttonOptions{
+            width: 100%;
         }
     }
 }

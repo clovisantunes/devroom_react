@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation, I18nextProvider } from 'react-i18next';
 import i18n from './i18n';
 import Navbar from "./components/Navbar/index"
@@ -10,29 +10,40 @@ import About from './components/About/index';
 import Footer from './components/Footer/index';
 import Carousel from './components/UI/Carousel';
 import WhatsContact from './components/UI/WhatsContact';
-import ButtonNavigation from './components/UI/ButtonNavigation';
-import GoogleTagManager from './GoogleAnalitycs';
 import Banner from './components/Banner';
 import Phases from './components/Phases';
-
+import ReactGA from "react-ga4";
+import styles from './styles/styles.module.scss'
 export default function App() {
+  useEffect(() => {
+  ReactGA.initialize("G-PQBPZJDJMP");
+  ReactGA.send({
+  hitType: 'pageview',
+  page: window.location.pathname
+})
+  }, [])
+
+
+  
   return (
     
     <I18nextProvider i18n={i18n}>
-       <GoogleTagManager />
-         <Navbar 
+    <Navbar 
       home="/"
-      about="#about"
+      about="#portfolio"
       contact="/contact"
       services="#services"  
+      portfolio='#portfolio'
     />
       <Main  id="home"/>
+      <div className={styles.bannerCA}>
       <Banner />
+      </div>
       <Services id='services' />
       <Carousel />
       <About id="about" />
       <Phases />
-      <Portfolio id="about" />
+      <Portfolio id="portfolio" />
       <WhatsContact />
       <Footer  id='footer'  textColor="#d9d9d9" iconColor="#d9d9d9"/>
     </I18nextProvider>

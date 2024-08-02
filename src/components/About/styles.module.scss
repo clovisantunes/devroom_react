@@ -4,25 +4,61 @@
     background-color: #757575;
     display: flex;
     flex-direction: row;
-    padding: 4em;
     overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: right;
+    justify-content: space-around;
     transition: all .8s ease-in-out;
     .aboutCard{
+        background-image: url('../../assets/images/DevRoom.png');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: contain;
         width: 100%;
         display: flex;
         flex-direction: row;
-        padding: 16px;
+        position: relative;
+       
+        background-position: center;
+    background-size: cover;
         .imgCard{
-            width: 50%;
+            width: 70%;
+            height: 100%;
             border-radius: 8px;
+             &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); 
+            z-index: 1;
+        }
         }
         .aboutTextContainer{
-            margin-left: 16px;
-            width: 40%;
+            width: 68%;
+            margin-left: -13%;
+            z-index: 2;
+            background-repeat: round;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            background-image: url('../../assets/images/aboutImg.png');
+            .textContent{
+                display: flex;
+                flex-direction: column;
+                margin-left: 8%;
+            width: 70%;
+            text-align: right;
+
+            }
             h1{
+                margin-top: 8%;
                 font-size: 36px;
                 font-weight: 400;
                 color: #fff;
+                border-bottom: 2px solid var(--colors-neutral-900);
             }
             h2{
                 font-size: 18px;
@@ -50,15 +86,12 @@
         height: 100%;
         .aboutCard{
             display: flex;
-            flex-direction: column;
             justify-content: center;
-            padding: 48px;
             .imgCard{
-                width: 100%;
+                width: 30%;
             }
             .aboutTextContainer{
                 width: 100%;
-                margin-left: 0;
                 h1{
                     font-size: 24px;
                     font-weight: 400;
@@ -92,28 +125,74 @@
     }
 
 }
+.spans{
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    text-align: right;
+}
+.aboutItem {
+    color: #fff;
+    margin-top: 16px;
+}
+
+.aboutSpan::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: var(--colors-neutral-900); 
+    border-radius: 50%;
+    margin-left: 16px;
+}
+.aboutButtons{
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    margin-top: 4%;
+    justify-content: space-around;
+}
 @media (max-width:768px) {
     .about_container{
         justify-content: center;
-        .aboutTextContainer{
-            width: 100%;
-            padding: 1em;
-            .titleText{
-                margin-top: 2em;
+        .aboutCard{
+            background-color: black;
+            background-image: none;
+            .imgCard{
+                display: none;
             }
-            .aboutText{
-                margin-top: 2em;
-                width: 85%;
-                h2{
-                    font-weight: 500;
+            .aboutTextContainer{
+                width: 100%;
+                padding: 1em;
+                margin: 0;
+                .textContent{
+                    width: auto;
+                }
+                .titleText{
+                    margin-top: 2em;
+                }
+                .aboutText{
+                    margin-top: 2em;
+                    width: 100%;
+                    h2{
+                        font-weight: 500;
+                    }
                 }
             }
         }
         .imgContainer{
             display: none;
         }
+        .spans{
+            width: 100%;
+        }
+        .aboutButtons{
+            align-items: center;
+            flex-direction: column;
+        }
     }
 }
+
 @media (max-width:420px) {
     .about_container{
         height: 100%;

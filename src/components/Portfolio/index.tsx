@@ -18,18 +18,18 @@ const projects = {
     name: "Renova Advogacia",
     deploy: "https://lading-page-topaz.vercel.app/",
     backgroundImage: "https://i.ibb.co/nbp1PYJ/landing-Page.png",
-    backgroundVideo: "https://streamable.com/e/gk9a2n?autoplay=1&muted=1",
+    backgroundVideo: "https://i.ibb.co/nbp1PYJ/landing-Page.png",
     descriptions: {
-      title: "Renova Advogacia",
+      title: "Website_1",
       spanI: "frontI.spanI",
       spanII: "frontI.spanII"
     }
   },
   frontII: {
     name: "PetVida Centro Veterinário",
-    deploy: "https://landing-page-ii.vercel.app/",
+    deploy: "Website_2",
     backgroundImage: "https://i.ibb.co/4Ps448m/landing-Page-II.png",
-    backgroundVideo: "https://streamable.com/e/9d1n6b?autoplay=1&muted=1",
+    backgroundVideo: "https://i.ibb.co/4Ps448m/landing-Page-II.png",
     descriptions: {
       title: "PetVida Centro Veterinário",
       spanI: "frontII.spanI",
@@ -38,9 +38,9 @@ const projects = {
   },
   frontIII: {
     name: "Blog de Decoração e Design de Interiores",
-    deploy: "https://blog-brown-five-96.vercel.app/",
+    deploy: "Website_3",
     backgroundImage: "https://i.postimg.cc/1mXP80tf/Blog.png",
-    backgroundVideo: "https://streamable.com/e/tu7d7c?autoplay=1&muted=1",
+    backgroundVideo: "https://i.postimg.cc/1mXP80tf/Blog.png",
     descriptions: {
       title: "Blog de Decoração e Design de Interiores",
       spanI: "frontIII.spanI",
@@ -49,9 +49,9 @@ const projects = {
   },
   frontIIII: {
     name: "E-commerce Electro",
-    deploy: "https://ecommerce-phi-eight-92.vercel.app/",
+    deploy: "Website_4",
     backgroundImage: "https://i.ibb.co/znk9Rdz/ecommerce.png",
-    backgroundVideo: "https://streamable.com/e/uds8v6?autoplay=1&muted=1",
+    backgroundVideo: "https://i.ibb.co/znk9Rdz/ecommerce.png",
     descriptions: {
       title: "E-commerce Electro",
       spanI: "frontIIII.spanI",
@@ -59,58 +59,58 @@ const projects = {
     }
   },
   frontIIIaI: {
-    name: "E-commerce Electro",
-    deploy: "https://ecommerce-phi-eight-92.vercel.app/",
-    backgroundImage: "https://i.ibb.co/znk9Rdz/ecommerce.png",
-    backgroundVideo: "https://streamable.com/e/uds8v6?autoplay=1&muted=1",
+    name: "TechNova",
+    deploy: "Website_5",
+    backgroundImage: "https://uploaddeimagens.com.br/images/004/813/417/original/landingpage.png?1721687021",
+    backgroundVideo: "https://uploaddeimagens.com.br/images/004/813/417/original/landingpage.png?1721687021",
     descriptions: {
-      title: "E-commerce Electro",
-      spanI: "frontIIII.spanI",
-      spanII: "frontIIII.spanII"
+      title: "TechNova",
+      spanI: "A TechNova é uma página única e simples, porém eficaz, dedicada a empresas de tecnologia com diversas especializações em áreas como desenvolvimento de software, infraestrutura de TI, segurança cibernética e consultoria tecnológica.",
+      spanII: "Esta página foi feita em uma landing page única, podendo ser ajustada para o gosto e o segmento do seu negócio."
     }
   },
   frontIIIjI: {
-    name: "E-commerce Electro",
-    deploy: "https://ecommerce-phi-eight-92.vercel.app/",
-    backgroundImage: "https://i.ibb.co/znk9Rdz/ecommerce.png",
-    backgroundVideo: "https://streamable.com/e/uds8v6?autoplay=1&muted=1",
+    name: "MultiServ",
+    deploy: "Website_6",
+    backgroundImage: "https://uploaddeimagens.com.br/images/004/813/420/original/MultiServ.png?1721688196",
+    backgroundVideo: "https://uploaddeimagens.com.br/images/004/813/420/original/MultiServ.png?1721688196",
     descriptions: {
-      title: "E-commerce Electro",
-      spanI: "frontIIII.spanI",
-      spanII: "frontIIII.spanII"
+      title: "MultiServ",
+      spanI: "A MultiServ é uma página única e simples, porém eficaz, dedicada a prestadores de serviços em diversas áreas, como manutenção, consultoria, design e muito mais. Esta página foi feita em uma landing page única, podendo ser ajustada para o gosto e o segmento do seu negócio.",
+      spanII: ""
     }
   },
   frontIhIII: {
-    name: "E-commerce Electro",
-    deploy: "https://ecommerce-phi-eight-92.vercel.app/",
-    backgroundImage: "https://i.ibb.co/znk9Rdz/ecommerce.png",
-    backgroundVideo: "https://streamable.com/e/uds8v6?autoplay=1&muted=1",
+    name: "FisioBem",
+    deploy: "Website_7",
+    backgroundImage: "https://uploaddeimagens.com.br/images/004/813/421/original/Fisioterapia.png?1721688262",
+    backgroundVideo: "https://uploaddeimagens.com.br/images/004/813/421/original/Fisioterapia.png?1721688262",
     descriptions: {
-      title: "E-commerce Electro",
-      spanI: "frontIIII.spanI",
-      spanII: "frontIIII.spanII"
+      title: "FisioBem",
+      spanI: "A FisioBem é uma página única e simples, porém eficaz, dedicada a fisioterapeutas com diversas especializações em áreas como ortopédica, esportiva, neurológica e pediátrica. Esta página foi feita em uma landing page única, podendo ser ajustada para o gosto e o segmento do seu negócio.",
+      spanII: ""
     }
   },
   frontIIjII: {
-    name: "E-commerce Electro",
-    deploy: "https://ecommerce-phi-eight-92.vercel.app/",
-    backgroundImage: "https://i.ibb.co/znk9Rdz/ecommerce.png",
-    backgroundVideo: "https://streamable.com/e/uds8v6?autoplay=1&muted=1",
+    name: "Advocacia",
+    deploy: "Website_8",
+    backgroundImage: "https://uploaddeimagens.com.br/images/004/813/422/original/Advocacia_2.png?1721688327",
+    backgroundVideo: "https://uploaddeimagens.com.br/images/004/813/422/original/Advocacia_2.png?1721688327",
     descriptions: {
-      title: "E-commerce Electro",
-      spanI: "frontIIII.spanI",
-      spanII: "frontIIII.spanII"
+      title: "Advocacia",
+      spanI: "A Advocacia é uma página única e simples, porém eficaz, dedicada a advogados com diversas especializações em áreas do direito, como civil, comercial, trabalhista e penal. Esta página foi feita em uma landing page única, podendo ser ajustada para o gosto e o segmento do seu negócio.",
+      spanII: ""
     }
   },
   frontIIkII: {
-    name: "E-commerce Electro",
-    deploy: "https://ecommerce-phi-eight-92.vercel.app/",
-    backgroundImage: "https://i.ibb.co/znk9Rdz/ecommerce.png",
-    backgroundVideo: "https://streamable.com/e/uds8v6?autoplay=1&muted=1",
+    name: "Contabilidade",
+    deploy: "Website_9",
+    backgroundImage: "https://uploaddeimagens.com.br/images/004/813/927/original/contabilidade.png?1721774296",
+    backgroundVideo: "https://uploaddeimagens.com.br/images/004/813/927/original/contabilidade.png?1721774296",
     descriptions: {
-      title: "E-commerce Electro",
-      spanI: "frontIIII.spanI",
-      spanII: "frontIIII.spanII"
+      title: "Contabiliza",
+      spanI: "A Contabiliza é uma página única e simples, porém eficaz, dedicada a contadores com diversas especializações em áreas da contabilidade, como fiscal, tributária, trabalhista e financeira. Esta página foi feita em uma landing page única, podendo ser ajustada para o gosto e o segmento do seu negócio.",
+      spanII: ""
     }
 }
 }
@@ -145,6 +145,8 @@ const Portfolio = ({ id }: PortfolioProps) => {
   };
 
   return (
+   
+    <>
     <div className={styles.portfolioContainer} id={id}>
       <div className={styles.shadowBox} />
       <div className={styles.titleItem}>
@@ -180,13 +182,6 @@ const Portfolio = ({ id }: PortfolioProps) => {
           </div>
         ))}
       </div>
-      {modalItem && (
-        <ModalItem
-          isOpen={modalVisible}
-          onRequestClose={handleCloseModal}
-          modalItem={modalItem}
-        />
-      )}
       <div className={styles.loadingButton}>
         <ButtonIcon
           fontSize="16px"
@@ -196,9 +191,19 @@ const Portfolio = ({ id }: PortfolioProps) => {
           localPath="#"
           text={TextButton}
           icon={svgButton}
-        />
+          />
       </div>
+     <div className={styles.containerPlus}>
+      {modalItem && (
+        <ModalItem
+          isOpen={modalVisible}
+          onRequestClose={handleCloseModal}
+          modalItem={modalItem}
+        />
+      )}
     </div>
+    </div>
+    </>
   );
 };
 

@@ -51,7 +51,6 @@ export function ModalItem({
         <img
           src={url}
           alt="background"
-          style={{ width: "100%", height: "80%", objectFit: "cover" }}
         />
       );
     }
@@ -72,7 +71,20 @@ export function ModalItem({
           </div>
           <div className={styles.techCard}>
             <div className={styles.techItems}>
+              <ButtonUI 
+                fontSize="16px"
+                height="100%"
+                width="100%"
+                text={"Adquira este template"}
+                localPath={`/services#${modalItem.deploy}`}
+              />
             </div>
+            <span>
+              Somente um lembrete!
+            </span>
+            <span>
+            *Todos os textos, imagens e botões são personalizados de acordo com a sua escolha! 
+            </span>
           </div>
         </div>
         <div className={styles.closeButton}>

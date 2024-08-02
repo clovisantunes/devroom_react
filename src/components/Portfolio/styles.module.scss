@@ -1,9 +1,18 @@
+.containerPlus{
+  position: relative;
+  width: 100%;
+  height: 48em;
+  position: absolute;
+  top: 2%;
+  left: 20%;
+}
 .portfolioContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -53,7 +62,7 @@
 
 @keyframes heightTransition{
   from{
-    height: 28em;
+    height: 40em;
   }
   to{
     height: 42em;
@@ -64,7 +73,7 @@
     height: 48em;
   }
   to{
-    height: 28em;
+    height: 44em;
   }
 }
 .portCard {
@@ -222,10 +231,13 @@
   .portfolioComponent.expanded {
     animation: heightTransitionResponsive .8s forwards;
   }
+  .containerPlus{
+    height: 80em;
+  }
 } 
 @keyframes heightTransitionResponsive{
   from{
-    height: 28em;
+    height: 36em;
 
   }
   to{

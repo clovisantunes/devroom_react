@@ -13,7 +13,7 @@
   "projectTitle": "Welcome to DevRoom",
   "buttonProject": "See more",
   "addresstTitle": "Address:",
-  "reminder": "Just a reminder!" ,
+  "reminder": "Just a reminder" ,
   "remindertext": "The prices of our plans serve merely as a baseline and are flexible, seamlessly adjusting to your needs. We take into account the complexity and time required to develop customized solutions, ensuring that you get exactly what you need at an affordable price.",
   "phoneTitle": "Contact:",
   "subcontact": "Sapiranga - RS",
@@ -46,7 +46,7 @@
   "phasesSeccionII": "Creation of wireframe, visual identity and branding, layout design, and presentation.",
   "phasesSeccionIII": "Programming and coding, along with structuring the pages and their functionalities, as well as optimization and SEO.",
   "phasesSeccionIV": "Final review, validations, and project publication. Monitoring access and performance.",
-  "phasesToPhase": "",
+  "phasesToPhase": "Step by Step",
   
 
   "serviceWeb": "Web Development",

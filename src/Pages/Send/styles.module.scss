@@ -1,0 +1,95 @@
+@keyframes grow {
+    from {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    to {
+        width: 60%;
+        height: 60%;
+        opacity: 1;
+    }
+}
+
+.sendContainer {
+    width: 60%;
+    height: 60%;
+    position: fixed;
+    border-radius: 4px;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff9f9;
+    padding: 24px;
+    overflow: hidden;
+    animation: grow 0.5s ease-in-out forwards;
+}
+
+.sendContent {
+    width: 60%;
+    text-align: center;
+    height: 16%;
+    border-bottom: solid 2px #4200FF;
+    h1 {
+        font-size: 36px;
+        font-weight: 400;
+    }
+}
+
+.sendImage {
+    width: 60%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    h2 {
+        font-size: 28px;
+        font-weight: 400;
+    }
+}
+
+.mailImg {
+    width: 80%;
+    height: 80%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../../assets/images/mail.png");
+}
+
+.textMail {
+    span {
+        font-size: 24px;
+        font-weight: 400;
+        color: #4F4F4F;
+    }
+}
+
+@media (max-width: 1366px) {
+    .sendContainer {
+        width: 100%;
+        height: 80%;
+        top: 10%;
+        text-align: center;
+    }
+    .sendContent {
+        width: 100%;
+        height: 20%;
+        h1{
+            font-size: 24px;
+        }
+    }
+    .sendImage {
+        width: 80%;
+        h2{
+            font-size: 22px;
+        }
+    }
+    .textMail{
+        span{
+            font-size: 18px;
+        }
+    }
+}

@@ -42,10 +42,10 @@ const ButtonIcon: React.FC<ButtonUIProps> = ({ width, height, text, fontSize,  c
   );
 };
 
-const ButtonServices: React.FC<ButtonServiceProps> = ({ fontSize, height, width, click, text, background, color }: ButtonServiceProps) => {
+const ButtonServices: React.FC<ButtonServiceProps> = ({ fontSize, height, width, click, text, background, color, icon }: ButtonServiceProps) => {
   return(
     <div className={styles.buttonServices} style={{ fontSize, width, height, background, color}} onClick={click}>
-        {text}
+        {icon}{text}
     </div>
   );
 }

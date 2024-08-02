@@ -99,6 +99,7 @@ export default function Phases() {
     };
   }, []);
 
+
   return (
     <>
       <div className={styles.phases_container}>
@@ -132,22 +133,22 @@ export default function Phases() {
           </div>
         </div>
         <div className={styles.phasesItems} ref={phasesRef}>
-          {renderedPhases.map((phase) => (
+          {renderedPhases.map((phasesItems) => (
             <div
-              key={phase.id}
-              className={`${styles.phaseItem} ${styles[`phaseItem${phase.id}`]}`}
+              key={phasesItems.id}
+              className={`${styles.phaseItem} ${styles[`phaseItem${phasesItems.id}`]}`}
             >
               <div className={styles.linePhases} />
-              <div className={styles.phaseIcon}>{phase.icon}</div>
+              <div className={styles.phaseIcon}>{phasesItems.icon}</div>
               <div className={styles.phaseNumber}>
-                {phase.id}
+                {phasesItems.id}
                 <span className={styles.colorPoint}>.</span>
               </div>
               <div className={styles.phaseTitle}>
-                <TitleText colorText="#FFFFFF" text={phase.title} />
+                <TitleText colorText="#FFFFFF" text={phasesItems.title} />
               </div>
               <div className={styles.phaseDescription}>
-                <p>{phase.description}</p>
+                <p>{phasesItems.description}</p>
               </div>
             </div>
           ))}

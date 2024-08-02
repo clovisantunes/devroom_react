@@ -142,58 +142,99 @@
     color: var(--colors-neutral-900);
 }
 @media(max-width: 1366px){
+    .phases_container{
+        padding: 16px;
+        position: relative;
+    }
     .phases_TitleCard{
         width: 90%;
     }
     .descriptionContent{
         width: 100%;
+        font-weight: bold;
+
     }
     .phasesItems{
         width: 90%;
+        height: 100%;
+        flex-direction: column;
+    }
+    .phaseIcon{
+    }
+    .phaseItem .phaseNumber{
+        margin-left: 4em;
+    }
+    .phaseItem .phaseTitle h1 {
+        margin-left: 4em;
+        font-size: 24px;
+    }
+    .phaseItem .phaseDescription p{
+        margin-left: 6em;
+        font-size: 22px;
+        height: 8em;
+    }
+    .linePhases{
+        width: 2px;
+        height: 100%;
+        top: 10%;
+        left: 48px;
+        transform-origin: top;
+        transform: scaleY(0); 
+        animation: expandWidthVertical 1.5s forwards linear;
     }
     .phaseItem{
         width: 100%;
         padding: 16px;
     }
 }
-@media(max-width: 768px){
+@media(max-width: 480px){
+    .phases_container{
+        margin-bottom: 4em;
+    }
     .phases_TitleCard{
         flex-direction: column;
     }
+    .linePhases{
+        left: 48px;
+    }
     .phases_Title{
         width: 100%;
+        padding: 0;
     }
     .titleContent{
         padding: 0;
-        padding-top: 16px;
-        text-align: center;
-        margin-bottom: 2em;
     }
-    .descriptionContent{
-        width: 100%;
+    .descriptionContent .buttonPhases {
+        margin-left: 35%;
     }
-    .phasesItems{
-        overflow: scroll;
-    }
-    .phaseItem .phaseTitle h1{
-        font-size: 12px;
+    .phases_Title .pass{
+        position: static;
+        margin-left: 0;
     }
     .phases_description{
         width: 100%;
-        padding: 0;
+        padding: 16px;
     }
-    .phaseIcon{
-        width: 2em;
-        height: 2em;
-    }
-    .phaseIcon svg {
-        width: 1em;
-        height: 1em;
+    .phaseItem .phaseTitle h1 {
+        margin-left: 4em;
+        font-size: 16px;
     }
     .phaseItem .phaseDescription p{
-        font-size: 12px;
+        margin-left: 4em;
+        font-size: 16px;
+        font-weight: bold;
+
     }
-    .linePhases {
-        top: 19%;
+    .phaseItem .phaseDescription{
+    height: 100%;
+    }
+}
+
+@keyframes expandWidthVertical {
+    from {
+        transform: scaleY(0);
+    }
+    to {
+        transform: scaleY(1);
     }
 }
