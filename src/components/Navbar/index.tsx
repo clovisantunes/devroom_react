@@ -4,6 +4,7 @@ import NavList from "../UI/NavList/index.";
 import styles from "./styles.module.scss";
 import { FaInstagram } from "react-icons/fa";
 import LanguageSelector  from '../UI/ChangeLanguage/button'
+import { Link } from "react-router-dom";
 
 interface NavbarProps {
   home: string;
@@ -45,9 +46,9 @@ export default function NavBar({
       className={`${styles.nav_container} ${
         isMobileMenuOpen ? styles.mobileMenuOpen : ""
       }`}
-      style={{ backgroundColor: scrollY > 50 || color ? 'black' : 'transparent' }}
+      style={{ backgroundColor: scrollY > 50 || color ? '#141414' : 'transparent' }}
     >
-      <div className={styles.logoCard}>
+      <div className={styles.logoCard} >
           <LogoUi
             alt={"Logo DevRoom"}
             width={280}

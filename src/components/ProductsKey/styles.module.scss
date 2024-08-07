@@ -5,8 +5,8 @@
 .mainCard {
   width: 100%;
   height: 100%;
-  margin-top: 4em;
-  background-color: black;
+  padding-top: 8em;
+  background-color: #161616;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -19,7 +19,6 @@
     align-items: center;
     width: 80%;
     height: 8em;
-    border-bottom: solid 2px var(--colors-neutral-900);
     border-radius: 2px;
     h1{
       font-size: 28px;
@@ -68,7 +67,6 @@
   align-items: center;
   gap: 2em;
   margin: 0 auto;
-  background-color: white;
   .productsCard {
     width: 20%;
     height: 36em;
@@ -138,6 +136,29 @@
   height: 100%;
 }
 
+@media (max-width: 1366px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #161616;
+  }
+  .mainCard{
+    width: 86%;
+    h1{
+      font-size: 24px;
+    }
+    h2{
+      font-size: 22px;
+    }
+    .titleMain{
+     
+      
+    }
+  }
+}
 @media (max-width: 950px) {
   .mainCard {
     .descriptionMain {
@@ -200,4 +221,38 @@
       }
     }
   }
+}
+@media (max-width: 480px) {
+  .mainCard {
+    h1 {
+      font-size: 14px;
+      font-weight: 600;
+    }
+    h2 {
+      font-size: 14px;
+    }
+    
+  }
+  .productsContainer {
+    .productsCard {
+      width: 90%;
+      height: 100%;
+      .productTitle {
+        height: 20%;
+      }
+      .productCoin {
+        height: 20%;
+      }
+      .productInformation {
+        height: 40%;
+      }
+      .utils {
+        height: 20%;
+      }
+      .productButton {
+        height: 20%;
+      }
+    }
+  }
+  
 }

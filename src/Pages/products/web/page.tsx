@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import ProdutsKey from '../../../components/ProductsKey';
 import { ToastContainer } from 'react-toastify';
+import WhatsContact from '../../../components/UI/WhatsContact';
 
 interface webProps {
   params: any;
@@ -51,6 +52,7 @@ export default  function Web({ params }: webProps) {
         descriptionTitle = { descriptionTitle }
         imgPath = {imgPath}
       />
+         <WhatsContact />
     </div>
   );
 }

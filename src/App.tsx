@@ -41,7 +41,7 @@ export default function App() {
       </div>
       <Services id='services' />
       <Carousel />
-      <About id="about" />
+      <About buttonRender={true} id="about" />
       <Phases />
       <Portfolio id="portfolio" />
       <WhatsContact />

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import SubTexts from "../UI/SubTexts";
 import TitleText from "../UI/TitleText";
 import styles from "./styles.module.scss";
-import { ButtonUI } from "../UI/ButtonUi";
+import { ButtonContact, ButtonServices, ButtonUI } from "../UI/ButtonUi";
 import NavBar from "../Navbar";
 import ImageUi from "../UI/ImageUi";
 import Footer from "../Footer";
@@ -51,42 +51,19 @@ const ProductsList: React.FC<ProductsKeyProps> = ({
         services="/#services"
       />
       <div className={styles.mainCard}>
-        <div className={styles.titleMain}>
-          <div className={styles.buttonCard}>
-            <ButtonUI
-              fontSize="14px"
-              height="100%"
-              width="100%"
-              localPath={whatsappLink}
-              text={buttonLang}
-              target="_blank"
-              click={() => console.log(title)}
-            />
-          </div>
-          <TitleText colorText="white" text={titleMain} />
-        </div>
-        <div className={styles.descriptionMain}>
-          <div className={styles.imageCard}>
-            <ImageUi
-              alt="Image Site"
-              height={1000}
-              width={1000}
-              path={imgPath}
-            />
-          </div>
-          <div className={styles.descriptionCard}>
-            <div className={styles.titleDescription}>
-              <TitleText
-                colorText="white"
-                text={descriptionTitle}
-              />
-            </div>
-            <SubTexts
-              colorText="white"
-              text={textDescription}
-            />
-          </div>
-        </div>
+        <TitleText 
+          colorText="white"
+          text="Precisando de um site profissional, de alta qualidade e baixo custo?"
+        />
+       <SubTexts 
+        colorText="white"
+        text="Temos a solução perfeita para você!"
+       />
+       <SubTexts 
+        colorText="white"
+        text="Faça seu site responsivo conosco e conquiste seu sucesso online!"
+       />
+
       </div>
         <ContactForm title={selectedPlanTitle} service={titleMain} id="contact"/>
       <Footer

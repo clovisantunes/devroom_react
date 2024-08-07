@@ -16,11 +16,11 @@ interface PortfolioProps {
 const projects = {
   frontI: {
     name: "Renova Advogacia",
-    deploy: "https://lading-page-topaz.vercel.app/",
+    deploy: "Website_1",
     backgroundImage: "https://i.ibb.co/nbp1PYJ/landing-Page.png",
     backgroundVideo: "https://i.ibb.co/nbp1PYJ/landing-Page.png",
     descriptions: {
-      title: "Website_1",
+      title: "Renova Advogacia",
       spanI: "frontI.spanI",
       spanII: "frontI.spanII"
     }
@@ -38,7 +38,7 @@ const projects = {
   },
   frontIII: {
     name: "Blog de Decoração e Design de Interiores",
-    deploy: "Website_3",
+    deploy: "Blogs",
     backgroundImage: "https://i.postimg.cc/1mXP80tf/Blog.png",
     backgroundVideo: "https://i.postimg.cc/1mXP80tf/Blog.png",
     descriptions: {
@@ -49,7 +49,7 @@ const projects = {
   },
   frontIIII: {
     name: "E-commerce Electro",
-    deploy: "Website_4",
+    deploy: "E-commerce",
     backgroundImage: "https://i.ibb.co/znk9Rdz/ecommerce.png",
     backgroundVideo: "https://i.ibb.co/znk9Rdz/ecommerce.png",
     descriptions: {
@@ -93,7 +93,7 @@ const projects = {
   },
   frontIIjII: {
     name: "Advocacia",
-    deploy: "Website_8",
+    deploy: "Website_9",
     backgroundImage: "https://uploaddeimagens.com.br/images/004/813/422/original/Advocacia_2.png?1721688327",
     backgroundVideo: "https://uploaddeimagens.com.br/images/004/813/422/original/Advocacia_2.png?1721688327",
     descriptions: {

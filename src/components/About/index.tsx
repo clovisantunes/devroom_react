@@ -10,10 +10,11 @@ import { FaWhatsapp } from "react-icons/fa";
 
 interface AboutProps {
   id: string;
+  buttonRender: boolean;
 }
 
 const img = imgPath;
-export default function About({ id }: AboutProps) {
+export default function About({ id, buttonRender }: AboutProps) {
   const { t, i18n } = useTranslation();
   const phoneNumber = "5551981399275";
   const customMessage =
@@ -54,15 +55,17 @@ export default function About({ id }: AboutProps) {
               ))}
             </div>
             <div className={styles.aboutButtons}>
-              <div className={styles.aboutButton}>
-                <ButtonUI
-                  fontSize="24px"
-                  height="50px"
-                  width="200px"
-                  localPath="/services"
-                  text="Contrate Agora!"
-                />
-              </div>
+              <div className={styles.aboutButtonNow}>
+                {buttonRender && (
+                  <ButtonUI
+                    fontSize="24px"
+                    height="50px"
+                    width="200px"
+                    localPath="/services"
+                    text="Contrate Agora!"
+                  />
+                )}
+                </div>
               <div className={styles.aboutButton}>
                 <ButtonServices
                   height="50px"

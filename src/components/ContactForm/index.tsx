@@ -13,6 +13,9 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import emailjs from "emailjs-com";
 import Send from "../../Pages/Send";
+import About from "../About";
+import Portfolio from "../Portfolio";
+import Banner from "../Banner";
 
 interface ContactProps {
   title: string;
@@ -70,7 +73,6 @@ export default function ContactForm({ title, service, id }: ContactProps) {
     buttons.map(() => ({ background: "#FFFFFF", color: "black" }))
   );
   const toggleButtonStyle = (index: number, text: string) => {
-    console.log("Toggling button style for index:", index);
     setButtonStyles((prevStyles) => {
       const updatedStyles = prevStyles.map((style, i) =>
         i === index
@@ -83,7 +85,6 @@ export default function ContactForm({ title, service, id }: ContactProps) {
             }
           : style
       );
-      console.log("Updated styles:", updatedStyles);
       return updatedStyles;
     });
   
@@ -107,10 +108,27 @@ export default function ContactForm({ title, service, id }: ContactProps) {
 
         if (websiteIndex !== -1) {
           toggleButtonStyle(websiteIndex, "Website");
-          console.log(websiteIndex);
         }
       }
-    }, 2000);
+      if (url.includes("Blogs")) {
+        const blogIndex = buttons.findIndex((button) =>
+          button.text.includes("Blogs")
+        );
+
+        if (blogIndex !== -1) {
+          toggleButtonStyle(blogIndex, "Blogs");
+        }
+      }
+      if (url.includes("E-commerce")) {
+        const ecommerceIndex = buttons.findIndex((button) =>
+          button.text.includes("E-commerce")
+        );
+
+        if (ecommerceIndex !== -1) {
+          toggleButtonStyle(ecommerceIndex, "E-commerce");
+        }
+      }
+    }, 1000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -161,9 +179,9 @@ export default function ContactForm({ title, service, id }: ContactProps) {
         contactPreference: contactPreference,
         message: `Olá,\n\nVocê possui uma nova mensagem de ${name}:\n\nPreferência de contato: ${contactPreference}\nServiços selecionados: ${selectedButtons.join(
           ", "
-        )}\n\nDetalhes do contato:\nNome: ${name}\nEmail: ${email}\nTelefone: (${ddd}) ${phone} \n\n${message}`,
+        )}\n\nDetalhes do contato:\nNome: ${name}\nEmail: ${email}\nTelefone: (${ddd}) ${phone} \n\n${message} ${window.location.hash}`, // incluir a parte da URL após #
       };
-
+  
       emailjs
         .send(
           "service_lgvm5ri",
@@ -428,7 +446,9 @@ export default function ContactForm({ title, service, id }: ContactProps) {
             )}
           </form>
         </div>
+          <Banner />
       </div>
+          <About buttonRender={false} id="about" />
     </>
   );
 }

@@ -18,7 +18,7 @@
     "addresstTitle": "Endereço",
     "phoneTitle": "Contato",
     "reminder": "Deixe seu projeto em ótimas mãos" ,
-    "remindertext": "Preencha corretamente o formulário ao lado e um dos nossos colaboradores ira entrar em contato",
+    "remindertext": "Preencha os campos ao lado, nossos especialistas irão preparar e lhe enviar GRATUITAMENTE um ORÇAMENTO personalizado para seu ramo de atuação e sua necessidade",
     "subcontact": "Sapiranga - RS",
     "subphone": "(51) 98139-9275",
     "emailsub": "contato@devroom.tech",
@@ -138,9 +138,9 @@
     "session": "seções",
     "web": {
       "title": "Website Profissional",
-      "descriptionTitle": "Sua Marca, Seu Espaço Online",
+      "descriptionTitle": "Desenvolvimento de Sites que convertem",
       "descriptionSubTitle": "Fale com um desenvolvedor",
-      "descriptionText": "Cada site é único. Somos desenvolvedores especializados e prontos para criar soluções personalizadas que atendam às suas necessidades específicas. Desde plataformas interativas até aplicativos inovadores, para transformar sua visão em uma experiência digital única.",
+      "descriptionText": "Maximize suas conversões com sites otimizados para resultados reais.",
       "details": {
         "plan": {
           "title": "Plano",

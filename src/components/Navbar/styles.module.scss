@@ -14,7 +14,7 @@
 .logoCard{
     width: 20%;
     height: 5em;
-    
+    cursor: pointer;
 }
 .itemsContainer {
         display: flex;
@@ -69,7 +69,7 @@
     width: 100%;
     height: 100%;
     top: 5em;
-    background-color: var(--colors-secondary-900);
+    background-color: #161616;
     animation: recover .8s forwards;
     overflow: hidden;
     &.coverScreenVisible {

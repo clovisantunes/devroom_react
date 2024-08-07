@@ -62,10 +62,10 @@
 
 @keyframes heightTransition{
   from{
-    height: 40em;
+    height: 28em;
   }
   to{
-    height: 42em;
+    height: 48em;
   }
 }
 @keyframes heightTransitionReverse{
@@ -73,7 +73,7 @@
     height: 48em;
   }
   to{
-    height: 44em;
+    height: 28em;
   }
 }
 .portCard {
@@ -228,6 +228,9 @@
   .loadingButton{
     width: 50%;
   }
+  .portfolioComponent{
+    animation: heightTransitionReverseResposive .8s forwards;
+  }
   .portfolioComponent.expanded {
     animation: heightTransitionResponsive .8s forwards;
   }
@@ -237,10 +240,19 @@
 } 
 @keyframes heightTransitionResponsive{
   from{
-    height: 36em;
+    height: 44em;
 
   }
   to{
     height: 130em;
+  }
+}
+@keyframes heightTransitionReverseResposive{
+  from{
+    height: 130em;
+
+  }
+  to{
+    height: 44em;
   }
 }
