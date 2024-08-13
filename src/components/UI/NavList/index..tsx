@@ -15,20 +15,26 @@ export default function NavList({
   services,
   contact,
 }: NavListProps) {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
+
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <ul>
       <li>
-        <Link to={home}>{t("init")}</Link>
+        <Link to={home} onClick={handleScrollToTop}>
+          {t("init")}
+        </Link>
       </li>
-      <li>
-        <a  href={services}>{t("services")}</a>
+      <li onClick={handleScrollToTop} >
+        <a href={services}>{t("services")}</a>
       </li>
-      <li>
-      <a href={port}>{t('port')}</a>
+      <li onClick={handleScrollToTop}>
+        <a href={port}>{t("port")}</a>
       </li>
-      <li>
+      <li onClick={handleScrollToTop}>
         <Link to={contact}>{t("contact")}</Link>
       </li>
     </ul>

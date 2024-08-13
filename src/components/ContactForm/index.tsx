@@ -155,10 +155,44 @@ export default function ContactForm({ title, service, id }: ContactProps) {
     setTextVisible(true);
     setContactPreference(text);
   };
-
-
-  
   const handleEmailClick = () => {
+    if (!isValidDDD(ddd)) {
+      toast.error("Por favor, insira um DDD válido.", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+      return;
+    }
+  
+    if (!isValidPhone(phone)) {
+      toast.error("Por favor, insira um número de telefone válido com 9 dígitos.", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+      return;
+    }
+    if (!isValidEmail(email)) {
+      toast.error("Por favor, insira um e-mail válido.", {
+        position: "top-right",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      });
+      return; 
+    }
     if (!isFormValid) {
       toast.error("Por favor, preencha todos os campos.", {
         position: "top-right",
@@ -230,6 +264,7 @@ export default function ContactForm({ title, service, id }: ContactProps) {
     }
   };
 
+
   useEffect(() => {
     if (sendEmail) {
       const timer = setTimeout(() => {
@@ -257,6 +292,17 @@ export default function ContactForm({ title, service, id }: ContactProps) {
     }
 
     setter(numericValue);
+  };
+
+  const isValidEmail = (email: string) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+  const isValidDDD = (ddd: string) => {
+    return ddd.length === 2;
+  };
+  const isValidPhone = (phone: string) => {
+    return phone.length === 9;
   };
 
   return (
@@ -349,7 +395,8 @@ export default function ContactForm({ title, service, id }: ContactProps) {
                   <InputUi
                     id="phone"
                     onChange={(e) => {
-                      handleNumericInput(e, setPhone);
+                      const value = e.target.value.slice(0, 9)
+                      setPhone(value);
                       setEmailVisible(true);
                     }}
                     placeholder={t("enterPhone")}

@@ -32,8 +32,9 @@ const ProductsList: React.FC<ProductsKeyProps> = ({
 
   useEffect(() => {
     Aos.init({ duration: 2000 });
-  }, []);
 
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
   const encodeMessage = (message: string) => {
     return encodeURIComponent(message);
   };
@@ -42,11 +43,13 @@ const ProductsList: React.FC<ProductsKeyProps> = ({
   const customMessage = "Olá! Estou interessado em saber mais informações sobre os planos de desenvolvimento.";
   const whatsappLink = `https://api.whatsapp.com/send?1=pt_BR&phone=${phoneNumber}&text=${encodeMessage(customMessage)}`;
 
+
+
   return (
     <div className={styles.container}>
       <NavBar 
         home="/"
-        about="/#about"
+        about="/#portfolio"
         contact="/contact"
         services="/#services"
       />

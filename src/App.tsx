@@ -13,31 +13,37 @@ import WhatsContact from './components/UI/WhatsContact';
 import Banner from './components/Banner';
 import Phases from './components/Phases';
 import ReactGA from "react-ga4";
-import styles from './styles/styles.module.scss'
+import styles from './styles/styles.module.scss';
+
 export default function App() {
   useEffect(() => {
-  ReactGA.initialize("G-PQBPZJDJMP");
-  ReactGA.send({
-  hitType: 'pageview',
-  page: window.location.pathname
-})
-  }, [])
+    ReactGA.initialize("G-PQBPZJDJMP");
+    ReactGA.send({
+      hitType: 'pageview',
+      page: window.location.pathname
+    });
 
+    const hash = window.location.hash;
+    if (hash) {
+      const element = document.getElementById(hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, []);
 
-  
   return (
-    
     <I18nextProvider i18n={i18n}>
-    <Navbar 
-      home="/"
-      about="#portfolio"
-      contact="/contact"
-      services="#services"  
-      portfolio='#portfolio'
-    />
-      <Main  id="home"/>
+      <Navbar 
+        home="/"
+        about="#portfolio"
+        contact="/contact"
+        services="#services"  
+        portfolio='#portfolio'
+      />
+      <Main id="home"/>
       <div className={styles.bannerCA}>
-      <Banner />
+        <Banner />
       </div>
       <Services id='services' />
       <Carousel />
@@ -45,7 +51,7 @@ export default function App() {
       <Phases />
       <Portfolio id="portfolio" />
       <WhatsContact />
-      <Footer  id='footer'  textColor="#d9d9d9" iconColor="#d9d9d9"/>
+      <Footer id='footer' textColor="#d9d9d9" iconColor="#d9d9d9"/>
     </I18nextProvider>
   );
 }

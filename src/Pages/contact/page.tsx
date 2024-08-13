@@ -14,7 +14,7 @@ export default  function Contact({ params }: contactProps) {
     <>
       <NavBar
         home="/"
-        about="/#about"
+        about="/#portfolio"
         contact="/contact"
         services="/#services"
         color="black"
