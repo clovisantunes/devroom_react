@@ -46,7 +46,6 @@ export default function App() {
         <Banner />
       </div>
       <Services id='services' />
-      <Carousel />
       <About buttonRender={true} id="about" />
       <Phases />
       <Portfolio id="portfolio" />

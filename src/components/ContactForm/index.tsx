@@ -495,7 +495,6 @@ export default function ContactForm({ title, service, id }: ContactProps) {
         </div>
           <Banner />
       </div>
-          <About buttonRender={false} id="about" />
     </>
   );
 }

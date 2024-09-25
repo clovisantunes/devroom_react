@@ -46,14 +46,20 @@ export default function About({ id, buttonRender }: AboutProps) {
         <div className={styles.imgCard} data-aos=""></div>
         <div className={styles.aboutTextContainer} data-aos="">
           <div className={styles.textContent}>
-            <TitleText colorText="#FFFFFF" text={t("aboutTitle")} />
+            <TitleText colorText="#161616" text={t("aboutTitle")} weight="400"/>
             <div className={styles.spans}>
               {texts.map((text, index) => (
                 <div key={index} className={styles.aboutItem}>
                   <span className={styles.aboutSpan}>{text}</span>
                 </div>
               ))}
+              
             </div>
+            <div className={styles.spanContext}>
+            <span>
+                  Ficou com duvidas?
+                </span>
+            </div>  
             <div className={styles.aboutButtons}>
               <div className={styles.aboutButtonNow}>
                 {buttonRender && (
@@ -65,6 +71,7 @@ export default function About({ id, buttonRender }: AboutProps) {
                     text="Contrate Agora!"
                   />
                 )}
+                
                 </div>
               <div className={styles.aboutButton}>
                 <ButtonServices

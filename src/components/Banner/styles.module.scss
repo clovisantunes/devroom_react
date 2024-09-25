@@ -2,10 +2,10 @@
     width: 80%;
     height: 24em;
     opacity: 1;
-    margin-top: -4%;
+    margin-top: -6%;
     padding: 16px;
     position: relative;
-    background-color: #fffbff;
+    background-color: rgba(238, 236, 236, 0.9);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,18 +24,21 @@
     
 }
 h1{
-    font-size: 36px;
-    font-weight: 800;
-    color: #0C0C0C;
+    font-size: 24px;
+    font-weight: 1000;
+
 }
 span{
-    font-size: 18px;
+    font-size: 22px;
+    color: #3A3A3A;
     font-weight: bold;
 }
 h2{
     font-size: 24px;
     font-weight: 600;
-    color: #0C0C0C;
+    color: rgb(255, 255, 255);
+    font-family: "jaldi";
+
 }
 .bannerIcons{
     width: 80%;
@@ -46,6 +49,7 @@ h2{
     .iconText{
         font-size: 16px;
         font-weight: 600;
+        color: #4200FF;
     }
 }
 .iconContainer{
@@ -84,34 +88,14 @@ h2{
 .rocket {
     animation: rocketAnimation 4s infinite;
 }
-
-@keyframes wordAnimation {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(180deg);
-    }
+.aboutButtons{
+    width: 100%;
+    justify-content: center;
+    display: flex;
 }
-
-@keyframes searchAnimation {
-    0%, 100% {
-        transform: rotate(0deg);
-    }
-    50% {
-        transform: rotate(-10deg);
-    }
+.aboutButtonNow{
+    margin-right: 16px;
 }
-
-@keyframes paidSearchAnimation {
-    0%, 100% {
-        transform: rotate(0deg);
-    }
-    50% {
-        transform: rotate(10deg);
-    }
-}
-
 @keyframes rocketAnimation {
     0% {
         transform: translate(0, 0); 

@@ -16,7 +16,6 @@ interface NavbarProps {
 }
 
 export default function NavBar({
-  
   home,
   about,
   contact,
@@ -25,36 +24,37 @@ export default function NavBar({
   color
 }: NavbarProps) {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
-  const [scrollY, setScrollY] = useState(0);
+
   useEffect(() => {
     const handleScroll = () => {
-        setScrollY(window.scrollY);
+      setScrollY(window.scrollY);
     };
     window.addEventListener('scroll', handleScroll);
     return () => {
-        window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
-}, []);
-
+  }, []);
 
   return (
     <div
       className={`${styles.nav_container} ${
         isMobileMenuOpen ? styles.mobileMenuOpen : ""
       }`}
-      style={{ backgroundColor: scrollY > 50 || color ? '#141414' : 'transparent' }}
-    >
-      <div className={styles.logoCard} >
-          <LogoUi
-            alt={"Logo DevRoom"}
-            width={280}
-            height={180}
-            priority={true}
-          />
+      style={{
+        backgroundColor: isMobileMenuOpen
+          ? "#161616"
+          : scrollY > 50 || color
+          ? "#141414"
+          : "rgba(128, 128, 128, 0.3)" 
+      }}
+      >
+      <div className={styles.logoCard}>
+        <LogoUi alt={"Logo DevRoom"} width={280} height={180} priority={true} />
       </div>
 
       <div className={styles.itemsContainer}>
@@ -64,16 +64,14 @@ export default function NavBar({
           home={home}
           services={services}
         />
-    
       </div>
 
       <div className={styles.instaCard}>
         <a href="https://www.instagram.com/devroom_oficial/" target="blank">
           <FaInstagram />
         </a>
-       
       </div>
-     
+
       <div
         className={`${styles.navBurgerCard} ${
           isMobileMenuOpen ? styles.burgerClicked : ""
@@ -97,9 +95,9 @@ export default function NavBar({
             services={services}
           />
           <div className={styles.instaCardHamburger}>
-          <a href="https://www.instagram.com/devroom_oficial/" target="blank">
-          <FaInstagram />
-        </a>
+            <a href="https://www.instagram.com/devroom_oficial/" target="blank">
+              <FaInstagram />
+            </a>
           </div>
         </div>
       </div>

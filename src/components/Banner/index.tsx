@@ -44,8 +44,8 @@ export default function Banner() {
         <>
             <div className={styles.banner}>
                 <div className={styles.bannerText}>
-                    <TitleText colorText='#0C0C0C' text={t('servicesMain')} />
-                    <span>Impulsione o crescimento da sua empresa com a DevRoom, desenvolvendo um site ágil e eficiente.</span>
+                    <TitleText colorText='#4200FF' text={t('servicesMain')} family='jaldi' weight='bold' />
+                    <span>Entrar para o mundo online é a chave para conquistar clientes na internet e não pode esperar</span>
                     <div className={styles.bannerIcons}>
                         {Object.entries(icons).map(([key, { name, icon, text }]) => (
                             <div key={key} className={styles.iconContainer}>
@@ -55,7 +55,8 @@ export default function Banner() {
                         ))}
                     </div>
                     <div className={styles.bannerButton}>
-                        <SubTexts colorText='#0C0C0C' text={t("bannerText")} />
+                        <SubTexts colorText='#4200FF' text={t("bannerText")} family='jaldi' wieght='bold'  />
+                        
                     </div>
                 </div>
             </div>

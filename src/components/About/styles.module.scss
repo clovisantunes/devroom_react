@@ -1,7 +1,6 @@
 .about_container{
     width: 100%;
     height: 32em;
-    background-color: #757575;
     display: flex;
     flex-direction: row;
     overflow: hidden;
@@ -9,6 +8,10 @@
     background-position: right;
     justify-content: space-around;
     transition: all .8s ease-in-out;
+    span{
+        color: #161616;
+        font-size: 18px;
+    }
     .aboutCard{
         background-image: url('../../assets/images/DevRoom.png');
         background-repeat: no-repeat;
@@ -32,23 +35,25 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.8); 
+            background-color: rgba(0, 0, 0, 0.6);; 
             z-index: 1;
         }
         }
         .aboutTextContainer{
-            width: 68%;
+            width: 100%;
             margin-left: -13%;
             z-index: 2;
-            background-repeat: round;
+            padding: 4px;
+            background-position: right;
+            background-repeat: no-repeat;
+            background-image: url('../../assets//images/aboutImg.png');
             display: flex;
-            justify-content: center;
+            justify-content: right;
             text-align: center;
             .textContent{
                 display: flex;
                 flex-direction: column;
                 margin-left: 8%;
-                width: 70%;
                 text-align: right;
 
             }
@@ -67,7 +72,17 @@
         }
     }
 }
+.spanContext{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0 8px 0;
+    span{
+        font-size: 22px;
+        font-weight: bold;
 
+    }
+}
 @keyframes zoomIn{
     0%{
         transform: scale(1);
@@ -157,13 +172,15 @@
     .about_container{
         justify-content: center;
         .aboutCard{
-           
+           width: 100%;
+           .imgCard{
+            display: none;
+           }
             .aboutTextContainer{
                 width: 100%;
                 padding: 1em;
                 margin: 0;
                 .textContent{
-                    width: auto;
                 }
                 .titleText{
                     margin-top: 2em;
@@ -186,6 +203,9 @@
         .aboutButtons{
             align-items: center;
             flex-direction: column;
+            .aboutButton{
+                margin-left: 0;
+            }
         }
     }
 }

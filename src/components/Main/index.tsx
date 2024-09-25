@@ -36,7 +36,7 @@ export default function Main({ id }: MainProps) {
           height="50px"
           width="200px"
           localPath="/services"
-          text="Contrate Agora!"
+          text="Entre em contato"
         />
           </div>
           <div className={styles.buttonsItem}>
