@@ -7,6 +7,7 @@
     margin-bottom: 16px;
 
     a{
+     font-size: 18px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -14,7 +15,7 @@
         height: 100%;
         color: var(--colors-secondary-50);
         background-color: var(--colors-neutral-900);
-        border-radius: 8px;
+        border-radius: 4px;
         border: none;
         cursor: pointer;
         transition: all .5s;
@@ -37,12 +38,13 @@
         background-color: var(--colors-secondary-50);
         border-radius: 2px;
         cursor: pointer;
-        border-radius: 16px;
+        border-radius: 4px;
         transition: all .5s;
         text-decoration: none;
         svg{
-            width: 30px;
-            height: 30px;
+            margin-right: 4px;
+            width: 24px;
+            height: 24px;
         }
 }
 .buttonServices:hover{

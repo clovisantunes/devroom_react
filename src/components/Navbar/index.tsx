@@ -50,7 +50,7 @@ export default function NavBar({
           ? "#161616"
           : scrollY > 50 || color
           ? "#141414"
-          : "rgba(128, 128, 128, 0.3)" 
+          : "rgba(255, 255, 255, 0)" 
       }}
       >
       <div className={styles.logoCard}>

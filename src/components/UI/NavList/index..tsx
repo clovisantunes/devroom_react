@@ -28,14 +28,14 @@ export default function NavList({
           {t("init")}
         </Link>
       </li>
-      <li onClick={handleScrollToTop} >
-        <a href={services}>{t("services")}</a>
-      </li>
       <li onClick={handleScrollToTop}>
         <a href={port}>{t("port")}</a>
       </li>
       <li onClick={handleScrollToTop}>
         <Link to={contact}>{t("contact")}</Link>
+      </li>
+      <li onClick={handleScrollToTop} >
+        <a href={services}>{t("services")}</a>
       </li>
     </ul>
   );

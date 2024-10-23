@@ -43,7 +43,6 @@ export default function App() {
       />
       <Main id="home"/>
       <div className={styles.bannerCA}>
-        <Banner />
       </div>
       <Services id='services' />
       <About buttonRender={true} id="about" />
