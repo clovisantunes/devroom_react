@@ -95,9 +95,11 @@ textarea {
 }
 
 body {
-
-
-  background-color: #161616;
+    font-family: 'Roboto', sans-serif;
+    font-smooth: antialiased; 
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #161616;
   a{
     color: var(--colors-neutral-100);
     text-decoration: none;

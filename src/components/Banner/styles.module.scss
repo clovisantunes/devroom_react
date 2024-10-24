@@ -1,17 +1,19 @@
 .banner{
     width: 80%;
-    height: 24em;
+    height: 10em;
     opacity: 1;
-    margin-top: -6%;
     padding: 16px;
     position: relative;
-    background-color: rgba(238, 236, 236, 0.9);
+    background-image: url('../../assets/images/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     border-radius: 16px;
+    margin-top: 24px;
 }
 .bannerText{
     width: 80%;
@@ -21,12 +23,14 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    
+    h1{
+        font-size: 36px;
+    }
 }
 h1{
     font-size: 24px;
     font-weight: 1000;
-
+    color: #FBFBFB;
 }
 span{
     font-size: 22px;
@@ -36,31 +40,41 @@ span{
 h2{
     font-size: 24px;
     font-weight: 600;
-    color: rgb(255, 255, 255);
+    color: #FBFBFB;
     font-family: "jaldi";
 
 }
-.bannerIcons{
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 16px;
-    .iconText{
-        font-size: 16px;
-        font-weight: 600;
-        color: #4200FF;
+
+.bannerButton {
+    width: 24%;
+    height: 2.5em;
+    margin-top: 1em;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: #FBFBFB; 
+    cursor: pointer;
+    transition: all 0.8s ease ;
+    color: #0C0C0C;
+    svg {
+        width: 28px;
+        height: 28px;
+        margin-right: 16px;
+        color: #FBFBFB; 
+        background-color: #0C0C0C;
+        border-radius: 100%;
+        padding: 8px;
+        transition: background-color 0.8s ease, color 0.3s ease;
     }
-}
-.iconContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-}
-.bannerButton{
-    margin-top: 2em;
-    width: 100%;
+
+    &:hover {
+        background-color: #0C0C0C; 
+        color: #FBFBFB;
+        transform: scale(1.1);
+        svg {
+            color: #0C0C0C; 
+            background-color: #FBFBFB; 
+        }
+    }
 }
 
 .word, .search, .paidSearch, .rocket {

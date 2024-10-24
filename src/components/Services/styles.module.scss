@@ -1,13 +1,14 @@
 .projectsContainer {
     width: 100%;
     height: 100%;
+    margin-bottom: 16px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     transition: all 0.8s ease-in-out;
     padding: 8px;
-    background-color: #161616;
+    background-color: #EFEFEF;
   }
   
   .servicesCard {
@@ -16,6 +17,10 @@
     height: 100%;
     border-radius: 16px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   
   .textTitle {
@@ -27,15 +32,9 @@
   }
   
   .textTitle h1 {
-    font-size: 24px;
+    font-size: 33px;
   }
-  
-  .line {
-    width: 8%;
-    height: 2px;
-    background-color: #4200ff;
-    top: 12%;
-  }
+
   
   .projectsCard {
     margin-top: 2em;
@@ -59,8 +58,8 @@
   }
   
   .spanText .span1 {
-    color: #fff;
-    font-size: 24px;
+    color: #0C0C0C;
+    font-size: 28px;
   }
   
   .spanText2 {
@@ -85,8 +84,10 @@
   }
   
   .servicesContainer .servicesCard {
-    width: 70%;
-    height: 36em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .servicesContainer .servicesImage {

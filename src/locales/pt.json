@@ -4,7 +4,7 @@
     "port": "Sobre",
     "services": "serviços",
     "contact": "contato",
-    "servicesMain": "Por que investir com a gente?",
+    "servicesMain": "Chega de conversa, vamos ao trabalho!",
     "textTitle":"DevRoom",
     "whats": "Entre em contato",
     "text": "Ficou com alguma duvida sobre nosso site?",
@@ -13,7 +13,7 @@
     "subAboutText": "Seja bem-vindo à nossa equipe dedicada à transformação de ideias em realidade digital. Com profundo conhecimento em HTML, CSS, e JavaScript, construímos bases sólidas, elevando a experiência do usuário. Utilizando tecnologias modernas como TypeScript, ReactJS, Next.js e Node.js, desenvolvemos soluções eficientes e escaláveis, proporcionando consistência e desempenho excepcionais de ponta a ponta. Estendemos nossa expertise ao mobile, destacando-nos em React Native, Firebase, Sass e Styled Components. Do frontend ao backend, cada linha de código reflete nosso compromisso com a inovação e qualidade. Junte-se a nós nesta jornada, onde a excelência é a norma e cada aplicação é uma experiência marcante.",
     "textButton": "Contate aqui",
     "subMainText": "Agencia de criação de sites",
-    "projectTitle": "Bem vindo a DevRoom",
+    "projectTitle": "Nossos Serviços",
     "buttonProject": "Veja mais",
     "addresstTitle": "Endereço",
     "phoneTitle": "Contato",
@@ -39,7 +39,7 @@
     "bannerTitle": "INVISTA SEU TEMPO NO CRESCIMENTO DO SEU NEGÓCIO E DEIXE A CRIAÇÃO DO SITE COM A GENTE.",
     "bannerText": "Seu site pronto em até 14 dias",
     "bannerButton": "Entrar em contato",
-    "serviceText": "Uma empresa criativa e pronta para tirar seu sonho do papel.",
+    "serviceText": "Excelência em cada serviço para o seu negócio.",
     "serviceFullText": "Somos responsáveis por transformar ideias em realidade digital, proporcionando consistência e desempenho excepcionais de ponta a ponta. Junte-se a nós nesta jornada, onde a excelência é a norma e cada aplicação é uma experiência marcante.",
     "phasesTitle": "Conheça as etapas de criação de seu site",
     "phasesText": " Veja e entenda o que engloba nossa metodologia e entenda como funciona o nosso processo de desenvolvimento de sites.",
@@ -50,31 +50,23 @@
     "phasesSeccionIV": "Revisão final,  validações e publicação do projeto. Realizando o acompanhamento dos acessos  e desempenho.",
     "phasesToPhase": "Passo a passo",
 
-    "serviceWeb": "Desenvolvimento Web",
-    "serviceWebItem1": "Criação de sites a partir de R$ 250,00",
-    "serviceWebItem2": "Criação de sites customizados",
-    "serviceWebItem3": "Criação de landing pages",
-    "serviceWebItem4": "Criação de Blogs de noticias",
-    "serviceWebItem5": "SEO e otimizações",
-    "serviceWebItem6": "Criação de sites em React ou Next",
-    
-    "serviceHost": "Hospedagem",
-    "hostItem1": "Hospedagem de alta velocidade",
-    "hostItem2": "Certificado de segurança SSL",
-    "hostItem3": "Email corporativo",
-    "hostItem4": "Registro de domínio",
-    "hostItem5": "Suporte técnico continuo",
-
+    "serviceWeb": "Trafego Pago",
+    "serviceWebItem1": "Nossa equipe cria conteúdo envolvente e compartilhável que repercute em seu público e gera tráfego orgânico",
+  
+    "serviceHost": "Design grafico",
+    "hostItem1": "Desbloqueie o poder da narrativa visual com nossos serviços especializados de design gráfico, feitos sob medida para elevar e cativar sua marca.",
+  
     "serviceMarketing": "Marketing Digital",
-    "digitalMarketingItem1": "Campanhas Google ADS",
-    "digitalMarketingItem2": "Campanhas Instagram ADS",
-    "digitalMarketingItem3": "Campanhas Facebook ADS",
-    "digitalMarketingItem4": "Tags de conversão",
+    "digitalMarketingItem1": "Eleve a presença online da sua marca com nossas estratégias de marketing digital baseadas em dados. De SEO e marketing de conteúdo",
 
-    "serviceDesign": "Design",
-    "designItem1": "Criação de Design’s",
-    "designItem2": "Identidade Visual",
-    "designItem3": "Prototipação",
+    "serviceDesign": "Web Design",
+    "designItem1": "Somos especializados na criação de sites visualmente impressionantes e fáceis de usar que se alinham com a identidade da sua marca e oferecem um desempenho excepcional.",
+    
+    "suporteTecnico": "Suporte Tecnico",
+    "suporteTecnico1": "Suporte especializado em hardware e software, garantindo que seus sistemas funcionem perfeitamente. Estamos prontos para resolver problemas e realizar manutenções para maximizar a eficiência.",
+   
+    "landingPages": "Criação de Landing Pages",
+    "landingPages1": "Desenvolvimento de landing pages que convertem, focadas na experiência do usuário e na identidade da marca.",
 
     "see": "Nosso Portifolio",
 

@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { ButtonUI } from '../UI/ButtonUi';
+import { ButtonIcon, ButtonUI } from '../UI/ButtonUi';
 import SubTexts from '../UI/SubTexts';
 import TitleText from '../UI/TitleText';
 import styles from './styles.module.scss';
@@ -9,33 +9,14 @@ import wordIcon from '../../assets/images/earth.png';
 import searchIcon from '../../assets/images/Search.png';
 import paidIcon from '../../assets/images/metrics.png';
 import rocketIcon from '../../assets/images/rocket.png';
+import { MdOutlineArrowForwardIos } from "react-icons/md";
+import { Navigate, useNavigate } from 'react-router-dom';
+
 
 export default function Banner() {
-    const icons = {
-        word: {
-            name: "word",
-            icon: wordIcon,
-            text: "Posicione sua empresa no digital"
-        },
-        search: {
-            name: "search",
-            icon: searchIcon,
-            text: "Aumente a visibilidade da sua empresa"
-        },
-        paidSearch: {
-            name: "paidSearch",
-            icon: paidIcon,
-            text: "Faça campanhas de tráfego pago"
-        },
-        rocket: {
-            name: "rocket",
-            icon: rocketIcon,
-            text: "Impulsione o crescimento da sua empresa"
-        }
-    };
 
     const { t } = useTranslation();
-
+    const navigate = useNavigate();
     useEffect(() => {
         Aos.init({ duration: 2000 });
     }, []);
@@ -44,19 +25,17 @@ export default function Banner() {
         <>
             <div className={styles.banner}>
                 <div className={styles.bannerText}>
-                    <TitleText colorText='#4200FF' text={t('servicesMain')} family='jaldi' weight='bold' />
-                    <span>Entrar para o mundo online é a chave para conquistar clientes na internet e não pode esperar</span>
-                    <div className={styles.bannerIcons}>
-                        {Object.entries(icons).map(([key, { name, icon, text }]) => (
-                            <div key={key} className={styles.iconContainer}>
-                                <img src={icon} alt={text} className={styles[`${name}`]} />
-                                <p className={styles.iconText}>{text}</p>
-                            </div>
-                        ))}
-                    </div>
+                    <TitleText colorText='#FBFBFB' text={t('servicesMain')} family='jaldi' weight='bold' />
                     <div className={styles.bannerButton}>
-                        <SubTexts colorText='#4200FF' text={t("bannerText")} family='jaldi' wieght='bold'  />
-                        
+                        <ButtonIcon 
+                            fontSize='16px'
+                            height='100%'
+                            localPath='/contact'
+                            click={() => {navigate('/contact')}}
+                            width='100%'
+                            text='Contato'
+                            icon={<MdOutlineArrowForwardIos size={20} />}
+                            />
                     </div>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 .about_container{
     width: 100%;
-    height: 32em;
+    height: 100%;
     display: flex;
     flex-direction: row;
     overflow: hidden;
@@ -13,7 +13,6 @@
         font-size: 18px;
     }
     .aboutCard{
-        background-image: url('../../assets/images/DevRoom.png');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: contain;
@@ -21,24 +20,9 @@
         display: flex;
         flex-direction: row;
         position: relative;
-       
         background-position: center;
-    background-size: cover;
-        .imgCard{
-            width: 70%;
-            height: 100%;
-            border-radius: 8px;
-             &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.6);; 
-            z-index: 1;
-        }
-        }
+        background-size: cover;
+    
         .aboutTextContainer{
             width: 100%;
             margin-left: -13%;
@@ -46,7 +30,6 @@
             padding: 4px;
             background-position: right;
             background-repeat: no-repeat;
-            background-image: url('../../assets//images/aboutImg.png');
             display: flex;
             justify-content: right;
             text-align: center;
@@ -83,6 +66,47 @@
 
     }
 }
+
+.imgCard {
+    position: relative;
+    width: 48%;
+    height: 44em;
+    margin-top: 4%;
+  
+    img {
+      position: absolute;
+      width: 480px;
+      transition: all 0.5s ease; 
+    }
+  
+    .imageActive {
+      top: 20%;
+      left: 20%;
+      z-index: 3;
+      opacity: 1;
+      transition: all 0.5s ease; 
+    }
+  
+    .imageSecond {
+      top: 16%;
+      left: 16%;
+      z-index: 2;
+      opacity: 0.8;
+      transition: all 0.5s ease; 
+    }
+  
+    .imageThird {
+      top: 12%;
+      left: 12%;
+      z-index: 1;
+      opacity: 0.4;
+      transition: all 0.5s ease; 
+    }
+  }
+
+
+
+
 @keyframes zoomIn{
     0%{
         transform: scale(1);
@@ -209,6 +233,10 @@
         }
     }
 }
+
+
+
+
 
 @media (max-width:420px) {
     .about_container{

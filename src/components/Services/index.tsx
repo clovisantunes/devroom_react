@@ -8,6 +8,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { useTranslation } from 'react-i18next';
 import ServicesItems from './ServicesItems';
+import Banner from '../Banner';
 
 interface ServicesProps {
   id: string;
@@ -64,10 +65,9 @@ export default function Services({ id }: ServicesProps) {
       <div className={styles.servicesCard}>
         <div className={styles.textTitle}>
           <TitleText
-            colorText="white"
+            colorText="#4200FF"
             text={t('projectTitle')}
           />
-          <div className={styles.line} />
         </div>
         <div className={styles.projectsCard}> 
           <div className={styles.spanText}>
@@ -75,22 +75,14 @@ export default function Services({ id }: ServicesProps) {
               {t('serviceText')}
             </span>
           </div>
-          <div className={styles.spanText2}>
-            <span className={styles.span2}>
-              {t("serviceFullText")}
-            </span>
-          </div>
+  
           <div className={styles.servicesContainer}>
             <div className={styles.servicesCard}>
               <ServicesItems />
             </div>
-            <div className={styles.servicesImage}>
-              <div className={styles.imageDev}>
-                <ImageUi alt='Developers image' path={imgDevelopers} height={100} width={100} />
-              </div>
-            </div>
           </div>
         </div>
+        <Banner />
       </div>
     </div>
   );

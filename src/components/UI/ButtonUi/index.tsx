@@ -25,12 +25,13 @@ interface ButtonServiceProps {
   icon?: ReactNode;
 }
 
-const ButtonUI: React.FC<ButtonUIProps> = ({ width, height, text, fontSize, localPath, click, target, icon  }) => {
+const ButtonUI: React.FC<ButtonUIProps> = ({ width, height, text, fontSize, localPath, click, target, icon }) => {
   return (
-    <div className={styles.buttonUi} style={{ fontSize, width, height }} onClick={click}>
-         <Link to={localPath}>
-        {icon}{text}
-        </Link>
+    <div className={styles.buttonUi} style={{ fontSize, width, height }}>
+      <Link to={localPath} onClick={click} target={target} rel={target === '_blank' ? 'noopener noreferrer' : undefined}>
+        {icon}
+        {text}
+      </Link>
     </div>
   );
 };

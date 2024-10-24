@@ -4,6 +4,12 @@ import { IoMdCloudDone } from "react-icons/io";
 import { IoIosRocket } from "react-icons/io";
 import { GiPaintBrush } from "react-icons/gi";
 import { useTranslation } from 'react-i18next';
+import { MdOutlinePaid } from "react-icons/md";
+import { MdOutlineDesignServices } from "react-icons/md";
+import { BsMegaphone } from "react-icons/bs";
+import { HiOutlinePaintBrush } from "react-icons/hi2";
+import { BiSupport } from "react-icons/bi";
+
 
 export default function ServicesItems() {
     const {t} = useTranslation();
@@ -14,44 +20,50 @@ export default function ServicesItems() {
     }[] = [
         {
             title: t("serviceWeb"),
-            logo: <RiComputerLine size={30} />,
+            logo: <MdOutlinePaid size={30} />,
             service: [
                 t("serviceWebItem1"),
-                t("serviceWebItem2"),
-                t("serviceWebItem3"),
-                t("serviceWebItem4"),
-                t("serviceWebItem5"),
-                t("serviceWebItem6")
+             
             ]
         },
         {
             title: t("serviceHost"),
-            logo: <IoMdCloudDone size={30} />,
+            logo: <MdOutlineDesignServices size={30} />,
             service: [
                 t("hostItem1"),
-                t("hostItem2"),
-                t("hostItem3"),
-                t("hostItem4"),
-                t("hostItem5")
+                
             ]
         },
         {
             title: t("serviceMarketing"),
-            logo: <IoIosRocket size={30} />,
+            logo: <BsMegaphone size={30} />,
             service: [
                 t("digitalMarketingItem1"),
-                t("digitalMarketingItem2"),
-                t("digitalMarketingItem3"),
-                t("digitalMarketingItem4")
+              
             ]
         },
         {
             title: t("serviceDesign"),
-            logo: <GiPaintBrush size={30} />,
+            logo: <HiOutlinePaintBrush size={30} />,
             service: [
                 t("designItem1"),
-                t("designItem2"),
-                t("designItem3")
+          
+            ]
+        },
+        {
+            title: t("suporteTecnico"),
+            logo: <BiSupport size={30} />,
+            service: [
+                t("suporteTecnico1"),
+          
+            ]
+        },
+        {
+            title: t("landingPages"),
+            logo: <RiComputerLine size={30} />,
+            service: [
+                t("landingPages1"),
+          
             ]
         },
     ];
