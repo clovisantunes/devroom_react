@@ -8,6 +8,11 @@ import { MdKeyboardArrowDown, MdOutlineKeyboardArrowUp } from "react-icons/md";
 import Cover from "../UI/cover";
 import { ModalItem } from "../Modal";
 import { useTranslation } from "react-i18next";
+import website1 from '../../assets/images/portifolio_Clovis.png'
+import website2 from '../../assets/images/portifolio_Dandara.png'
+import design1 from '../../assets/images/design1.png'
+import design2 from '../../assets/images/design2.png'
+import design3 from '../../assets/images/design3.png'
 
 interface PortfolioProps {
   id: string;
@@ -15,104 +20,83 @@ interface PortfolioProps {
 
 const projects = {
   frontI: {
-    name: "Renova Advogacia",
+    name: "Portifólio Clovis Antunes",
     deploy: "Website_1",
-    backgroundImage: "https://i.ibb.co/nbp1PYJ/landing-Page.png",
-    backgroundVideo: "https://i.ibb.co/nbp1PYJ/landing-Page.png",
+    category: "Website",
+    backgroundImage: website1,
+    online: "https://clovis-antunes.vercel.app/",
+    design: "https://www.figma.com/design/DqT6M5WTb2o2OiAz9p6BGM/Contabilidade?node-id=0-1&t=HztxmjzYsEyGaFdl-1",
     descriptions: {
-      title: "Renova Advogacia",
-      spanI: "frontI.spanI",
+      title: "Portifólio Clovis Antunes",
+      spanI: "Design de Portfólio Web, desenvolvido como uma landing page dinâmica e visualmente atraente, voltada para destacar e demonstrar as habilidades e conhecimentos do desenvolvedor. O projeto foi pensado para proporcionar uma experiência intuitiva e envolvente, refletindo as melhores práticas de design e desenvolvimento web.",
       spanII: "frontI.spanII"
     }
   },
   frontII: {
-    name: "PetVida Centro Veterinário",
+    name: "Portifólio Dandara Bianca",
     deploy: "Website_2",
-    backgroundImage: "https://i.ibb.co/4Ps448m/landing-Page-II.png",
-    backgroundVideo: "https://i.ibb.co/4Ps448m/landing-Page-II.png",
+    category: "Website",
+    online: 'https://portifolio-dandara.vercel.app/',
+    design: "https://www.figma.com/design/DqT6M5WTb2o2OiAz9p6BGM/Contabilidade?node-id=0-1&t=HztxmjzYsEyGaFdl-1",
+    backgroundImage: website2,
     descriptions: {
-      title: "PetVida Centro Veterinário",
-      spanI: "frontII.spanI",
+      title: "Portifólio Dandara Bianca",
+      spanI: "Portfólio Web desenvolvido como uma landing page dinâmica e visualmente atraente, destacando as habilidades da designer. Com foco na acessibilidade e interatividade, o projeto oferece uma experiência intuitiva, combinando estética moderna e funcionalidade.",
       spanII: "frontII.spanII"
-    }
-  },
-  frontIII: {
-    name: "Blog de Decoração e Design de Interiores",
-    deploy: "Blogs",
-    backgroundImage: "https://i.postimg.cc/1mXP80tf/Blog.png",
-    backgroundVideo: "https://i.postimg.cc/1mXP80tf/Blog.png",
-    descriptions: {
-      title: "Blog de Decoração e Design de Interiores",
-      spanI: "frontIII.spanI",
-      spanII: "frontIII.spanII"
-    }
-  },
-  frontIIII: {
-    name: "E-commerce Electro",
-    deploy: "E-commerce",
-    backgroundImage: "https://i.ibb.co/znk9Rdz/ecommerce.png",
-    backgroundVideo: "https://i.ibb.co/znk9Rdz/ecommerce.png",
-    descriptions: {
-      title: "E-commerce Electro",
-      spanI: "frontIIII.spanI",
-      spanII: "frontIIII.spanII"
-    }
-  },
-  frontIIIaI: {
-    name: "TechNova",
-    deploy: "Website_5",
-    backgroundImage: "https://uploaddeimagens.com.br/images/004/813/417/original/landingpage.png?1721687021",
-    backgroundVideo: "https://uploaddeimagens.com.br/images/004/813/417/original/landingpage.png?1721687021",
-    descriptions: {
-      title: "TechNova",
-      spanI: "A TechNova é uma página única e simples, porém eficaz, dedicada a empresas de tecnologia com diversas especializações em áreas como desenvolvimento de software, infraestrutura de TI, segurança cibernética e consultoria tecnológica.",
-      spanII: "Esta página foi feita em uma landing page única, podendo ser ajustada para o gosto e o segmento do seu negócio."
     }
   },
   frontIIIjI: {
     name: "MultiServ",
     deploy: "Website_6",
-    backgroundImage: "https://uploaddeimagens.com.br/images/004/813/420/original/MultiServ.png?1721688196",
-    backgroundVideo: "https://uploaddeimagens.com.br/images/004/813/420/original/MultiServ.png?1721688196",
+    category: "Design",
+    online: '',
+    design: "https://www.figma.com/design/DqT6M5WTb2o2OiAz9p6BGM/Contabilidade?node-id=0-1&t=HztxmjzYsEyGaFdl-1",
+    backgroundImage: design1,
     descriptions: {
       title: "MultiServ",
-      spanI: "A MultiServ é uma página única e simples, porém eficaz, dedicada a prestadores de serviços em diversas áreas, como manutenção, consultoria, design e muito mais. Esta página foi feita em uma landing page única, podendo ser ajustada para o gosto e o segmento do seu negócio.",
-      spanII: ""
-    }
-  },
-  frontIhIII: {
-    name: "FisioBem",
-    deploy: "Website_7",
-    backgroundImage: "https://uploaddeimagens.com.br/images/004/813/421/original/Fisioterapia.png?1721688262",
-    backgroundVideo: "https://uploaddeimagens.com.br/images/004/813/421/original/Fisioterapia.png?1721688262",
-    descriptions: {
-      title: "FisioBem",
-      spanI: "A FisioBem é uma página única e simples, porém eficaz, dedicada a fisioterapeutas com diversas especializações em áreas como ortopédica, esportiva, neurológica e pediátrica. Esta página foi feita em uma landing page única, podendo ser ajustada para o gosto e o segmento do seu negócio.",
-      spanII: ""
-    }
-  },
-  frontIIjII: {
-    name: "Advocacia",
-    deploy: "Website_9",
-    backgroundImage: "https://uploaddeimagens.com.br/images/004/813/422/original/Advocacia_2.png?1721688327",
-    backgroundVideo: "https://uploaddeimagens.com.br/images/004/813/422/original/Advocacia_2.png?1721688327",
-    descriptions: {
-      title: "Advocacia",
-      spanI: "A Advocacia é uma página única e simples, porém eficaz, dedicada a advogados com diversas especializações em áreas do direito, como civil, comercial, trabalhista e penal. Esta página foi feita em uma landing page única, podendo ser ajustada para o gosto e o segmento do seu negócio.",
+      spanI: "Design de uma landing page prestadores de serviços em diversas áreas, como manutenção, consultoria, design e muito mais.",
       spanII: ""
     }
   },
   frontIIkII: {
     name: "Contabilidade",
     deploy: "Website_9",
-    backgroundImage: "https://uploaddeimagens.com.br/images/004/813/927/original/contabilidade.png?1721774296",
-    backgroundVideo: "https://uploaddeimagens.com.br/images/004/813/927/original/contabilidade.png?1721774296",
+    category: "Design",
+    online: '',
+    design: "https://www.figma.com/design/DqT6M5WTb2o2OiAz9p6BGM/Contabilidade?node-id=0-1&t=HztxmjzYsEyGaFdl-1",
+    backgroundImage: design2,
     descriptions: {
       title: "Contabiliza",
-      spanI: "A Contabiliza é uma página única e simples, porém eficaz, dedicada a contadores com diversas especializações em áreas da contabilidade, como fiscal, tributária, trabalhista e financeira. Esta página foi feita em uma landing page única, podendo ser ajustada para o gosto e o segmento do seu negócio.",
+      spanI: "A Contabiliza é uma página única e simples, porém eficaz, dedicada a contadores com diversas especializações em áreas da contabilidade, como fiscal, tributária, trabalhista e financeira. Esta página foi feita em uma landing page única, podendo ser ajustada para o gosto e o segmento do seu negócioDesign de uma landing page para um escritório de contabilidade.",
       spanII: ""
     }
-}
+},
+frontIIjII: {
+  name: "Advocacia",
+  deploy: "Website_9",
+  category: "Design",
+  online: '',
+  design: "https://www.figma.com/design/DqT6M5WTb2o2OiAz9p6BGM/Contabilidade?node-id=0-1&t=HztxmjzYsEyGaFdl-1",
+  backgroundImage: design3,
+  descriptions: {
+    title: "Advocacia",
+    spanI: "Design de uma landing page dedicada a advogados com diversas especializações em áreas do direito, como civil, comercial, trabalhista e penal",
+    spanII: ""
+  }
+},
+  frontIIIaI: {
+    name: "TechNova",
+    deploy: "Website_5",
+    category: "Design",
+    online: '',
+    design: "https://www.figma.com/design/DqT6M5WTb2o2OiAz9p6BGM/Contabilidade?node-id=0-1&t=HztxmjzYsEyGaFdl-1",
+    backgroundImage: "https://uploaddeimagens.com.br/images/004/813/417/original/landingpage.png?1721687021",
+    descriptions: {
+      title: "TechNova",
+      spanI: "A TechNova é uma página única e simples, porém eficaz, dedicada a empresas de tecnologia com diversas especializações em áreas como desenvolvimento de software, infraestrutura de TI, segurança cibernética e consultoria tecnológica.",
+      spanII: "Esta página foi feita em uma landing page única, podendo ser ajustada para o gosto e o segmento do seu negócio."
+    }
+  },
 }
 
 const Portfolio = ({ id }: PortfolioProps) => {
@@ -150,57 +134,90 @@ const Portfolio = ({ id }: PortfolioProps) => {
     <div className={styles.portfolioContainer} id={id}>
       <div className={styles.shadowBox} />
       <div className={styles.titleItem}>
-        <TitleText colorText="white" text={t("see")} />
+        <TitleText colorText="#ffffff" text={t("see")} />
         <span>:</span>
       </div>
-      <div className={`${styles.portfolioComponent} ${expanded ? styles.expanded : ""}`}>
-        {Object.entries(projects).map(([key, project]) => (
+      <h2 className={styles.categoryTitle}>Websites</h2>
+    <div className={`${styles.portfolioComponent} ${expanded ? styles.expanded : ""}`}>
+      {Object.entries(projects)
+        .filter(([, project]) => project.category === "Website")
+        .map(([key, project]) => (
+          <div
+          key={key}
+          className={styles.portCard}
+          onMouseEnter={() => setHoveredIndex(key)}
+          onMouseLeave={() => setHoveredIndex(null)}
+          >
+            <span>
+              {project.name}
+            </span>
+            <p>
+              {project.descriptions.spanI}
+            </p>
+            <div className={styles.buttons}>
+                <button className={styles.design}>
+                    <a href={project.design} target="_blank" rel="noopener noreferrer">
+                      Acessar Design
+                      </a>
+                </button>
+                {project.online && (
+                  <button className={styles.online}>
+                    <a
+                      href={project.online}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Online
+                    </a>
+                  </button>
+                )}
+            
+              </div>
+            <img src={project.backgroundImage} alt={`Image for ${project.name}`} />
+          </div>
+        ))}
+    </div>
+    <h2 className={styles.categoryTitle}>Design</h2>
+    <div className={`${styles.portfolioComponent} ${expanded ? styles.expanded : ""}`}>
+      {Object.entries(projects)
+        .filter(([, project]) => project.category === "Design")
+        .map(([key, project]) => (
           <div
             key={key}
             className={styles.portCard}
             onMouseEnter={() => setHoveredIndex(key)}
             onMouseLeave={() => setHoveredIndex(null)}
-          >
+          > 
+          <span>
+          {project.name}
+        </span>
+        <p>
+          {project.descriptions.spanI}
+        </p>
+        <div className={styles.buttons}>
+                <button className={styles.design}>
+                    <a href={project.design} target="_blank" rel="noopener noreferrer">
+                      Acessar Design
+                      </a>
+                </button>
+                {project.online && (
+                  <button className={styles.online}>
+                    <a
+                      href={project.online}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Online
+                    </a>
+                  </button>
+                )}
+            
+              </div>
             <img src={project.backgroundImage} alt={`Image for ${project.name}`} />
-            {hoveredIndex === key && (
-              <Cover
-                title={t(project.name)}
-                onClick={() =>
-                  handleOpenModal({
-                    name: t(project.name),
-                    deploy: project.deploy,
-                    backgroundVideo: project.backgroundVideo,
-                    descriptions: {
-                      title: t(project.descriptions.title),
-                      spanI: t(project.descriptions.spanI),
-                      spanII: t(project.descriptions.spanII),
-                    },
-                  })
-                }
-              />
-            )}
+            
+            
           </div>
         ))}
-      </div>
-      <div className={styles.loadingButton}>
-        <ButtonIcon
-          fontSize="16px"
-          height="100%"
-          click={handleExpand}
-          width="100%"
-          localPath="#"
-          text={TextButton}
-          icon={svgButton}
-          />
-      </div>
-     <div className={styles.containerPlus}>
-      {modalItem && (
-        <ModalItem
-          isOpen={modalVisible}
-          onRequestClose={handleCloseModal}
-          modalItem={modalItem}
-        />
-      )}
     </div>
     </div>
     </>

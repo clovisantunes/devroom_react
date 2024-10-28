@@ -46,7 +46,6 @@ export default function App() {
       </div>
       <Services id='services' />
       <About buttonRender={true} id="about" />
-      <Phases />
       <Portfolio id="portfolio" />
       <WhatsContact />
       <Footer id='footer' textColor="#d9d9d9" iconColor="#d9d9d9"/>
