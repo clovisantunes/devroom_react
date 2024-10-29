@@ -9,7 +9,7 @@
   background-position: center;
   background-size: cover;
   transition: all 2s ease-in-out;
-  background-color: #161616;
+  background-color: #F4F4F4;
   text-align: left;
   .categoryTitle{
     color: #F4F4F4;
@@ -33,15 +33,57 @@
   margin: 36px 0 36px 0;
   font-size: 36px;
 }
-
+.filters{
+  width: 56%;
+  margin-bottom: 4em;
+  button{
+    width: 6em;
+    height: 2em;
+    border: none;
+    background-color: #FFFF;
+    margin-left: 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all .3s ease-in-out;
+    &:Hover{
+      background-color: #5609F9;
+      color: #FFFF;
+      
+    }
+  }
+  .active{
+    background-color: #5609F9;
+    color: #FFFF;
+  }
+}
 .portfolioComponent {
-  width: 80%;
+  width: 77%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  height: 100%;
-  transition: 3s ease-in-out;
-  animation: heightTransitionReverse .8s forwards;
+  height: auto; 
+  transition: opacity 0.4s ease-in-out;
+  &.fading {
+    opacity: 0;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 .portfolioComponent.expanded {
@@ -65,36 +107,38 @@
   }
 }
 .portCard {
-  background-color: #030303;
+  background-color: none;
   position: relative;
   border-radius: 16px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
   width: 22em;
-  height: 28em;
+  height: 100%;
   background-size: cover;
-  margin: 0  36px 0;
+  margin: 0  8px 0;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: solid 2px rgba(123, 74, 226, 0.5);
   transition: all .4s ease-in-out;
   z-index: 1;
   padding: 16px;
   span{
-    font-size: 16px;
+    font-size: 22px;
     margin-bottom: 8px;
-    color: #FFFF;
+    color: #272727;
   }
   p{
     font-weight: 400;
     font-size: 12px;
-    color: #FFFF;
+    color: #272727;
+  }
+  &:hover{
+    cursor: pointer;
   }
 }
 
 .portCard img {
-  margin: 16px;
+  border-radius: 16px;
+  margin-bottom: 8px;
 }
 
 .portCard .titleText {
@@ -150,20 +194,20 @@
 .buttons {
   display: flex;
   margin-bottom: 18px;
-  margin-top: auto;
+  margin-top: 16px;
 
   .design {
     width: 36%;
-    height: 24px;
-    margin-right: 8px;
-    background-color: rgba(123, 74, 226, 0.1);
+    height: 28px;
+   
+    background-color: #7B4AE2;
     border: none;
     border-radius: 4px;
     transition: background-color 0.3s, transform 0.2s;
 
     a {
         font-size: 14px;
-      color: #7B4AE2;
+      color: white;
       text-decoration: none;
       font-weight: bold;
 
@@ -173,21 +217,20 @@
     }
 
     &:hover {
-      background-color: rgba(123, 74, 226, 0.2); 
       transform: translateY(-2px);
     }
   }
 
   .online {
     width: 26%;
-    height: 24px;
-    background-color: rgba(74, 226, 144, 0.3);
+    height: 28px;
+    background-color: #06FF49;
     border: none;
     border-radius: 4px;
     transition: background-color 0.3s, transform 0.2s; 
-
+    margin-right: 8px;
     a {
-      color: #4AE290;
+      color: white;
       text-decoration: none;
       font-weight: bold;
 
@@ -197,7 +240,6 @@
     }
 
     &:hover {
-      background-color: rgba(74, 226, 144, 0.5); 
       transform: translateY(-2px); 
     }
   }

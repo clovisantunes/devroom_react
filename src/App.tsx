@@ -14,6 +14,7 @@ import Banner from './components/Banner';
 import Phases from './components/Phases';
 import ReactGA from "react-ga4";
 import styles from './styles/styles.module.scss';
+import Team from './components/Team';
 
 export default function App() {
   useEffect(() => {
@@ -47,6 +48,7 @@ export default function App() {
       <Services id='services' />
       <About buttonRender={true} id="about" />
       <Portfolio id="portfolio" />
+      <Team />
       <WhatsContact />
       <Footer id='footer' textColor="#d9d9d9" iconColor="#d9d9d9"/>
     </I18nextProvider>
