@@ -1,12 +1,10 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate para navegação
 import Modal from "react-modal";
 import "../../styles/assets/dist/css/bootstrap.min.css";
 import styles from "./styles.module.scss";
 import TitleText from "../UI/TitleText";
-import { ButtonIcon } from "../UI/ButtonUi";
 import { MdKeyboardArrowDown, MdOutlineKeyboardArrowUp } from "react-icons/md";
-import Cover from "../UI/cover";
-import { ModalItem } from "../Modal";
 import { useTranslation } from "react-i18next";
 import website1 from '../../assets/images/portifolio_Clovis.png';
 import website2 from '../../assets/images/portifolio_Dandara.png';
@@ -20,7 +18,7 @@ interface PortfolioProps {
 }
 
 const projects = {
-  frontI: {
+  clovis: {
     name: "Portifólio Clovis",
     deploy: "Website_1",
     category: "Website",
@@ -33,7 +31,7 @@ const projects = {
       spanII: "frontI.spanII"
     }
   },
-  frontII: {
+  dandara: {
     name: "Portifólio Dandara",
     deploy: "Website_2",
     category: "Website",
@@ -46,7 +44,7 @@ const projects = {
       spanII: "frontII.spanII"
     }
   },
-  frontIIIjI: {
+  multiserv: {
     name: "MultiServ",
     deploy: "Website_6",
     category: "Design",
@@ -59,7 +57,7 @@ const projects = {
       spanII: ""
     }
   },
-  frontIIkII: {
+  contabilidade: {
     name: "Contabilidade",
     deploy: "Website_9",
     category: "Design",
@@ -72,7 +70,7 @@ const projects = {
       spanII: ""
     }
   },
-  frontIIjII: {
+  advocacia: {
     name: "Advocacia",
     deploy: "Website_9",
     category: "Design",
@@ -85,7 +83,7 @@ const projects = {
       spanII: ""
     }
   },
-  frontIIjI: {
+  technova: {
     name: "TechNova",
     deploy: "Website_9",
     category: "Design",
@@ -102,25 +100,31 @@ const projects = {
 
 const Portfolio = ({ id }: PortfolioProps) => {
   const { t } = useTranslation();
+  const navigate = useNavigate(); // Inicializa o hook de navegação
   const [filter, setFilter] = useState("Todos");
   const [expanded, setExpanded] = useState(false);
   const [TextButton, setTextButton] = useState("Veja mais");
   const [svgButton, setSvgButton] = useState(<MdKeyboardArrowDown />);
   const [btnActive, setBtnActive] = useState("");
   const [isFading, setIsFading] = useState(false);
+
   const filteredProjects = Object.entries(projects).filter(
     ([, project]) => filter === "Todos" || project.category === filter
   );
+
   const handleFilterChange = (newFilter: string) => {
     if (newFilter !== filter) {
       setIsFading(true);
       setTimeout(() => {
         setFilter(newFilter);
         setIsFading(false);
-      }, 400); 
+      }, 400);
     }
   };
 
+  const handleProjectClick = (projectId: string) => {
+    navigate(`/details#${projectId.toLowerCase()}`); // Navega para a página com o ID do projeto como hash
+  };
 
   return (
     <div className={styles.portfolioContainer} id={id}>
@@ -131,17 +135,18 @@ const Portfolio = ({ id }: PortfolioProps) => {
       </div>
 
       <div className={styles.filters}>
-  <button className={filter === "Todos" ? styles.active : ""} onClick={() => handleFilterChange("Todos")}>Todos</button>
-  <button className={filter === "Website" ? styles.active : ""} onClick={() => handleFilterChange("Website")}>Sites</button>
-  <button className={filter === "Design" ? styles.active : ""} onClick={() => handleFilterChange("Design")}>Design</button>
-</div>
+        <button className={filter === "Todos" ? styles.active : ""} onClick={() => handleFilterChange("Todos")}>Todos</button>
+        <button className={filter === "Website" ? styles.active : ""} onClick={() => handleFilterChange("Website")}>Sites</button>
+        <button className={filter === "Design" ? styles.active : ""} onClick={() => handleFilterChange("Design")}>Design</button>
+      </div>
 
-<div className={`${styles.portfolioComponent} ${isFading ? styles.fading : ""} ${expanded ? styles.expanded : ""}`}>
+      <div className={`${styles.portfolioComponent} ${isFading ? styles.fading : ""} ${expanded ? styles.expanded : ""}`}>
         {filteredProjects.map(([key, project]) => (
           <div
             key={key}
             className={styles.portCard}
-            >
+            onClick={() => handleProjectClick(key)} // Adiciona o evento de clique
+          >
             <img src={project.backgroundImage} alt={`Image for ${project.name}`} />
             <span>{project.name}</span>
             <div className={styles.buttons}>
@@ -161,7 +166,6 @@ const Portfolio = ({ id }: PortfolioProps) => {
           </div>
         ))}
       </div>
-    
     </div>
   );
 };

@@ -9,7 +9,7 @@ import './styles/global.scss';
 import App from './App';
 import Contact from './Pages/contact/page';
 import  Login  from './Pages/Login/index';
-
+import Details from './Pages/details/index';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -22,6 +22,7 @@ root.render(
           <Route path="/services" element={<Web />} />
           <Route path="auth" element={<Login />} />
           <Route path='send' element={<Send />} />
+          <Route path='details' element={<Details />} />
         </Routes>
       </Router>
     </I18nextProvider>
