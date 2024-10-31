@@ -82,8 +82,8 @@ export default function Services({ id }: ServicesProps) {
             </div>
           </div>
         </div>
-        <Banner />
       </div>
+        <Banner />
     </div>
   );
 }

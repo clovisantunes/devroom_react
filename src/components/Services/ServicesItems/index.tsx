@@ -14,27 +14,13 @@ import { BiSupport } from "react-icons/bi";
 export default function ServicesItems() {
     const {t} = useTranslation();
     const services: {
+        id: string;    
         title: string;
         logo?: JSX.Element;
         service: string[];
     }[] = [
         {
-            title: t("serviceWeb"),
-            logo: <MdOutlinePaid size={30} />,
-            service: [
-                t("serviceWebItem1"),
-             
-            ]
-        },
-        {
-            title: t("serviceHost"),
-            logo: <MdOutlineDesignServices size={30} />,
-            service: [
-                t("hostItem1"),
-                
-            ]
-        },
-        {
+            id: 'marketing',
             title: t("serviceMarketing"),
             logo: <BsMegaphone size={30} />,
             service: [
@@ -43,6 +29,17 @@ export default function ServicesItems() {
             ]
         },
         {
+            id: 'design',
+            title: t("serviceHost"),
+            logo: <MdOutlineDesignServices size={30} />,
+            service: [
+                t("hostItem1"),
+                
+            ]
+        },
+      
+        {
+            id: 'web',
             title: t("serviceDesign"),
             logo: <HiOutlinePaintBrush size={30} />,
             service: [
@@ -51,6 +48,7 @@ export default function ServicesItems() {
             ]
         },
         {
+            id: 'suporte',
             title: t("suporteTecnico"),
             logo: <BiSupport size={30} />,
             service: [
@@ -58,14 +56,7 @@ export default function ServicesItems() {
           
             ]
         },
-        {
-            title: t("landingPages"),
-            logo: <RiComputerLine size={30} />,
-            service: [
-                t("landingPages1"),
-          
-            ]
-        },
+      
     ];
 
     return (
@@ -73,6 +64,8 @@ export default function ServicesItems() {
             <div className={styles.servicesItems}>
                 {services.map((service, index) => (
                     <div key={index} className={styles.servicesItem}>
+                        <a href={`detailService#${service.id}`}>
+
                         <div className={styles.nameLogo}>
                             <span>{service.logo}</span>
                             <div className={styles.name}>
@@ -85,6 +78,7 @@ export default function ServicesItems() {
                                 <li className={styles.serviceLi} key={index}>{item}</li>
                             ))}
                         </ul>
+                            </a>
                     </div>
                 ))}
             </div>   

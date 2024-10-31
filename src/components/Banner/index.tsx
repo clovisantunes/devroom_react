@@ -1,42 +1,28 @@
-import { useEffect } from 'react';
-import { ButtonIcon, ButtonUI } from '../UI/ButtonUi';
-import SubTexts from '../UI/SubTexts';
-import TitleText from '../UI/TitleText';
+import { ButtonIcon } from '../UI/ButtonUi';
 import styles from './styles.module.scss';
-import Aos from 'aos';
-import { useTranslation } from 'react-i18next';
-import wordIcon from '../../assets/images/earth.png';
-import searchIcon from '../../assets/images/Search.png';
-import paidIcon from '../../assets/images/metrics.png';
-import rocketIcon from '../../assets/images/rocket.png';
-import { MdOutlineArrowForwardIos } from "react-icons/md";
-import { Navigate, useNavigate } from 'react-router-dom';
-
 
 export default function Banner() {
-
-    const { t } = useTranslation();
-    const navigate = useNavigate();
-    useEffect(() => {
-        Aos.init({ duration: 2000 });
-    }, []);
-
     return (
         <>
             <div className={styles.banner}>
-                <div className={styles.bannerText}>
-                    <TitleText colorText='#FBFBFB' text={t('servicesMain')} family='jaldi' weight='bold' />
-                    <div className={styles.bannerButton}>
-                        <ButtonIcon 
-                            fontSize='16px'
-                            height='100%'
-                            localPath='/contact'
-                            click={() => {navigate('/contact')}}
-                            width='100%'
-                            text='Contato'
-                            icon={<MdOutlineArrowForwardIos size={20} />}
-                            />
+                <div className={styles.bannerContent}>
+                    <h1>Desenvolva seu projeto conosco</h1>
+                    <h2>Conte com a DevRoom para colocar seu projeto no ar.</h2>
+                    <p>
+                        Entre em contato com nossos especialistas para conversar sobre o seu projeto! Teremos o prazer de
+                        compreender sua ideia e ajudar a transformá-la em realidade.
+                    </p>
+                    <div className={styles.bannerButtons}>
+                    <ButtonIcon
+                        fontSize='18px'
+                        height='100%'
+                        width='100%'
+                        text='Fale conosco'
+                        click={() => ''}
+                    />
                     </div>
+                </div>
+                <div className={styles.bannerImage}>
                 </div>
             </div>
         </>

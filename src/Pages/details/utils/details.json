@@ -6,7 +6,7 @@
     "mainImage": "portifolioClovis.png",
     "aboutProject": "Este projeto foi desenvolvido para apresentar o trabalho de um desenvolvedor Front-end, utilizando as tecnologias React, SASS e TypeScript. Focado na criação de uma interface moderna e interativa, o site oferece uma experiência visual atrativa, destacando-se pela responsividade e adaptação a diversos dispositivos. Com React, o projeto possui uma estrutura modular e organizada, enquanto SASS permite um controle refinado dos estilos, garantindo personalização e consistência. O uso de TypeScript contribui para a segurança e a manutenção do código, reforçando as melhores práticas em desenvolvimento web.",
     "technologies": ["React", "TypeScript", "SASS"],
-    "images": ["TABLET clovis.png", "celularclovis.png","portifolioClovis.png", "portifolioClovis2.png", "portifolioClovis3.png", "portifolioClovis4.png"],
+    "images":  "portifolioClovis2.png",
     "soluction": "A solução implementada neste projeto busca otimizar a experiência do usuário por meio de uma interface intuitiva e interativa. Combinando animações suaves e navegação rápida, o site permite uma visualização eficiente do conteúdo em qualquer dispositivo. A arquitetura desenvolvida em React oferece modularidade, facilitando a expansão de funcionalidades futuras, enquanto o SASS garante estilização avançada e consistente. A aplicação do TypeScript melhora a confiabilidade do código, assegurando manutenção e escalabilidade.",
     "layout": "Design responsivo focado na experiência do usuário em todas as telas.",
     "content": "O conteúdo abrange uma introdução sobre o projeto, tecnologias utilizadas, soluções aplicadas e o layout final."

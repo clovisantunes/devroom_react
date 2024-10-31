@@ -7,7 +7,7 @@ interface ButtonUIProps {
   fontSize: string;
   width: string;
   height: string;
-  localPath: string;
+  localPath?: string;
   click?: any;
   target?: string;
   icon?: ReactNode;

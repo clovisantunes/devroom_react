@@ -14,6 +14,8 @@ import {
 } from "react-icons/fa";
 import { SiNextdotjs, SiPostgresql, SiTypescript } from "react-icons/si";
 import Team from "../../components/Team";
+import Banner from "../../components/Banner";
+import WhatsContact from "../../components/UI/WhatsContact";
 
 interface DetailsProps {
   project: string;
@@ -23,7 +25,7 @@ interface DetailsProps {
   mainImage: "string";
   aboutProject: string;
   technologies: string[];
-  images: string[];
+  images: string;
   soluction: string;
   layout: string;
   content: string;
@@ -55,85 +57,6 @@ export default function Details() {
       return "";
     }
   };
-
-  const stacksRef = useRef(null);
-  const [scrollPosition, setScrollPosition] = useState(0);
-  const [activeButton, setActiveButton] = useState(0);
-  const [intervalId, setIntervalId] = useState(null);
-
-  const stacks = [
-  ]
-
-  const scrollToPosition = (position: number) => {
-    if (stacksRef.current) {
-      const itemWidth = stacksRef.current.children[0].clientWidth;
-      const scrollToPosition = position * itemWidth;
-      stacksRef.current.scrollTo({
-          left: scrollToPosition,
-          behavior: "smooth",
-        });
-        setScrollPosition(position);
-    }
-};
-
-const autoScroll = () => {
-  clearInterval(intervalId);
-
-  setIntervalId(
-    setInterval(() => {
-      if (activeButton === 0) {
-        handleScrollCenter();
-      } else if (activeButton === 1) {
-        handleScrollRight();
-      } else {
-        handleScrollLeft();
-      }
-    }, 2000)
-  );
-};
-  
-  const handleScrollLeft = () => {
-    scrollToPosition(0);
-    setActiveButton(0);
-    setScrollPosition(0); 
-  };
-  
-  const handleScrollCenter = () => {
-    if (stacksRef.current && selectedProject) { 
-      const containerWidth = stacksRef.current.clientWidth;
-      const middlePosition = (stacksRef.current.scrollWidth - containerWidth) / 2;
-      stacksRef.current.scrollTo({ left: middlePosition, behavior: "smooth" });
-      setScrollPosition(Math.floor(selectedProject.images.length / 2));
-      setActiveButton(1);
-    }
-  };
-  
-  const handleScrollRight = () => {
-    if (selectedProject) { 
-      const isLastPosition = scrollPosition >= selectedProject.images.length - 1;
-  
-      if (isLastPosition) {
-        handleScrollLeft();
-      } else {
-        const newPosition = scrollPosition + 1;
-        scrollToPosition(newPosition);
-        setScrollPosition(newPosition);
-        setActiveButton(2);
-      }
-    }
-  };
-  
-  useEffect(() => {
-    if (selectedProject) { 
-      autoScroll();
-    }
-  
-    return () => {
-      if (intervalId) {
-        clearInterval(intervalId);
-      }
-    };
-  }, [activeButton, selectedProject]);
 
   return (
     <>
@@ -177,31 +100,53 @@ const autoScroll = () => {
                     </li>
                   ))}
                 </ul>
-                <div className={styles.imagesCard} ref={stacksRef}>
-  <div className={styles.stacks}>
-    {selectedProject.images.map((stack, index) => (
-      <div className={styles.stackItem} key={index}>
-        <img src={getImage(stack)} alt={`${selectedProject.name} - ${index + 1}`} />
-      </div>
-    ))}
-  </div>
-</div>
-
-<div className={styles.buttonContainer}>
-  {selectedProject.images.map((_, index) => (
-    <button
-      key={index}
-      onClick={() => scrollToPosition(index)}
-      className={`${styles.scrollButton} ${activeButton === index ? styles.activeButton : ''}`}
-    />
-  ))}
-</div>
+                <div className={styles.imagesCard}>
+                  <div className={styles.stackItem}>
+                    <img
+                      src={getImage(selectedProject.images)}
+                      alt={selectedProject.name}
+                    />
+                  </div>
+                </div>
               </div>
             </div>
+            <Banner />
           </>
         ) : (
           <p>Projeto não encontrado.</p>
         )}
+        <div className={styles.caracteristicsContainer}>
+            <h1>
+            Principais características de um site padrão da DevRoom
+            </h1>
+          <div className={styles.layoutCard}>
+            <div className={styles.text}>
+              <h3>
+              Layout responsivo:
+              </h3>
+              <span>
+              Oferecemos desenvolvimento de layouts responsivos que permitem que seu site se adapte automaticamente a diferentes tamanhos de tela, proporcionando uma experiência de usuário consistente em dispositivos como desktops, tablets e smartphones. Utilizamos grids flexíveis, imagens ajustáveis e media queries para garantir que a interface e o conteúdo se adaptem de forma fluida e otimizada, valorizando cada detalhe do seu projeto em qualquer resolução de tela.
+              </span>
+            </div>
+            <div className={styles.imagemLayout}>
+
+            </div>
+          </div>
+          <div className={styles.contentCard}>
+            <div className={styles.imagemContent}>
+
+            </div>
+            <div className={styles.text}>
+            <h3>
+              Otimização de conteúdo:
+              </h3>
+              <span>
+              Nosso serviço de Otimização de Conteúdo garante que o conteúdo do seu site seja relevante, atrativo e ajustado para alcançar melhor desempenho em motores de busca. Com técnicas de SEO, análise de palavras-chave e estruturação eficiente, maximizamos a visibilidade do seu site, melhorando o ranqueamento e a experiência do usuário. Esse serviço assegura que seu conteúdo seja claro, organizado e acessível, aumentando o alcance e engajamento do público-alvo.
+              </span>
+            </div>
+          </div>
+        </div>
+        <WhatsContact />
         <Team />
         <Footer iconColor="white" id="details" textColor="white" />
       </div>

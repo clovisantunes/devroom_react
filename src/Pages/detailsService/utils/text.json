@@ -1,0 +1,106 @@
+[
+    {
+    "id": "marketing",
+    "title": "Marketing Digital",
+    "backgroundMain": "marketing.png", 
+    "subTitle": [
+        "Estratégias de Crescimento",
+        "Otimização de Campanhas"
+    ],
+    "description": [
+        "Nossas estratégias de crescimento são projetadas para ajudar sua marca a alcançar um público mais amplo e engajar com ele de forma significativa. Utilizamos análises detalhadas e insights de mercado para desenvolver campanhas personalizadas que maximizam o retorno sobre o investimento. Acreditamos que um marketing digital eficaz começa com uma compreensão profunda do seu público-alvo e da dinâmica do seu setor.",
+        "A otimização de campanhas é essencial para garantir que cada real investido gere resultados. Analisamos constantemente o desempenho das suas campanhas de Google Ads, Facebook Ads e E-mail Marketing para ajustar estratégias em tempo real. Com o uso de ferramentas de análise avançadas, garantimos que seus anúncios atinjam as pessoas certas, no momento certo, com a mensagem certa."
+    ],
+    "images": [
+        "path/to/image1.jpg", 
+        "path/to/image2.jpg",
+        "path/to/image3.jpg"
+    ],
+    "services": [
+        "Campanhas Google Ads",
+        "E-mail Marketing",
+        "Google Analytics",
+        "Campanhas Facebook Ads",
+        "Campanhas Instagram Ads",
+        "Tags de conversão"
+    ]
+},
+    {
+    "id": "design",
+    "title": "Design Gráfico",
+    "backgroundMain": "#161616", 
+    "subTitle": [
+        "Estratégias de Crescimento",
+        "Otimização de Campanhas"
+    ],
+    "description": [
+        "Nossas estratégias de crescimento são projetadas para ajudar sua marca a alcançar um público mais amplo e engajar com ele de forma significativa. Utilizamos análises detalhadas e insights de mercado para desenvolver campanhas personalizadas que maximizam o retorno sobre o investimento. Acreditamos que um marketing digital eficaz começa com uma compreensão profunda do seu público-alvo e da dinâmica do seu setor.",
+        "A otimização de campanhas é essencial para garantir que cada real investido gere resultados. Analisamos constantemente o desempenho das suas campanhas de Google Ads, Facebook Ads e E-mail Marketing para ajustar estratégias em tempo real. Com o uso de ferramentas de análise avançadas, garantimos que seus anúncios atinjam as pessoas certas, no momento certo, com a mensagem certa."
+    ],
+    "images": [
+        "path/to/image1.jpg", 
+        "path/to/image2.jpg",
+        "path/to/image3.jpg"
+    ],
+    "services": [
+        "Campanhas Google Ads",
+        "E-mail Marketing",
+        "Google Analytics",
+        "Campanhas Facebook Ads",
+        "Campanhas Instagram Ads",
+        "Tags de conversão"
+    ]
+},
+    {
+    "id": "web",
+    "title": "Web Design",
+    "backgroundMain": "#161616", 
+    "subTitle": [
+        "Estratégias de Crescimento",
+        "Otimização de Campanhas"
+    ],
+    "description": [
+        "Nossas estratégias de crescimento são projetadas para ajudar sua marca a alcançar um público mais amplo e engajar com ele de forma significativa. Utilizamos análises detalhadas e insights de mercado para desenvolver campanhas personalizadas que maximizam o retorno sobre o investimento. Acreditamos que um marketing digital eficaz começa com uma compreensão profunda do seu público-alvo e da dinâmica do seu setor.",
+        "A otimização de campanhas é essencial para garantir que cada real investido gere resultados. Analisamos constantemente o desempenho das suas campanhas de Google Ads, Facebook Ads e E-mail Marketing para ajustar estratégias em tempo real. Com o uso de ferramentas de análise avançadas, garantimos que seus anúncios atinjam as pessoas certas, no momento certo, com a mensagem certa."
+    ],
+    "images": [
+        "path/to/image1.jpg", 
+        "path/to/image2.jpg",
+        "path/to/image3.jpg"
+    ],
+    "services": [
+        "Campanhas Google Ads",
+        "E-mail Marketing",
+        "Google Analytics",
+        "Campanhas Facebook Ads",
+        "Campanhas Instagram Ads",
+        "Tags de conversão"
+    ]
+},
+    {
+    "id": "suporte",
+    "title": "Suporte tecnico",
+    "backgroundMain": "#161616", 
+    "subTitle": [
+        "Estratégias de Crescimento",
+        "Otimização de Campanhas"
+    ],
+    "description": [
+        "Nossas estratégias de crescimento são projetadas para ajudar sua marca a alcançar um público mais amplo e engajar com ele de forma significativa. Utilizamos análises detalhadas e insights de mercado para desenvolver campanhas personalizadas que maximizam o retorno sobre o investimento. Acreditamos que um marketing digital eficaz começa com uma compreensão profunda do seu público-alvo e da dinâmica do seu setor.",
+        "A otimização de campanhas é essencial para garantir que cada real investido gere resultados. Analisamos constantemente o desempenho das suas campanhas de Google Ads, Facebook Ads e E-mail Marketing para ajustar estratégias em tempo real. Com o uso de ferramentas de análise avançadas, garantimos que seus anúncios atinjam as pessoas certas, no momento certo, com a mensagem certa."
+    ],
+    "images": [
+        "path/to/image1.jpg", 
+        "path/to/image2.jpg",
+        "path/to/image3.jpg"
+    ],
+    "services": [
+        "Campanhas Google Ads",
+        "E-mail Marketing",
+        "Google Analytics",
+        "Campanhas Facebook Ads",
+        "Campanhas Instagram Ads",
+        "Tags de conversão"
+    ]
+}
+]
