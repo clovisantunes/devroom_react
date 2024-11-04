@@ -1,106 +1,102 @@
 [
     {
-    "id": "marketing",
-    "title": "Marketing Digital",
-    "backgroundMain": "marketing.png", 
-    "subTitle": [
-        "Estratégias de Crescimento",
-        "Otimização de Campanhas"
-    ],
-    "description": [
-        "Nossas estratégias de crescimento são projetadas para ajudar sua marca a alcançar um público mais amplo e engajar com ele de forma significativa. Utilizamos análises detalhadas e insights de mercado para desenvolver campanhas personalizadas que maximizam o retorno sobre o investimento. Acreditamos que um marketing digital eficaz começa com uma compreensão profunda do seu público-alvo e da dinâmica do seu setor.",
-        "A otimização de campanhas é essencial para garantir que cada real investido gere resultados. Analisamos constantemente o desempenho das suas campanhas de Google Ads, Facebook Ads e E-mail Marketing para ajustar estratégias em tempo real. Com o uso de ferramentas de análise avançadas, garantimos que seus anúncios atinjam as pessoas certas, no momento certo, com a mensagem certa."
-    ],
-    "images": [
-        "path/to/image1.jpg", 
-        "path/to/image2.jpg",
-        "path/to/image3.jpg"
-    ],
-    "services": [
-        "Campanhas Google Ads",
-        "E-mail Marketing",
-        "Google Analytics",
-        "Campanhas Facebook Ads",
-        "Campanhas Instagram Ads",
-        "Tags de conversão"
-    ]
-},
+        "id": "marketing",
+        "title": "Marketing Digital",
+        "backgroundMain": "marketing.png",
+        "subTitle": [
+            "Estratégias de Crescimento",
+            "Otimização de Campanhas"
+        ],
+        "description": [
+            "Nosso serviço de Marketing Digital é focado em ajudar sua marca a expandir sua presença online e alcançar seu público-alvo com precisão. Desenvolvemos estratégias de crescimento personalizadas que utilizam uma combinação de dados e criatividade para construir campanhas que impactam e engajam o público. Compreendemos a importância de cada detalhe — desde a segmentação de público até a escolha de palavras-chave e os formatos de anúncios, buscando sempre maximizar o ROI e melhorar o desempenho geral da sua marca.",
+            "A otimização de campanhas é uma etapa contínua e essencial para garantir que cada investimento gere resultados significativos. Analisamos de forma constante o desempenho de campanhas no Google Ads, Facebook Ads e E-mail Marketing, ajustando as estratégias conforme os dados em tempo real. Com o uso de ferramentas avançadas de análise, garantimos que sua mensagem chegue ao público certo, no momento ideal, e da maneira mais eficaz. Nosso objetivo é potencializar o impacto das suas campanhas digitais e alcançar resultados mensuráveis."
+        ],
+        "images": [
+            "image1.png",
+            "image2.png"
+        ],
+        "services": [
+            "Campanhas Google Ads",
+            "E-mail Marketing",
+            "Google Analytics",
+            "Campanhas Facebook Ads",
+            "Campanhas Instagram Ads",
+            "Tags de conversão"
+        ]
+    },
     {
-    "id": "design",
-    "title": "Design Gráfico",
-    "backgroundMain": "#161616", 
-    "subTitle": [
-        "Estratégias de Crescimento",
-        "Otimização de Campanhas"
-    ],
-    "description": [
-        "Nossas estratégias de crescimento são projetadas para ajudar sua marca a alcançar um público mais amplo e engajar com ele de forma significativa. Utilizamos análises detalhadas e insights de mercado para desenvolver campanhas personalizadas que maximizam o retorno sobre o investimento. Acreditamos que um marketing digital eficaz começa com uma compreensão profunda do seu público-alvo e da dinâmica do seu setor.",
-        "A otimização de campanhas é essencial para garantir que cada real investido gere resultados. Analisamos constantemente o desempenho das suas campanhas de Google Ads, Facebook Ads e E-mail Marketing para ajustar estratégias em tempo real. Com o uso de ferramentas de análise avançadas, garantimos que seus anúncios atinjam as pessoas certas, no momento certo, com a mensagem certa."
-    ],
-    "images": [
-        "path/to/image1.jpg", 
-        "path/to/image2.jpg",
-        "path/to/image3.jpg"
-    ],
-    "services": [
-        "Campanhas Google Ads",
-        "E-mail Marketing",
-        "Google Analytics",
-        "Campanhas Facebook Ads",
-        "Campanhas Instagram Ads",
-        "Tags de conversão"
-    ]
-},
+        "id": "design",
+        "title": "Design Gráfico",
+        "backgroundMain": "design.png",
+        "subTitle": [
+            "Identidade Visual",
+            "Experiência do Usuário"
+        ],
+        "description": [
+            "Nosso serviço de design gráfico ajuda sua marca a transmitir uma imagem visual única e impactante, refletindo sua essência e valores. Criamos uma identidade visual completa que inclui desde o desenvolvimento de logos até o design de interfaces digitais. Trabalhamos para que sua marca se destaque no mercado, com uma estética coesa e atraente que gera reconhecimento e confiabilidade junto ao seu público.",
+            "Além da identidade visual, oferecemos design de interface (UI) e experiência do usuário (UX), focados em tornar cada interação intuitiva e prazerosa. Nossa abordagem abrange desde o planejamento inicial com protótipos e wireframes até o desenvolvimento de interfaces adaptadas para dispositivos móveis e desktops, sempre pensando em uma navegação eficiente e em designs que maximizam a satisfação do usuário e os objetivos da sua marca."
+        ],
+        "images": [
+            "design2.png",
+            "design3.png"
+        ],
+        "services": [
+            "Design de Interface de Usuário (UI)",
+            "Experiência do Usuário (UX)",
+            "Logos",
+            "Prototipagem e Wireframing",
+            "Design de Publicidade Digital",
+            "Identidade Visual"
+        ]
+    },
     {
-    "id": "web",
-    "title": "Web Design",
-    "backgroundMain": "#161616", 
-    "subTitle": [
-        "Estratégias de Crescimento",
-        "Otimização de Campanhas"
-    ],
-    "description": [
-        "Nossas estratégias de crescimento são projetadas para ajudar sua marca a alcançar um público mais amplo e engajar com ele de forma significativa. Utilizamos análises detalhadas e insights de mercado para desenvolver campanhas personalizadas que maximizam o retorno sobre o investimento. Acreditamos que um marketing digital eficaz começa com uma compreensão profunda do seu público-alvo e da dinâmica do seu setor.",
-        "A otimização de campanhas é essencial para garantir que cada real investido gere resultados. Analisamos constantemente o desempenho das suas campanhas de Google Ads, Facebook Ads e E-mail Marketing para ajustar estratégias em tempo real. Com o uso de ferramentas de análise avançadas, garantimos que seus anúncios atinjam as pessoas certas, no momento certo, com a mensagem certa."
-    ],
-    "images": [
-        "path/to/image1.jpg", 
-        "path/to/image2.jpg",
-        "path/to/image3.jpg"
-    ],
-    "services": [
-        "Campanhas Google Ads",
-        "E-mail Marketing",
-        "Google Analytics",
-        "Campanhas Facebook Ads",
-        "Campanhas Instagram Ads",
-        "Tags de conversão"
-    ]
-},
+        "id": "web",
+        "title": "Web Design",
+        "backgroundMain": "web.jpeg",
+        "subTitle": [
+            "Desenvolvimento Responsivo",
+            "Otimização para SEO"
+        ],
+        "description": [
+            "Nosso serviço de web design é voltado para criar uma presença digital que combine estética, funcionalidade e performance. Desenvolvemos sites responsivos, que oferecem uma experiência de navegação perfeita em todos os dispositivos, e garantimos que seu site tenha uma interface intuitiva e atraente. Cada projeto é adaptado para atender às necessidades do seu negócio, fortalecendo sua imagem online e oferecendo uma estrutura técnica robusta para que seu site seja ágil e confiável.",
+            "Além do desenvolvimento, focamos na otimização para SEO para que seu site tenha uma melhor performance nos motores de busca e seja facilmente encontrado por clientes potenciais. Oferecemos também suporte para hospedagem e manutenção, ajudando sua empresa a se manter competitiva com preços acessíveis e soluções técnicas que evoluem junto com as tendências digitais."
+        ],
+        "images": [
+            "web2.png",
+            "web3.png"
+        ],
+        "services": [
+            "Desenvolvimento de Sites",
+            "Layouts Responsivos",
+            "Hospedagem",
+            "SEO e Otimizações",
+            "Preços Acessíveis",
+            "Criação de Blogs de Notícias"
+        ]
+    },
     {
-    "id": "suporte",
-    "title": "Suporte tecnico",
-    "backgroundMain": "#161616", 
-    "subTitle": [
-        "Estratégias de Crescimento",
-        "Otimização de Campanhas"
-    ],
-    "description": [
-        "Nossas estratégias de crescimento são projetadas para ajudar sua marca a alcançar um público mais amplo e engajar com ele de forma significativa. Utilizamos análises detalhadas e insights de mercado para desenvolver campanhas personalizadas que maximizam o retorno sobre o investimento. Acreditamos que um marketing digital eficaz começa com uma compreensão profunda do seu público-alvo e da dinâmica do seu setor.",
-        "A otimização de campanhas é essencial para garantir que cada real investido gere resultados. Analisamos constantemente o desempenho das suas campanhas de Google Ads, Facebook Ads e E-mail Marketing para ajustar estratégias em tempo real. Com o uso de ferramentas de análise avançadas, garantimos que seus anúncios atinjam as pessoas certas, no momento certo, com a mensagem certa."
-    ],
-    "images": [
-        "path/to/image1.jpg", 
-        "path/to/image2.jpg",
-        "path/to/image3.jpg"
-    ],
-    "services": [
-        "Campanhas Google Ads",
-        "E-mail Marketing",
-        "Google Analytics",
-        "Campanhas Facebook Ads",
-        "Campanhas Instagram Ads",
-        "Tags de conversão"
-    ]
-}
+        "id": "suporte",
+        "title": "Suporte Técnico",
+        "backgroundMain": "suporte.jpg",
+        "subTitle": [
+            "Diagnóstico Rápido",
+            "Serviços de Manutenção"
+        ],
+        "description": [
+            "Nosso suporte técnico cobre uma ampla gama de serviços para manter seus equipamentos em pleno funcionamento. Desde diagnósticos rápidos até reparos especializados, nosso objetivo é oferecer soluções eficazes e personalizadas para prolongar a vida útil de seus dispositivos. Realizamos desde a manutenção preventiva e upgrades de computadores até a remoção de vírus e malware, garantindo que seu sistema funcione com eficiência e segurança.",
+            "Além disso, oferecemos suporte completo para backup e recuperação de dados, essencial para proteger suas informações mais valiosas. Realizamos manutenção de nobreaks e atualizações de software, proporcionando maior estabilidade e desempenho para seu sistema. Com uma equipe qualificada e pronta para oferecer assistência em diferentes necessidades tecnológicas, nosso suporte técnico é a solução confiável para empresas e usuários que buscam um atendimento rápido e de qualidade."
+        ],
+        "images": [
+            "suporte2.png",
+            "suporte3.png"
+        ],
+        "services": [
+            "Diagnóstico e Reparação de Notebooks",
+            "Remoção de Vírus e Malware",
+            "Manutenção e Upgrade de Computadores",
+            "Backup e Recuperação de Dados",
+            "Manutenção de Nobreaks",
+            "Instalação de Software e Atualizações"
+        ]
+    }
 ]
