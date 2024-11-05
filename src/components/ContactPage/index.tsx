@@ -18,6 +18,7 @@ export default function ContactPage({ lang }: ContactPageProps) {
     name: "",
     email: "",
     phone: "",
+    reason: "",
     message: ""
   });
 
@@ -49,19 +50,19 @@ export default function ContactPage({ lang }: ContactPageProps) {
       return;
     }
 
-    const { name, email, phone, message } = formData;
+    const { name, email, phone, reason, message } = formData;
     const templateParams = {
       to_name: name,
       from_name: name,
       email: email,
       phone: phone,
-      message: `Olá,\n\nVocê possui uma nova mensagem de ${name}:\n\nDetalhes do contato:\nNome: ${name}\nEmail: ${email}\nTelefone: ${phone} \n\n${message}`
+      message: `Olá,\n\nVocê possui uma nova mensagem de ${name}:\n\nDetalhes do contato:\nNome: ${name}\nEmail: ${email}\nTelefone: ${phone}\nMotivo: ${reason}\n\n${message}`
     };
 
     emailjs.send('service_lgvm5ri', 'template_ne1bh6f', templateParams, 'iO2lpoB-bfL_4roVH')
       .then((response) => {
         toast.success('Email enviado com sucesso!', {
-          position: "top-right",
+          position: "bottom-right",
           autoClose: 5000,
           hideProgressBar: false,
           closeOnClick: true,
@@ -74,6 +75,7 @@ export default function ContactPage({ lang }: ContactPageProps) {
           name: "",
           email: "",
           phone: "",
+          reason: "",
           message: ""
         });
       }, (err) => {
@@ -98,38 +100,59 @@ export default function ContactPage({ lang }: ContactPageProps) {
       </div>
       <form onSubmit={handleSubmit}>
         <div className={styles.dadosComponent}>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder={t('enterName')}
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="text"
-            id="email"
-            name="email"
-            placeholder={t('enterEmail')}
-            value={formData.email}
-            onChange={handleChange}
-          />
-          <input
-            type="text"
-            id="phone"
-            name="phone"
-            placeholder={t('enterPhone')}
-            value={formData.phone}
-            onChange={handleChange}
-          />
+          <div className={styles.inputCards}>
+            <div className={styles.inputInfo}>
+
+            <label htmlFor="name">{t('enterName')}</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              value={formData.name}
+              onChange={handleChange}
+              required
+              />
+              </div>
+              <div className={styles.inputInfo}>
+            <label htmlFor="email">{t('enterEmail')}</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+            />
+          </div>
+          </div>
+          <div className={styles.inputCards}>
+          <div className={styles.inputInfo}>
+            <label htmlFor="phone">{t('enterPhone')}</label>
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+            />
+ </div>
+ <div className={styles.inputInfo}>
+            <label htmlFor="reason">Motivo do contato</label>
+            <input
+              type="text"
+              id="reason"
+              name="reason"
+              value={formData.reason}
+              onChange={handleChange}
+            />
+            </div>
+          </div>
         </div>
 
         <div className={styles.textAreaCard}>
+          <label htmlFor="message">Mensagem</label>
           <textarea
             id="message"
             name="message"
-            placeholder={t('enterMessage')}
             value={formData.message}
             onChange={handleChange}
           />

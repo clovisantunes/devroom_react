@@ -2,8 +2,8 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 8px;
-    margin-top: 50px;
-    width: 70%;
+    margin-bottom: 50px;
+    width: 100%;
     height: 100%;
     justify-content: center;
 }
@@ -29,14 +29,14 @@
 }
 .servicesItem {
     width: 320px;
-    height: 100%;
+    height: 360px;
     margin: 10px;
     background-color: #F4F4F4;
     margin-right: 36px;
     border-radius: 16px;
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-    padding: 24px;
+    padding: 16px;
     h3 {
         color: #0C0C0C;
         font-weight: bold;
