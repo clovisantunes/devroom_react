@@ -182,26 +182,48 @@
 
 
 
-@media (max-width: 1366px) {
+@media (max-width: 1080px) {
+  .main_container{
+    height: 100%;
+    margin-bottom: 2em;
+  }
+  
+  .main_box {
+    width: 50%;
+    h1{
+      font-size: 36px;
+    }
+    span{
+      font-size: 24px;
+    }
+  }
+  .cardMain{
+    flex-direction: row;
+  }
+  .imagesMain{
+    img{
+      width: 280px;
+    }
+  }
   .main{
-    background-position: center;
   }
   .main_buttons {
-    width: 60%;
   }
 }
 
-@media (max-width: 768px) {
-  .main_box h1 {
-    font-size: 36px;
+@media (max-width: 780px) {
+  .cardMain{
+    flex-direction: column;
+    margin-top: 4em;
   }
 
-  .main_box h2 {
-    font-size: 24px;
-  }
+ .imagesMain{
+  height: 24em;
+    margin: 0;
+ }
 
-  .main_box span {
-    font-size: 8px;
+  .main_box{
+    width: 80%;
   }
 
   .typewriter {
@@ -210,6 +232,18 @@
 
   .main_buttons {
     width: 80%;
+  }
+  .texts{
+    align-items: center;
+    text-align: center;
+  }
+  .main_buttons {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    .buttonsItem{
+      margin-bottom: 16px;
+    }
   }
 }
 
@@ -236,15 +270,11 @@
     font-size: 8px;
   }
 
-  .main_buttons {
-    flex-direction: column;
-    align-items: center;
-  }
+
 }
 
 @media (max-width: 400px) {
   .main_container{
-    height: 24em;
   }
  
   .main_box span {

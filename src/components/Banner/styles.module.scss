@@ -75,6 +75,7 @@
         width: 90%;
         margin-left: 5%;
         text-align: center;
+        align-items: center;
     }
 
     .bannerContent h2 {
@@ -86,8 +87,7 @@
     }
 
     .bannerImage {
-        position: relative;
-        width: 100%;
-        height: 200px; 
+        display: none;
+
     }
 }

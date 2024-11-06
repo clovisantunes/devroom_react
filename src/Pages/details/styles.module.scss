@@ -191,3 +191,48 @@
     background-repeat: no-repeat;
     background-image: url('../../assets/images/content.png');
   }
+  @media(max-width: 1080px){
+    .detailsContainer{
+        .caracteristicsContainer{
+            .layoutCard, .contentCard{
+                width: 90%;
+                height: 100%;
+                margin-bottom: 2em;
+                align-items: center;
+            }
+        }
+    }
+    .aboutProjectContainer{
+        .aboutCard{
+            h3{
+                font-size: 20px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+
+}
+  @media(max-width: 780px){
+    .detailsContainer{
+        .caracteristicsContainer{
+            .layoutCard, .contentCard{
+                flex-direction: column;
+                .text{
+                    width: 90%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .aboutProjectContainer{
+        flex-direction: column;
+        .aboutCard{
+            width: 90%;
+        }
+    }
+    .techCard{
+       width: 90%;
+    }
+  }

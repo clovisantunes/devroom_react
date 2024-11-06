@@ -91,10 +91,14 @@ export default function Footer({
               />
           </div>
               </div>
-          <div className={styles.socialSVG}>
-            <FaFacebook />
-            <RiInstagramFill />
-          </div>
+              <div className={styles.socialSVG}>
+  <a href="https://www.facebook.com/profile.php?id=61559027484616" target="_blank" rel="noopener noreferrer">
+    <FaFacebook />
+  </a>
+  <a href="https://www.instagram.com/devroom_oficial/" target="_blank" rel="noopener noreferrer">
+    <RiInstagramFill />
+  </a>
+</div>
       </div>
     </div>
   );

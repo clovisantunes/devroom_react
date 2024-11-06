@@ -91,6 +91,12 @@
     margin-left: -1em; 
 }
 
+@media(max-width: 1366px){
+    .servicesItems{
+        grid-template-columns: repeat(2, 2fr);
+    }
+}
+
 @media(max-width: 768px){
     .servicesItems{
         display: flex;
@@ -104,6 +110,10 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 250px;
+        width: 70%;
+        .nameLogo{
+            align-items: center;
+        }
+        text-align: center;
     }
 }

@@ -298,15 +298,28 @@
   .portfolioContainer .portfolioComponent .portifolioCard .portItens {
     width: 100%;
   }
+  .portCard{
+    width: 40%;
+    height: auto;
+  }
 }
 
-@media (max-width: 980px) {
+@media (max-width: 780px) {
   .portfolioContainer .portfolioComponent .portifolioCard {
     width: 100%;
     display: flex;
     flex-direction: column;
   }
-
+  .filters{
+    width: 100%;
+  }
+  .portfolioComponent{
+    width: 100%;
+  }
+  .portCard{
+    width: 80%;
+    height: auto;
+  }
   .portfolioContainer .portfolioComponent .portifolioCard .portItens {
     width: 100%;
     display: flex;
@@ -329,31 +342,8 @@
   .loadingButton{
     width: 50%;
   }
-  .portfolioComponent{
-    animation: heightTransitionReverseResposive .8s forwards;
-  }
-  .portfolioComponent.expanded {
-    animation: heightTransitionResponsive .8s forwards;
-  }
+ 
   .containerPlus{
     height: 80em;
   }
 } 
-@keyframes heightTransitionResponsive{
-  from{
-    height: 44em;
-
-  }
-  to{
-    height: 130em;
-  }
-}
-@keyframes heightTransitionReverseResposive{
-  from{
-    height: 130em;
-
-  }
-  to{
-    height: 44em;
-  }
-}

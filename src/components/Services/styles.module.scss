@@ -118,11 +118,11 @@
   }
 
   @media (max-width: 1366px){
-    .servicesContainer .servicesCard{
+    .servicesCard{
       width: 100%;
     }
-    .servicesContainer .servicesImage{
-      display: none;
+    .servicesContainer .servicesCard{
+      flex-direction: column;
     }
    .imageDev{
       display: none;
