@@ -164,7 +164,7 @@ export default function ContactPage({ lang }: ContactPageProps) {
             height="2em"
             localPath=""
             text={t('submit')}
-            width="25%"
+            width="50%"
             click={handleSubmit}
           />
         </div>

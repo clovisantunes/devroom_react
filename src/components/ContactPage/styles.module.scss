@@ -90,74 +90,12 @@
     align-items: center;
     justify-content: center;
 }
-@media (max-width:768px) {
-    .contactContainer{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+@media (max-width:780px) {
+    .inputCards{
         flex-direction: column;
-        form{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-    }
-    .titleText{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 16px;
-        h1{
-            font-size: 24px;
-        }
-    }
-    .subTexts{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        h2{
-          font-size: 18px;
-          margin-bottom: 8px;
-        }
-    }
-    .dadosComponent{
-        width: 80%;
-    }
-    .textAreaCard{
-        width: 80%;
-    }
-}
-@media (max-width:480px) {
-    .contactContainer{
-        form{
-            width: 100%;
-        }
-
-    }
-    .titleText{
-        h1{
-            font-size: 36px;
-        }
-    }
-    .subTexts{
-
-        h2{
-          font-size: 16px;
-     
-        }
-    }
-    .dadosComponent{
-        display: flex;
-        flex-direction: column;
-        .formItems{
-            width: 100%;
-            margin-bottom: 16px;
-        }
-    }
-    .buttonFormCard{
         width: 100%;
+        .inputInfo{
+            width: 90%;
+        }
     }
 }

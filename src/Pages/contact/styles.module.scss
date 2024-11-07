@@ -85,14 +85,18 @@
 
 }
 
-@media (max-width:768px) {
+@media (max-width:1080px) {
     .contactContainer{
-        margin-top: 0;
+        flex-direction: column;
+        align-items: center;
     }
-    .imageCard{
-        display: none;
-    }
-    .contactForm{
-        width: 100%;
-    }
+  .textsContact{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contactForm{
+    width: 80%;
+  }
 }
