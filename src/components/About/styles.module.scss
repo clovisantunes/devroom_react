@@ -190,6 +190,29 @@
 .aboutButton{
     margin-left: 2em;
 }
+@media (max-width:1366px) {
+    .about_container{
+
+        .aboutCard{
+            width: 100%;
+        }
+    }
+           .imgCard {
+            width: 60%;
+               img{  
+                   width: 360px;
+                }
+        }
+ }
+    
+@media (max-width:1366px) {
+           .imgCard {
+            display: none;
+              
+        }
+ }
+    
+
 @media (max-width:768px) {
     .about_container{
         justify-content: center;
@@ -236,7 +259,7 @@
 
 
 
-@media (max-width:420px) {
+@media (max-width:480px) {
     .about_container{
         height: 100%;
         .aboutCard{
