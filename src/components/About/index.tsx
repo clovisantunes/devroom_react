@@ -10,6 +10,8 @@ import { FaWhatsapp } from "react-icons/fa";
 import image1 from '../../assets/images/about1.png';
 import image2 from '../../assets/images/about2.png';
 import image3 from '../../assets/images/about3.png';
+import { WhatsAppLink } from "../Utils/WhatsLink";
+import { useImageCarousel } from "../Utils/getImagesCarousel/getImagens";
 
 interface AboutProps {
   id: string;
@@ -20,11 +22,7 @@ const img = imgPath;
 
 export default function About({ id, buttonRender }: AboutProps) {
   const { t, i18n } = useTranslation();
-  const phoneNumber = "5551981399275";
-  const customMessage = "Olá! Estou interessado em saber mais informações sobres os planos de desenvolvimento.";
-  const encodeMessage = (message: string) => {
-    return encodeURIComponent(message);
-  };
+ 
 
 
   
@@ -52,35 +50,17 @@ export default function About({ id, buttonRender }: AboutProps) {
     Aos.init({ duration: 2000 });
   }, []);
 
-  const whatsappLink = `https://api.whatsapp.com/send?1=pt_BR&phone=${phoneNumber}&text=${encodeMessage(customMessage)}`;
-  const handleWhatsappClick = () => {
-    window.open(whatsappLink, "_blank");
-  };
+const handleWhatsappClick: () => void = () => {
+  WhatsAppLink();
+};
 
-  const [activeImageIndex, setActiveImageIndex] = useState(0);
   const images = [
     { id: 1, src: image1, alt: "DevRoom Image 1" },
     { id: 2, src: image2, alt: "DevRoom Image 2" },
     { id: 3, src: image3, alt: "DevRoom Image 3" },
   ];
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 10000);
-
-    return () => clearInterval(interval);
-  }, [images.length]);
-
-  const getImageClass = (index: number) => {
-    if (index === activeImageIndex) {
-      return `${styles.imageActive}`;
-    } else if (index === (activeImageIndex + 1) % images.length) {
-      return `${styles.imageSecond}`;
-    } else {
-      return `${styles.imageThird}`;
-    }
-  };
+  const { getImageClass } = useImageCarousel(images);
 
   return (
     <div className={styles.about_container} id={id}>

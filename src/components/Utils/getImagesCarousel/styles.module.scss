@@ -1,0 +1,23 @@
+.imageActive {
+  top: 20%;
+  left: 20%;
+  z-index: 3;
+  opacity: 1;
+  transition: all 0.5s ease; 
+}
+
+.imageSecond {
+  top: 16%;
+  left: 16%;
+  z-index: 2;
+  opacity: 0.8;
+  transition: all 0.5s ease; 
+}
+
+.imageThird {
+  top: 12%;
+  left: 12%;
+  z-index: 1;
+  opacity: 0.4;
+  transition: all 0.5s ease; 
+}

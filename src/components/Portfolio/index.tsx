@@ -123,7 +123,7 @@ const Portfolio = ({ id }: PortfolioProps) => {
   };
 
   const handleProjectClick = (projectId: string) => {
-    navigate(`/details#${projectId.toLowerCase()}`); // Navega para a página com o ID do projeto como hash
+    navigate(`/details#${projectId.toLowerCase()}`);
   };
 
   return (
@@ -145,7 +145,7 @@ const Portfolio = ({ id }: PortfolioProps) => {
           <div
             key={key}
             className={styles.portCard}
-            onClick={() => handleProjectClick(key)} // Adiciona o evento de clique
+            onClick={() => handleProjectClick(key)}
           >
             <img src={project.backgroundImage} alt={`Image for ${project.name}`} />
             <span>{project.name}</span>

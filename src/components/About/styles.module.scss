@@ -190,7 +190,7 @@
 .aboutButton{
     margin-left: 2em;
 }
-@media (max-width:1366px) {
+@media (max-width:1480px) {
     .about_container{
 
         .aboutCard{
@@ -200,12 +200,12 @@
            .imgCard {
             width: 60%;
                img{  
-                   width: 360px;
+                   width: 420px;
                 }
         }
  }
     
-@media (max-width:1366px) {
+@media (max-width:1080px) {
            .imgCard {
             display: none;
               

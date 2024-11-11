@@ -1,10 +1,5 @@
 import styles from './styles.module.scss'
-import { RiComputerLine } from "react-icons/ri";
-import { IoMdCloudDone } from "react-icons/io";
-import { IoIosRocket } from "react-icons/io";
-import { GiPaintBrush } from "react-icons/gi";
 import { useTranslation } from 'react-i18next';
-import { MdOutlinePaid } from "react-icons/md";
 import { MdOutlineDesignServices } from "react-icons/md";
 import { BsMegaphone } from "react-icons/bs";
 import { HiOutlinePaintBrush } from "react-icons/hi2";
@@ -65,7 +60,6 @@ export default function ServicesItems() {
                 {services.map((service, index) => (
                     <div key={index} className={styles.servicesItem}>
                         <a href={`detailService#${service.id}`}>
-
                         <div className={styles.nameLogo}>
                             <span>{service.logo}</span>
                             <div className={styles.name}>

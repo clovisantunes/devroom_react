@@ -1,17 +1,11 @@
 import { ButtonIcon } from '../UI/ButtonUi';
+import { WhatsAppLink } from '../Utils/WhatsLink';
 import styles from './styles.module.scss';
 
 export default function Banner() {
-    const encodeMessage = (message: string) => {
-        return encodeURIComponent(message);
-    };
-    const phoneNumber = "5551981399275";
-    const customMessage = "Olá! Estou interessado em saber mais informações sobre os planos de desenvolvimento.";
-    const whatsappLink = `https://api.whatsapp.com/send?1=pt_BR&phone=${phoneNumber}&text=${encodeMessage(customMessage)}`;
-
-    const handleWhatsappClick = () => {
-        window.open(whatsappLink, '_blank');
-    };
+    const handleWhatsappClick: () => void = () => {
+        WhatsAppLink();
+      };
     return (
         <>
             <div className={styles.banner}>
