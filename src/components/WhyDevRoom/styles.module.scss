@@ -1,0 +1,125 @@
+.whyDevRoomContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.whyDevRoomCard{
+    width: 70%;
+    text-align: center;
+}
+.whyDevRoomTitle{
+    margin-top: 24px 16px;
+    h1{
+        font-size: 36px;
+        color: #FF0000;
+    }
+    p{
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+}
+.whyDevRoomContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 52em;
+}
+.WhyButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 14%;
+    margin-top: 24px;
+
+    .whyButton {
+        width: 360px;
+        height: 64px;
+        font-size: 18px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 10%;
+        font-weight: 600;
+        border: solid 1px #000000;
+        background-color: #D9D9D9;
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.2s ease; /* Adiciona transições suaves */
+        svg {
+            margin-right: 16px;
+            font-size: 24px;
+            transition: transform 0.2s ease;
+        }
+        &:hover {
+            background-color: #e0e0e0;
+        }
+    }
+
+    .whyButton.active {
+        background-color: #8B0000;
+        color: #fff;
+        border-color: #8B0000;
+        transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
+    }
+}
+.WhyContent {
+    width: 60%;
+    transition: opacity 0.3s ease; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title {
+    display: flex;
+    flex-wrap: wrap; 
+    text-align: center;
+    justify-content: center;
+    gap: 8px; 
+    p {
+        font-size: 32px;
+        color: #FF0000;
+    }
+    p:nth-child(2) {
+        font-size: 32px;
+        color: #FFFFFF;
+    }
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 80%;
+    p {
+        color: #FFFFFF;
+    }
+
+}
+.item{
+    display: flex;
+    flex-direction: column;
+}
+.itemContent{
+    display: flex;
+    flex-direction: row;
+    .icon{
+
+        svg{
+            font-size: 48px;
+            color: #8B0000;
+            margin-right: 16px;
+        }
+    }
+}
+.subtitle{
+    p{
+        font-size: 24px;
+        font-weight: bold;
+    }
+}
+.description{
+    text-align: left;
+    margin-left: 10%;
+    p{
+        font-size: 18px;
+    }
+}

@@ -20,8 +20,8 @@ export default function Main({ id }: MainProps) {
   };
 
   const images = [
-    { id: 1, src: image1, alt: "DevRoom Image 1" },
-    { id: 2, src: image2, alt: "DevRoom Image 2" },
+    { id: 1, src: image2, alt: "DevRoom Image 1" },
+    { id: 2, src: image1, alt: "DevRoom Image 2" },
     { id: 3, src: image3, alt: "DevRoom Image 3" },
   ];
 
@@ -29,13 +29,13 @@ export default function Main({ id }: MainProps) {
     { id: 1, title: t("textTitle"), text: t("bannerTitle") },
     {
       id: 2,
-      title: "Web Design",
-      text: "Soluções de desenvolvimento web feitas para impulsionar o crescimento do seu negócio.",
+      title: "Personalizado para você.",
+      text: "Do design ao conteúdo, tudo feito sob medida para o seu negócio.",
     },
     {
       id: 3,
-      title: "Suporte Tecnico",
-      text: "Suporte técnico de confiança para manter seu negócio funcionando.",
+      title: "Resultados que impressionam.",
+      text: "Maximize conversões com páginas otimizadas para o seu público.",
     },
   ];
 

@@ -16,6 +16,7 @@ import { SiNextdotjs, SiPostgresql, SiTypescript } from "react-icons/si";
 import Team from "../../components/Team";
 import Banner from "../../components/Banner";
 import WhatsContact from "../../components/UI/WhatsContact";
+import ProductsList from "../../components/ProductCard";
 
 interface DetailsProps {
   project: string;
@@ -119,6 +120,20 @@ export default function Details() {
         ) : (
           <p>Projeto não encontrado.</p>
         )}
+        <ProductsList
+          buttonLang="Contrate agora"
+          coin="R$"
+          descriptionTitle="Contrate agora"
+          imgPath="https://images"
+          select=""
+          subTitles={['Contrate agora']}
+          textDescription=""
+          title="Contrate agora"
+          titleMain="Contrate agora"
+          utils={['']}
+          values={['  ']}
+
+        />
         <div className={styles.caracteristicsContainer}>
             <h1>
             Principais características de um site padrão da DevRoom

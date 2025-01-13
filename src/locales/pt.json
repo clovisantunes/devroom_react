@@ -5,7 +5,7 @@
     "services": "Serviços",
     "contact": "contato",
     "servicesMain": "Chega de conversa, vamos ao trabalho!",
-    "textTitle":"DevRoom",
+    "textTitle":"Sites incríveis em tempo recorde!",
     "whats": "Entre em contato",
     "text": "Ficou com alguma duvida sobre nosso site?",
     "textContact": "Entre em contato que nos iremos lhe auxiliar.",
@@ -13,7 +13,7 @@
     "subAboutText": "Seja bem-vindo à nossa equipe dedicada à transformação de ideias em realidade digital. Com profundo conhecimento em HTML, CSS, e JavaScript, construímos bases sólidas, elevando a experiência do usuário. Utilizando tecnologias modernas como TypeScript, ReactJS, Next.js e Node.js, desenvolvemos soluções eficientes e escaláveis, proporcionando consistência e desempenho excepcionais de ponta a ponta. Estendemos nossa expertise ao mobile, destacando-nos em React Native, Firebase, Sass e Styled Components. Do frontend ao backend, cada linha de código reflete nosso compromisso com a inovação e qualidade. Junte-se a nós nesta jornada, onde a excelência é a norma e cada aplicação é uma experiência marcante.",
     "textButton": "Contate aqui",
     "subMainText": "Agencia de criação de sites",
-    "projectTitle": "Nossos Serviços",
+    "projectTitle": "Por que escolher a gente?",
     "buttonProject": "Veja mais",
     "addresstTitle": "Endereço",
     "phoneTitle": "Contato",
@@ -36,10 +36,10 @@
     "follow": "Siga-nos",
     "deploy": "Acessar projeto",
     "git": "GitHub",
-    "bannerTitle": "INVISTA SEU TEMPO NO CRESCIMENTO DO SEU NEGÓCIO E DEIXE A CRIAÇÃO DO SITE COM A GENTE.",
+    "bannerTitle": "Crie uma presença digital única e poderosa em até 24 horas.",
     "bannerText": "Seu site pronto em até 14 dias",
     "bannerButton": "Entrar em contato",
-    "serviceText": "Excelência em cada serviço para o seu negócio.",
+    "serviceText": "Entregamos sites de qualidade profissional com preços justos, ajudando você a investir onde importa: no crescimento do seu negócio.",
     "serviceFullText": "Somos responsáveis por transformar ideias em realidade digital, proporcionando consistência e desempenho excepcionais de ponta a ponta. Junte-se a nós nesta jornada, onde a excelência é a norma e cada aplicação é uma experiência marcante.",
     "phasesTitle": "Conheça as etapas de criação de seu site",
     "phasesText": " Veja e entenda o que engloba nossa metodologia e entenda como funciona o nosso processo de desenvolvimento de sites.",
@@ -53,22 +53,22 @@
     "serviceWeb": "Trafego Pago",
     "serviceWebItem1": "Nossa equipe cria conteúdo envolvente e compartilhável que repercute em seu público e gera tráfego orgânico",
   
-    "serviceHost": "Design grafico",
+    "serviceHost": "Sites únicos e alinhados com sua identidade visual.",
     "hostItem1": "Desbloqueie o poder da narrativa visual com nossos serviços especializados de design gráfico, feitos sob medida para elevar e cativar sua marca.",
   
-    "serviceMarketing": "Marketing Digital",
+    "serviceMarketing": "Entrega garantida em até 24 horas.",
     "digitalMarketingItem1": "Eleve a presença online da sua marca com nossas estratégias de marketing digital baseadas em dados. De SEO e marketing de conteúdo",
 
-    "serviceDesign": "Web Design",
+    "serviceDesign": "SEO integrado para que você seja encontrado no Google.",
     "designItem1": "Somos especializados na criação de sites visualmente impressionantes e fáceis de usar que se alinham com a identidade da sua marca e oferecem um desempenho excepcional.",
     
-    "suporteTecnico": "Suporte Tecnico",
+    "suporteTecnico": "Acompanhamento dedicado do início ao fim.",
     "suporteTecnico1": "Suporte especializado em hardware e software, garantindo que seus sistemas funcionem perfeitamente. Estamos prontos para resolver problemas e realizar manutenções para maximizar a eficiência.",
    
     "landingPages": "Criação de Landing Pages",
     "landingPages1": "Desenvolvimento de landing pages que convertem, focadas na experiência do usuário e na identidade da marca.",
 
-    "see": "Nosso Portifolio",
+    "see": "Acelere sua presença online com nossos sites prontos!",
 
     "textModal": "Este projeto foi desenvolvido com as seguintes tecnologias:",
     "technologies": "Tecnologias",

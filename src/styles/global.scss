@@ -45,7 +45,7 @@ $colors-neutral-500: #dee7f8;
 $colors-neutral-600: #b4c1d8;
 $colors-neutral-700: #adb9cf;
 $colors-neutral-800: #8a97ad;
---colors-neutral-900: #4200FF;
+--colors-neutral-900: #FF0000;
 
 $colors-error-50: #ffebeb;
 $colors-error-100: #fdc1c1;
@@ -99,7 +99,7 @@ body {
     font-smooth: antialiased; 
     -webkit-font-smoothing: antialiased; 
     -moz-osx-font-smoothing: grayscale;
-    background-color: #161616;
+    background-color: #121314;
   a{
     color: var(--colors-neutral-100);
     text-decoration: none;

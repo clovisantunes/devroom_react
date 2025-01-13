@@ -63,12 +63,8 @@ export default function Services({ id }: ServicesProps) {
   return (
     <div className={styles.projectsContainer} id={id}>
       <div className={styles.servicesCard}>
-        <div className={styles.textTitle}>
-          <TitleText
-            colorText="#4200FF"
-            text={t('projectTitle')}
-          />
-        </div>
+        
+        
         <div className={styles.projectsCard}> 
           <div className={styles.spanText}>
             <span className={styles.span1}>
@@ -83,7 +79,7 @@ export default function Services({ id }: ServicesProps) {
           </div>
         </div>
       </div>
-        <Banner />
+        
     </div>
   );
 }

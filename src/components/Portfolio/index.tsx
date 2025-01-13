@@ -12,6 +12,8 @@ import design1 from '../../assets/images/design1.png';
 import design2 from '../../assets/images/design2.png';
 import design3 from '../../assets/images/design3.png';
 import design4 from '../../assets/images/design4.png';
+import links1 from '../../assets/images/links1.png';
+
 
 interface PortfolioProps {
   id: string;
@@ -19,27 +21,27 @@ interface PortfolioProps {
 
 const projects = {
   clovis: {
-    name: "Portifólio Clovis",
+    name: "Portfólio programador",
     deploy: "Website_1",
-    category: "Website",
+    category: "portifolio",
     backgroundImage: website1,
-    online: "https://clovis-antunes.vercel.app/",
-    design: "https://www.figma.com/design/DqT6M5WTb2o2OiAz9p6BGM/Contabilidade?node-id=0-1&t=HztxmjzYsEyGaFdl-1",
+    online: "https://www.figma.com/design/DqT6M5WTb2o2OiAz9p6BGM/Contabilidade?node-id=0-1&t=HztxmjzYsEyGaFdl-1",
+    design: "",
     descriptions: {
-      title: "Portifólio Clovis",
+      title: "Portfólio programador",
       spanI: "Design de Portfólio Web, desenvolvido como uma landing page dinâmica e visualmente atraente...",
       spanII: "frontI.spanII"
     }
   },
   dandara: {
-    name: "Portifólio Dandara",
+    name: "Portifolio Designer UI/Ux",
     deploy: "Website_2",
-    category: "Website",
-    online: 'https://portifolio-dandara.vercel.app/',
-    design: "https://www.figma.com/design/DqT6M5WTb2o2OiAz9p6BGM/Contabilidade?node-id=0-1&t=HztxmjzYsEyGaFdl-1",
+    category: "portifolio",
+    online: 'https://www.figma.com/design/DqT6M5WTb2o2OiAz9p6BGM/Contabilidade?node-id=0-1&t=HztxmjzYsEyGaFdl-1',
+    design: "",
     backgroundImage: website2,
     descriptions: {
-      title: "Portifólio Dandara",
+      title: "Portifolio Designer UI/Ux",
       spanI: "Portfólio Web desenvolvido como uma landing page dinâmica...",
       spanII: "frontII.spanII"
     }
@@ -48,8 +50,8 @@ const projects = {
     name: "MultiServ",
     deploy: "Website_6",
     category: "Design",
-    online: '',
-    design: "https://www.figma.com/design/DqT6M5WTb2o2OiAz9p6BGM/Contabilidade?node-id=0-1&t=HztxmjzYsEyGaFdl-1",
+    online: 'https://www.figma.com/design/DqT6M5WTb2o2OiAz9p6BGM/Contabilidade?node-id=0-1&t=HztxmjzYsEyGaFdl-1',
+    design: "",
     backgroundImage: design1,
     descriptions: {
       title: "MultiServ",
@@ -61,8 +63,8 @@ const projects = {
     name: "Contabilidade",
     deploy: "Website_9",
     category: "Design",
-    online: '',
-    design: "https://www.figma.com/design/DqT6M5WTb2o2OiAz9p6BGM/Contabilidade?node-id=0-1&t=HztxmjzYsEyGaFdl-1",
+    online: 'https://www.figma.com/design/DqT6M5WTb2o2OiAz9p6BGM/Contabilidade?node-id=0-1&t=HztxmjzYsEyGaFdl-1',
+    design: "",
     backgroundImage: design2,
     descriptions: {
       title: "Contabiliza",
@@ -74,8 +76,8 @@ const projects = {
     name: "Advocacia",
     deploy: "Website_9",
     category: "Design",
-    online: '',
-    design: "https://www.figma.com/design/DqT6M5WTb2o2OiAz9p6BGM/Contabilidade?node-id=0-1&t=HztxmjzYsEyGaFdl-1",
+    online: 'https://www.figma.com/design/DqT6M5WTb2o2OiAz9p6BGM/Contabilidade?node-id=0-1&t=HztxmjzYsEyGaFdl-1',
+    design: "",
     backgroundImage: design3,
     descriptions: {
       title: "Advocacia",
@@ -87,8 +89,8 @@ const projects = {
     name: "TechNova",
     deploy: "Website_9",
     category: "Design",
-    online: '',
-    design: "https://www.figma.com/design/DqT6M5WTb2o2OiAz9p6BGM/Contabilidade?node-id=0-1&t=HztxmjzYsEyGaFdl-1",
+    online: 'https://www.figma.com/design/DqT6M5WTb2o2OiAz9p6BGM/Contabilidade?node-id=0-1&t=HztxmjzYsEyGaFdl-1',
+    design: "",
     backgroundImage: design4,
     descriptions: {
       title: "TechNova",
@@ -96,11 +98,25 @@ const projects = {
       spanII: ""
     }
   },
+  links1: {
+    name: "Pagina de Link's",
+    deploy: "Website_9",
+    category: "links",
+    online: 'https://www.figma.com/design/DqT6M5WTb2o2OiAz9p6BGM/Contabilidade?node-id=0-1&t=HztxmjzYsEyGaFdl-1',
+    design: "",
+    backgroundImage: links1,
+    descriptions: {
+      title: "TechNova",
+      spanI: "Design de uma landing page dedicada a advogados...",
+      spanII: ""
+    }
+  },
+
 };
 
 const Portfolio = ({ id }: PortfolioProps) => {
   const { t } = useTranslation();
-  const navigate = useNavigate(); // Inicializa o hook de navegação
+  const navigate = useNavigate(); 
   const [filter, setFilter] = useState("Todos");
   const [expanded, setExpanded] = useState(false);
   const [TextButton, setTextButton] = useState("Veja mais");
@@ -130,15 +146,20 @@ const Portfolio = ({ id }: PortfolioProps) => {
     <div className={styles.portfolioContainer} id={id}>
       <div className={styles.shadowBox} />
       <div className={styles.titleItem}>
-        <TitleText colorText="#272727" text={t("see")} />
+        <TitleText colorText="#FF0000" text={t("see")} />
         <span>:</span>
       </div>
 
       <div className={styles.filters}>
-        <button className={filter === "Todos" ? styles.active : ""} onClick={() => handleFilterChange("Todos")}>Todos</button>
-        <button className={filter === "Website" ? styles.active : ""} onClick={() => handleFilterChange("Website")}>Sites</button>
-        <button className={filter === "Design" ? styles.active : ""} onClick={() => handleFilterChange("Design")}>Design</button>
-      </div>
+        <button className={filter === "todos:" ? styles.active : ""} onClick={() => handleFilterChange("Todos")}>Todos: </button>
+        <button className={filter === "portifolio" ? styles.active : ""} onClick={() => handleFilterChange("portifolio")}>Portifolio</button>
+        <button className={filter === "design" ? styles.active : ""} onClick={() => handleFilterChange("Design")}>Design</button>
+        <button className={filter === "links" ? styles.active : ""} onClick={() => handleFilterChange("links")}>Pagina de Link's</button>
+        <button className={filter === "empresas" ? styles.active : ""} onClick={() => handleFilterChange("empresas")}>Empresas</button>
+     
+     
+     
+     </div>
 
       <div className={`${styles.portfolioComponent} ${isFading ? styles.fading : ""} ${expanded ? styles.expanded : ""}`}>
         {filteredProjects.map(([key, project]) => (
@@ -153,13 +174,13 @@ const Portfolio = ({ id }: PortfolioProps) => {
               {project.online && (
                 <button className={styles.online}>
                   <a href={project.online} target="_blank" rel="noopener noreferrer">
-                    Online
+                    Visualizar
                   </a>
                 </button>
               )}
               <button className={styles.design}>
                 <a href={project.design} target="_blank" rel="noopener noreferrer">
-                  Design
+                  Comprar
                 </a>
               </button>
             </div>

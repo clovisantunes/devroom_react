@@ -65,7 +65,7 @@ export default function NavBar({
           services={services}
         />
       </div>
-
+      <LanguageSelector />
       <div className={styles.instaCard}>
         <a href="https://www.instagram.com/devroom_oficial/" target="blank">
           <FaInstagram />

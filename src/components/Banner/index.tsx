@@ -10,11 +10,10 @@ export default function Banner() {
         <>
             <div className={styles.banner}>
                 <div className={styles.bannerContent}>
-                    <h1>Desenvolva seu projeto conosco</h1>
-                    <h2>Conte com a DevRoom para colocar seu projeto no ar.</h2>
+                    <h1>Precisando de um site</h1>
+                    <h2>personalizado?</h2>
                     <p>
-                        Entre em contato com nossos especialistas para conversar sobre o seu projeto! Teremos o prazer de
-                        compreender sua ideia e ajudar a transformá-la em realidade.
+                    Solicite seu site agora e transforme sua presença online.
                     </p>
                     <div className={styles.bannerButtons}>
                         <ButtonIcon

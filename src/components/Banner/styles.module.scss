@@ -21,25 +21,25 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    text-align: left;
+    text-align: center;
 }
 
 .bannerButtons{
     width: 50%;
     height: 3em;
-    border: solid 2px #FFFF;
+    border: solid 1px #FFFF;
     color: #FFFF;
     transition: all ease-in-out .3s;
     cursor: pointer;
     &:hover{
-        background-color: #5D24FE;
+        background-color: #8B0000;
         transform: scale(1.1);
+        border: none;
     }
 }
 .bannerContent h1 {
-    color: #5D24FE;
-    font-size: 24px;
-    width: 100%; 
+    color: #FF0606;
+    font-size: 36px;
 }
 
 .bannerContent h2 {
@@ -50,9 +50,10 @@
 
 .bannerContent p {
     color: #FFFFFF;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 400;
     width: 100%;
+    margin-top: 24px;
 }
 
 .bannerImage {

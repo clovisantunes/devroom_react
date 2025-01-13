@@ -11,6 +11,7 @@
 .nameLogo{
     display: flex;
     flex-direction: column;
+    align-items: center;
     span{
         transition: all 0.5s ease-in-out;
         width: 64px;
@@ -18,7 +19,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color:#0C0C0C;
         border-radius: 100%;
         margin-right: 16px;
         color: #F4F4F4;
@@ -31,16 +31,17 @@
     width: 320px;
     height: 360px;
     margin: 10px;
-    background-color: #F4F4F4;
+    padding: 8px;
+    background-color: #212121;
     margin-right: 36px;
+    text-align: center;
     border-radius: 16px;
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
     box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-    padding: 16px;
     h3 {
-        color: #0C0C0C;
+        color: #FFFFFF;
         font-weight: bold;
-        font-size: 24px;
+        font-size: 18px;
         transition: color 0.3s ease-in-out;
     }
     li {
@@ -50,28 +51,38 @@
         transition: color 0.3s ease-in-out;
         
     }
+    svg{
+        transition: all 0.2s ease-in-out;
+    }
     ul{
         padding: 0;
      }
 }
-
+.border{
+    width: 100%;
+    height: 100%;
+    border: solid 1px #8B0000;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .servicesItem:hover {
     transform: translateY(-10px);
     background-color: #0C0C0C;
     color: #F4F4F4;
     cursor: pointer;
-    border: solid 2px #4200FF;
-    box-shadow: 0 0 10px rgba(66, 0, 255, 0.5);
+    box-shadow: 0 0 10px rgba(139, 0, 0, 0.5);
     .nameLogo{
         span{
-            background-color: #F4F4F4;
             color: #0C0C0C;
         }
         h3{
             color: #F4F4F4;
         }
         svg{
-            color: #4200FF;
+            color: #8B0000;
         }
     }
 }
@@ -83,6 +94,32 @@
 }
 .servicesUl {
     list-style: none; 
+}
+.line {
+    width: 10%;
+    height: 2px;
+    background-color: #F4F4F4;
+    position: relative;
+    margin-left: 15%;
+    margin-top: 25%;
+    transition: all 0.5s ease; 
+  
+  
+    svg {
+      position: absolute;
+      top: -14px;
+      left: calc(84% - 11px); 
+      transition: all 0.5s ease;
+    }
+  }
+  
+  .servicesItem:hover .line {
+    width: 66%; 
+    background-color: #8B0000;
+}
+
+.servicesItem:hover .line svg {
+    left: calc(96% - 10px);
 }
 .serviceLi::before {
     font-size: 20px; 
