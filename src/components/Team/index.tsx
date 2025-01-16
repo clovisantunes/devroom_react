@@ -23,17 +23,7 @@ export default function Team() {
 
     return (
         <div className={styles.teamContainer}>
-            <div className={styles.TextTeam}>
-                <h2>
-                    Conheça nossa equipe<span>:</span>
-                </h2>
-                <span>
-                    Nossa equipe é composta por duas pessoas apaixonadas pelo que fazem. Juntos, unimos experiência e criatividade para oferecer soluções personalizadas e eficientes. Cada um de nós traz habilidades complementares, garantindo que todos os aspectos do nosso trabalho sejam atendidos com excelência e atenção aos detalhes. 
-                </span>
-                <span>
-                    Nosso compromisso é entregar resultados de alta qualidade, com foco total nas necessidades de nossos clientes.
-                </span>
-            </div>
+        
             <div className={styles.imageTeam}>
                 {team.map((member, index) => (
                     <div key={index} className={styles.teamMember}>

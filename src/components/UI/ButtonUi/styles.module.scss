@@ -35,10 +35,9 @@
         width: 100%;
         height: 100%;
         font-weight: 700;
-        background-color: var(--colors-secondary-50);
-        border-radius: 2px;
+        background-color: #3483fa;
+        border-bottom-right-radius: 2px;
         cursor: pointer;
-        border-radius: 4px;
         transition: all .5s;
         text-decoration: none;
         svg{
@@ -48,8 +47,8 @@
         }
 }
 .buttonServices:hover{
-    background-color: var(--colors-secondary-800);
-    border: 2px solid var(--colors-secondary-50);
+    background-color: #1a66d8;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transform: scale(1.1);
 }
 

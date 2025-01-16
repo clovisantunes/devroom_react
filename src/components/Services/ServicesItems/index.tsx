@@ -18,20 +18,20 @@ export default function ServicesItems() {
     service: string[];
   }[] = [
     {
-      id: "marketing",
+      id: "delivery",
       title: t("serviceMarketing"),
       logo: <IoSpeedometer size={60} />,
       service: [t("digitalMarketingItem1")],
     },
     {
-      id: "design",
+      id: "identity",
       title: t("serviceHost"),
       logo: <MdOutlineDesignServices size={60} />,
       service: [t("hostItem1")],
     },
 
     {
-      id: "web",
+      id: "SEO",
       title: t("serviceDesign"),
       logo: <GiProgression size={60} />,
       service: [t("designItem1")],

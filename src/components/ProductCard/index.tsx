@@ -84,12 +84,6 @@ const ProductsList: React.FC<ProductsKeyProps> = ({
           />
         ))}
       </div>
-      {showContactEmail && <ContactForm title={selectedPlanTitle} service={titleMain}  id="contact"/>}
-      <Footer
-        id="Footer"
-        textColor="white"
-        iconColor="white"
-      />
     </div>
   );
 };
@@ -139,8 +133,8 @@ const ProductsCard: React.FC<{
           util.map((item, i) => (
             <div className={styles.utils} key={romanNumber}>
               <SubTexts colorText="black" text={item} />
-              {(romanNumber === "I" && i <= 2) ||
-              (romanNumber === "II" && i <= 3) ||
+              {(romanNumber === "I" && i <= 0) ||
+              (romanNumber === "II" && i <= 2) ||
               (romanNumber === "III" && i < 5) ||
               romanNumber === "IV"
                 ? renderIcon(<FaCheck color="green" />)
@@ -163,7 +157,7 @@ const ProductsCard: React.FC<{
           fontSize="16px"
           height={"100%"}
           width={"100%"}
-          text={select}
+          text={'Comprar agora'}
           key={"plan"}
           contact="#contact"
           click={() => {

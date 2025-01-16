@@ -95,14 +95,7 @@ export default function DetailService() {
                 </div>
               </div>
             </div>
-            <div className={styles.servicesContent}>
-                <h3>Serviços<span>:</span></h3>
-                <div className={styles.servicesGrid}>
-                    {selectedService.services.map((service) => (
-                        <span key={service}>{service}</span>
-                    ))}
-                </div>
-            </div>
+        
           </>
         ) : (
           <p>Serviço não encontrado</p>

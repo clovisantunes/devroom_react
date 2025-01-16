@@ -68,7 +68,6 @@
     align-items: center;
     gap: 2em;
     margin: 0 auto;
-    background-color: white;
     .productsCard {
       width: 20%;
       height: 36em;
@@ -78,8 +77,8 @@
       background-color: var(--colors-neutral-100);
       display: flex;
       flex-direction: column;
-      border-bottom: solid 4px var(--colors-secondary-500);
       overflow: hidden;
+      border: none;
       .productTitle {
         width: 100%;
         height: 15%;
@@ -87,7 +86,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        background-color: var(--colors-secondary-800);
+        background-color: #00AA2D;
       }
       h1{
         font-size: 24px;
@@ -129,7 +128,6 @@
         width: 100%;
         height: 10%;
         overflow: hidden;
-        border-radius: 8px;
       }
     }
   }

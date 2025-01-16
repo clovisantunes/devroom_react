@@ -9,8 +9,29 @@
     "images":  "portifolioClovis2.png",
     "soluction": "A solução implementada neste projeto busca otimizar a experiência do usuário por meio de uma interface intuitiva e interativa. Combinando animações suaves e navegação rápida, o site permite uma visualização eficiente do conteúdo em qualquer dispositivo. A arquitetura desenvolvida em React oferece modularidade, facilitando a expansão de funcionalidades futuras, enquanto o SASS garante estilização avançada e consistente. A aplicação do TypeScript melhora a confiabilidade do código, assegurando manutenção e escalabilidade.",
     "layout": "Design responsivo focado na experiência do usuário em todas as telas.",
-    "content": "O conteúdo abrange uma introdução sobre o projeto, tecnologias utilizadas, soluções aplicadas e o layout final."
-  },
+    "content": "O conteúdo abrange uma introdução sobre o projeto, tecnologias utilizadas, soluções aplicadas e o layout final.",
+"plans": [
+  {
+    "title": "Plano",
+    "value": ["30", "250", "600", "1500"],
+    "subTitle": {
+      "api": "Template de design pronto",
+      "multi": "Template pronto e site funcional",
+      "blog": "Inclui hospedagem e registro de domínio",
+      "ecommerce": "Suporte contínuo por 3 meses"
+    },
+    "utils": [
+      "Template de design pronto",
+      "Site funcional e pronto para uso",
+      "Responsivo em dispositivos móveis",
+      "Registro de domínio (1 ano)",
+      "Hospedagem inclusa",
+      "Suporte contínuo por 3 meses"
+    ]
+  }
+]
+    },
+      
   {
     "project": "dandara",
     "type": "Desenvolvimento de Sites",
@@ -22,7 +43,28 @@
     "images": ["portifoliodandara2.png"],
     "soluction": "Implementação de uma interface interativa com navegação otimizada e animações suaves.",
     "layout": "Design responsivo focado na experiência do usuário em todas as telas.",  
-    "content": "O conteúdo abrange uma introdução sobre o projeto, tecnologias utilizadas, soluções aplicadas e o layout final."    
+    "content": "O conteúdo abrange uma introdução sobre o projeto, tecnologias utilizadas, soluções aplicadas e o layout final.",   
+"plans": [
+  {
+    "title": "Plano",
+    "value": ["30", "250", "600", "1500"],
+    "subTitle": {
+      "api": "Template de design pronto",
+      "multi": "Template pronto e site funcional",
+      "blog": "Inclui hospedagem e registro de domínio",
+      "ecommerce": "Suporte contínuo por 3 meses"
+    },
+    "utils": [
+      "Template de design pronto",
+      "Site funcional e pronto para uso",
+      "Responsivo em dispositivos móveis",
+      "Registro de domínio (1 ano)",
+      "Hospedagem inclusa",
+      "Suporte contínuo por 3 meses"
+    ]
+  }
+]
+  
   },
   {
     "project": "multiserv",
@@ -35,7 +77,27 @@
     "images": ["MultiServ2.png"],
     "soluction": "Desenvolvimento de uma interface intuitiva com navegação simplificada, alinhada a animações sutis para uma experiência de uso agradável e funcional.",
     "layout": "Design responsivo e adaptado para telas de diferentes tamanhos, com foco na experiência do usuário.",
-    "content": "O conteúdo apresenta as etapas do projeto, desde a introdução e descrição das tecnologias usadas até as soluções aplicadas e o design final."
+    "content": "O conteúdo apresenta as etapas do projeto, desde a introdução e descrição das tecnologias usadas até as soluções aplicadas e o design final.",
+ "plans": [
+  {
+    "title": "Plano",
+    "value": ["30", "250", "600", "1500"],
+    "subTitle": {
+      "api": "Template de design pronto",
+      "multi": "Template pronto e site funcional",
+      "blog": "Inclui hospedagem e registro de domínio",
+      "ecommerce": "Suporte contínuo por 3 meses"
+    },
+    "utils": [
+      "Template de design pronto",
+      "Site funcional e pronto para uso",
+      "Responsivo em dispositivos móveis",
+      "Registro de domínio (1 ano)",
+      "Hospedagem inclusa",
+      "Suporte contínuo por 3 meses"
+    ]
+  }
+]
   },
   {
     "project": "contabilidade",
@@ -48,7 +110,29 @@
     "images": ["contabilidade2.png"],
     "soluction": "Desenvolvimento de um layout que facilita o acesso rápido às informações e transmite credibilidade, essencial para o setor contábil.",
     "layout": "Design responsivo, com uma estrutura adaptada para dispositivos móveis e desktop.",
-    "content": "Inclui uma visão geral do projeto, as tecnologias usadas, soluções aplicadas e o layout final."
+    "content": "Inclui uma visão geral do projeto, as tecnologias usadas, soluções aplicadas e o layout final.",
+    
+  "plans": [
+  {
+    "title": "Plano",
+    "value": ["30", "250", "600", "1500"],
+    "subTitle": {
+      "api": "Template de design pronto",
+      "multi": "Template pronto e site funcional",
+      "blog": "Inclui hospedagem e registro de domínio",
+      "ecommerce": "Suporte contínuo por 3 meses"
+    },
+    "utils": [
+      "Template de design pronto",
+      "Site funcional e pronto para uso",
+      "Responsivo em dispositivos móveis",
+      "Registro de domínio (1 ano)",
+      "Hospedagem inclusa",
+      "Suporte contínuo por 3 meses"
+    ]
+  }
+]
+    
   },
   {
     "project": "advocacia",
@@ -61,7 +145,27 @@
     "images": ["Advocacia2.png"],
     "soluction": "Desenvolvimento de uma interface refinada e funcional, com navegação intuitiva que atende aos requisitos de um público formal.",
     "layout": "Design responsivo, priorizando a experiência do usuário em dispositivos móveis e desktops.",
-    "content": "Apresentação geral do projeto, tecnologias empregadas, soluções criativas e o layout final."
+    "content": "Apresentação geral do projeto, tecnologias empregadas, soluções criativas e o layout final.",
+"plans": [
+  {
+    "title": "Plano",
+    "value": ["30", "250", "600", "1500"],
+    "subTitle": {
+      "api": "Template de design pronto",
+      "multi": "Template pronto e site funcional",
+      "blog": "Inclui hospedagem e registro de domínio",
+      "ecommerce": "Suporte contínuo por 3 meses"
+    },
+    "utils": [
+      "Template de design pronto",
+      "Site funcional e pronto para uso",
+      "Responsivo em dispositivos móveis",
+      "Registro de domínio (1 ano)",
+      "Hospedagem inclusa",
+      "Suporte contínuo por 3 meses"
+    ]
+  }
+]
   },
   {
     "project": "technova",
@@ -75,5 +179,43 @@
     "soluction": "Construção de um layout inovador que combina funcionalidade com elementos visuais modernos, ideal para uma marca de tecnologia.",
     "layout": "Design responsivo, otimizado para proporcionar uma experiência interativa e moderna em qualquer dispositivo.",
     "content": "Conteúdo aborda as etapas do projeto, tecnologias, soluções de design e o layout final."
+  
+  },
+  {
+    "project": "links1",
+    "type": "Design",
+    "name": "Pagina de Links",
+    "subText": "Inovação e tecnologia em um design moderno.",
+    "mainImage": "technova.png",
+    "aboutProject": "Desenvolvido para uma empresa de tecnologia, o projeto TechNova apresenta um design futurista e inovador. Com a criação no Figma, a interface destaca-se por sua aparência moderna e interação dinâmica.",
+    "technologies": ["Figma"],
+    "images": ["technova2.png"],
+    "soluction": "Construção de um layout inovador que combina funcionalidade com elementos visuais modernos, ideal para uma marca de tecnologia.",
+    "layout": "Design responsivo, otimizado para proporcionar uma experiência interativa e moderna em qualquer dispositivo.",
+    "content": "Conteúdo aborda as etapas do projeto, tecnologias, soluções de design e o layout final.",
+"plans": [
+  {
+    "title": "Plano",
+    "value": ["30", "250", "600", "1500"],
+    "subTitle": {
+      "api": "Template de design pronto",
+      "multi": "Template pronto e site funcional",
+      "blog": "Inclui hospedagem e registro de domínio",
+      "ecommerce": "Suporte contínuo por 3 meses"
+    },
+    "utils": [
+      "Template de design pronto",
+      "Site funcional e pronto para uso",
+      "Responsivo em dispositivos móveis",
+      "Registro de domínio (1 ano)",
+      "Hospedagem inclusa",
+      "Suporte contínuo por 3 meses"
+    ]
   }
+]
+  },
+{
+
+
+}
 ]
