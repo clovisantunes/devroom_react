@@ -75,7 +75,7 @@ const buttonsData = [
         {
           icon: <PiPaintBrushDuotone />,
           subtitle: "Ajuste sempre que precisar",
-          description: "Você pode contratar manutenções extras para realizar mais de 3 alterações mensais inclusas no plano.",
+          description: "Você pode contratar manutenções extras para alterar seu sita da forma que desejar.",
         },
       ],
     },
@@ -114,14 +114,7 @@ export default function WhyDevroom() {
           <div className={styles.whyDevRoomTitle}>
             <h1>Por que você deve criar um site com a DevRoom? </h1>
             <p>
-              Disponibilizamos diferentes sistemas para criação de sites!
-              Oferecemos pacotes onde você mesmo pode inserir seu conteúdo, ou,
-              se preferir, deixamos tudo pronto para você. A partir de R$150,00
-              de taxa de ativação, com mensalidade de R$19,99. Também temos
-              opções de Sites Profissionais, começando por R$999,99 em pagamento
-              único. Além disso, há pacotes mensais que incluem o gerenciamento
-              de Redes Sociais e um site incrível e profissional, a partir de
-              R$449.
+            Na DevRoom, criamos sites modernos e de alta performance para levar seu negócio ao próximo nível. Garantimos entrega rápida, suporte contínuo, e utilizamos as melhores tecnologias para oferecer sites velozes e eficientes. Nossos planos são acessíveis, totalmente customizáveis e feitos para atender às suas necessidades. Invista em um site profissional com a qualidade que sua marca merece!
             </p>
           </div>
           <div className={styles.whyDevRoomContent}>

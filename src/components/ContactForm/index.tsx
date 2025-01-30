@@ -43,6 +43,7 @@ export default function ContactForm({ title, service, id }: ContactProps) {
   const [buttonVisible, setButtonVisible] = useState(false);
   const [sendEmail, setSendEmail] = useState(false);
   const [ddd, setDdd] = useState("");
+  const [selectedProject, setSelectedProject] = useState("");
 
   useEffect(() => {
     setMessage(`${t("buy")} ${service}-${title}!`);
@@ -56,7 +57,7 @@ export default function ContactForm({ title, service, id }: ContactProps) {
 
   const [selectedButtons, setSelectedButtons] = useState<string[]>([]);
   const [contactPreference, setContactPreference] = useState<string>("");
-
+  const [projectSelect, setSelectProject] = useState(false);
   const buttons = [
     { text: "Website" },
     { text: "Blogs" },
@@ -69,9 +70,11 @@ export default function ContactForm({ title, service, id }: ContactProps) {
   useEffect(() => {
     Aos.init({ duration: 2000 });
   }, []);
+
   const [buttonStyles, setButtonStyles] = useState(
     buttons.map(() => ({ background: "#FFFFFF", color: "black" }))
   );
+
   const toggleButtonStyle = (index: number, text: string) => {
     setButtonStyles((prevStyles) => {
       const updatedStyles = prevStyles.map((style, i) =>
@@ -87,7 +90,7 @@ export default function ContactForm({ title, service, id }: ContactProps) {
       );
       return updatedStyles;
     });
-  
+
     setNameVisible(true);
     setSelectedButtons((prevSelected) => {
       if (prevSelected.includes(text)) {
@@ -97,40 +100,6 @@ export default function ContactForm({ title, service, id }: ContactProps) {
       }
     });
   };
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      const url = window.location.href;
-      if (url.includes("Website")) {
-        const websiteIndex = buttons.findIndex((button) =>
-          button.text.includes("Website")
-        );
-
-        if (websiteIndex !== -1) {
-          toggleButtonStyle(websiteIndex, "Website");
-        }
-      }
-      if (url.includes("Blogs")) {
-        const blogIndex = buttons.findIndex((button) =>
-          button.text.includes("Blogs")
-        );
-
-        if (blogIndex !== -1) {
-          toggleButtonStyle(blogIndex, "Blogs");
-        }
-      }
-      if (url.includes("E-commerce")) {
-        const ecommerceIndex = buttons.findIndex((button) =>
-          button.text.includes("E-commerce")
-        );
-
-        if (ecommerceIndex !== -1) {
-          toggleButtonStyle(ecommerceIndex, "E-commerce");
-        }
-      }
-    }, 1000);
-    return () => clearTimeout(timer);
-  }, []);
 
   const [contactButtonStyles, setContactButtonStyles] = useState([
     { background: "#FFFFFF", color: "black" },
@@ -155,6 +124,7 @@ export default function ContactForm({ title, service, id }: ContactProps) {
     setTextVisible(true);
     setContactPreference(text);
   };
+
   const handleEmailClick = () => {
     if (!isValidDDD(ddd)) {
       toast.error("Por favor, insira um DDD válido.", {
@@ -191,7 +161,7 @@ export default function ContactForm({ title, service, id }: ContactProps) {
         draggable: true,
         progress: undefined,
       });
-      return; 
+      return;
     }
     if (!isFormValid) {
       toast.error("Por favor, preencha todos os campos.", {
@@ -211,9 +181,11 @@ export default function ContactForm({ title, service, id }: ContactProps) {
         phone: `(${ddd}) ${phone}`,
         selectedButtons: selectedButtons.join(", "),
         contactPreference: contactPreference,
+        selectedProject: selectedProject, // Novo campo
+        value: value, // Novo campo
         message: `Olá,\n\nVocê possui uma nova mensagem de ${name}:\n\nPreferência de contato: ${contactPreference}\nServiços selecionados: ${selectedButtons.join(
           ", "
-        )}\n\nDetalhes do contato:\nNome: ${name}\nEmail: ${email}\nTelefone: (${ddd}) ${phone} \n\n${message} ${window.location.hash}`, // incluir a parte da URL após #
+        )}\nProjeto Selecionado: ${selectedProject}\nValor: ${value}\n\nDetalhes do contato:\nNome: ${name}\nEmail: ${email}\nTelefone: (${ddd}) ${phone} \n\n${message} ${window.location.hash}`,
       };
   
       emailjs
@@ -263,7 +235,7 @@ export default function ContactForm({ title, service, id }: ContactProps) {
         );
     }
   };
-
+  
 
   useEffect(() => {
     if (sendEmail) {
@@ -305,6 +277,89 @@ export default function ContactForm({ title, service, id }: ContactProps) {
     return phone.length === 9;
   };
 
+
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      setSelectProject(true);
+      const parts = hash.split("#");
+      if (parts.length > 1) {
+        const project = parts[1]; 
+        setSelectedProject(decodeURIComponent(project));
+      }
+    }
+  }, []);
+
+  const [value, setValue ] = useState("");
+
+  const values = {
+    portifolio: {
+      PlanoI: "R$ 30,00",
+      PlanoII: "R$ 100,00",
+      PlanoIII: "R$ 450,00",
+      PlanoIV: "R$ 800,00",
+
+    },
+    business: {
+      PlanoI: "R$ 45,00",
+      PlanoII: "R$ 200,00",
+      PlanoIII: "R$ 600,00",
+      PlanoIV: "R$ 1200,00",
+    },
+    links: {
+      PlanoI: "R$ 10,00",
+      PlanoII: "R$ 50,00",
+      PlanoIII: "R$ 350,00",
+      PlanoIV: "R$ 600,00",
+    },
+    ecommerce: {
+      PlanoI: "R$ 300,00",
+      PlanoII: "R$ 300,00",
+      PlanoIII: "R$ 300,00",
+      PlanoIV: "R$ 1000,00",
+    }
+
+  };
+
+  useEffect(() => {
+    const hash = window.location.hash; 
+
+    if (hash) {
+      const hashString = decodeURIComponent(hash.slice(1)); 
+      let categoria = "";
+      let plano = "";
+
+      if (hashString.includes("Portifolio")) {
+        categoria = "portifolio";
+      } else if (hashString.includes("Business")) {
+        categoria = "business";
+      } else if (hashString.includes("Links")) {
+        categoria = "links";
+      } else if (hashString.includes("ecommerce")) {
+        categoria = "ecommerce";
+      }
+
+      console.log(categoria);
+      if (categoria) {
+
+        const parts = hash.split("#");
+        const planoMatch = parts[parts.length - 1];;
+        console.log(planoMatch);
+        plano = planoMatch ? planoMatch : "PlanoI"; 
+        setNameVisible(true);
+        if (values[categoria] && values[categoria][plano]) {
+          setValue(values[categoria][plano]); 
+        } else {
+          console.error("Plano não encontrado na categoria especificada");
+          setValue(""); 
+        }
+      } else {
+        console.error("Categoria não encontrada");
+        setValue(""); 
+      }
+    }
+  }, []);
+
   return (
     <>
       <ToastContainer />
@@ -335,32 +390,44 @@ export default function ContactForm({ title, service, id }: ContactProps) {
                   text={t("enterContact")}
                   span="?"
                 />
-                <SubTexts
-                  colorText="#ABA9AB"
-                  text="Você poderá selecionar mais que uma opção"
-                />
+              
               </div>
-              <div className={styles.buttonsCard}>
-                {buttons.map((button, text) => (
-                  <div
-                    className={styles.buttonCard}
-                    key={text}
-                    onClick={() => toggleButtonStyle(text, button.text)}
-                  >
-                    <ButtonServices
-                      key={text}
-                      background={buttonStyles[text].background}
-                      color={buttonStyles[text].color}
-                      text={button.text}
-                      height="40px"
-                      localPath=""
-                      width="100%"
-                    />
-                  </div>
-                ))}
-              </div>
+          
             </div>
-
+            {projectSelect && (
+              <div className={styles.selectProjetct}>
+                <div className={styles.textButons}>
+            <InputUi
+              id="project"
+              label="Project"
+              labelName="Projeto:"
+              onChange={(e) => {
+              }}
+              placeholder={"Projeto Selecionado"}
+              type="text"
+              name="Project"
+              value={selectedProject}
+              read={true}
+              mouse="not-allowed"
+            />
+            </div>
+            <div className={styles.textButons}>
+            <InputUi
+                  id="value"
+                  label="Project"
+                  labelName="Valor:"
+                  onChange={(e) => setSelectedProject(e.target.value)
+                  }
+                  placeholder="Valor:"
+                  type="text"
+                  name="Value"
+                  value={value} 
+                  read={true}
+                   mouse="not-allowed"
+            />
+             </div>
+              </div>
+            )}
             {nameVisible && (
               <div className={`${styles.card} ${styles.fadeIn}`}>
                 <div className={styles.aboutTitle}>
@@ -465,7 +532,7 @@ export default function ContactForm({ title, service, id }: ContactProps) {
             {textVisible && (
               <div className={`${styles.textareaCard} ${styles.fadeIn}`}>
                 <label htmlFor="message">
-                  {"Deixe uma breve descrição do seu projeto aqui:"}
+                  {"Alguma obsevação:"}
                 </label>
                 <textarea
                   id="message"

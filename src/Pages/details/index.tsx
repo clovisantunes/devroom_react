@@ -128,6 +128,7 @@ export default function Details() {
         )}
 
             <ProductsList
+            name={selectedProject?.name}
           title={title}
           subTitles={Object.values(subTitle)}
           buttonLang="Contrate agora"

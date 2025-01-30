@@ -1,4 +1,4 @@
-.footer_container{
+.footer_container {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -9,7 +9,7 @@
     border-top: solid 2px var(--colors-secondary-50);
 }
 
-.copyrightCard{
+.copyrightCard {
     width: 100%;
     position: relative;
     margin-top: 20px;
@@ -18,37 +18,42 @@
     justify-content: space-around;
     flex-direction: row;
     background-color: #000000;
-    padding: 15px 0; 
+    padding: 15px 0;
+
     &::before {
-        content: ''; 
-        position: absolute; 
-        top: 0; 
-        left: 50%; 
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
         transform: translateX(-50%);
-        width: 80%; 
-        border-top: 2px solid var(--colors-secondary-50); 
+        width: 80%;
+        border-top: 2px solid var(--colors-secondary-50);
     }
-    .copyCard{
-        h2{
+
+    .copyCard {
+        h2 {
             font-size: 16px;
         }
-        span{
+
+        span {
             font-size: 14px;
             font-weight: 600;
             color: white;
         }
     }
 }
-.svgCard{
+
+.svgCard {
     display: flex;
     flex-direction: row;
     align-items: center;
-    h2{
+
+    h2 {
         font-size: 16px;
-        
     }
 }
-.footerCard{
+
+.footerCard {
     width: 100%;
     height: 100%;
     display: flex;
@@ -56,32 +61,35 @@
     align-items: center;
     justify-content: space-around;
     transition: all .8s ease-in-out;
-
 }
-.cardFooter{
+
+.cardFooter {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-.contactCard{
+
+.contactCard {
     width: 20%;
     height: 8em;
     background-image: url('../../assets/images/logoUI.png');
     background-position: center;
     background-size: 80%;
     background-repeat: no-repeat;
-   
 }
-.assets{
+
+.assets {
     display: flex;
     flex-direction: column;
-    h1{
+
+    h1 {
         font-size: 22px;
         font-family: sans-serif, 'arial';
         font-weight: bold;
         margin-bottom: 16px;
     }
-    span{
+
+    span {
         font-size: 12px;
         font-family: sans-serif, 'arial';
         font-weight: bold;
@@ -89,54 +97,62 @@
         margin-bottom: 8px;
     }
 }
-.subcard{
+
+.subcard {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100%;
     margin-left: 16px;
-    span{
+
+    span {
         color: #fff;
         font-size: 18px;
         font-weight: 600;
     }
-    h2{
+
+    h2 {
         font-size: 16px;
         font-weight: 600;
     }
 }
-.items{
+
+.items {
     display: flex;
     justify-content: space-around;
     width: 30%;
     height: 100%;
 }
-.phoneCard{
-    span{
+
+.phoneCard {
+    span {
         color: #fff;
         font-size: 18px;
         font-weight: 600;
     }
-    .sub_box{
+
+    .sub_box {
         display: flex;
         flex-direction: row;
         align-items: center;
-    }   
-    svg{
+    }
+
+    svg {
         margin-right: 8px;
     }
-    h1{
+
+    h1 {
         font-size: 22px;
     }
-   
 }
-.socialCards{
+
+.socialCards {
     margin-left: 2em;
     display: flex;
     flex-direction: column;
-    svg{
+
+    svg {
         display: flex;
-        
         align-items: center;
         justify-content: center;
         margin-right: 8px;
@@ -145,95 +161,167 @@
         height: 24px;
         color: var(--colors-secondary-50);
     }
-    h2:first-child{
+
+    h2:first-child {
         font-size: 24px;
         font-weight: bold;
         margin: 0;
     }
-    h2{
+
+    h2 {
         font-size: 16px;
         margin-top: 16px;
     }
 }
-.sub_box{
-    h2{
+
+.sub_box {
+    h2 {
         font-size: 16px;
     }
 }
-.socialSVG{
+
+.socialSVG {
     width: 8%;
     display: flex;
     flex-direction: row;
     height: 100%;
-    svg{
+
+    svg {
         margin-left: 16px;
         width: 36px;
         height: 36px;
         color: #fff;
         transition: all .3s ease-in-out;
-        &:hover{
+
+        &:hover {
             color: #4200FF;
             cursor: pointer;
         }
     }
 }
 
-@media (max-width:768px) {
-    .copyrightCard{
+@media (max-width: 768px) {
+    .copyrightCard {
         flex-direction: column;
     }
-    .copyCard{
+
+    .copyCard {
         display: flex;
         flex-direction: row;
-        span{
+
+        span {
             margin-left: 8px;
         }
     }
-    .items{
+
+    .items {
         width: 80%;
     }
-    .socialSVG{
+
+    .socialSVG {
         width: 80%;
         display: flex;
         justify-content: center;
-        svg{
+
+        svg {
             width: 36px;
             height: 36px;
         }
     }
 }
-@media (max-width:480px) {
-    .footer_container{
-     
+
+@media (max-width: 480px) {
+    .footer_container {
+        padding-top: 10px;
     }
-    .contactCard{
+
+    .contactCard {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 80%;
+        height: auto;
+        margin-bottom: 16px;
     }
-    .footerCard{
+
+    .footerCard {
         width: 100%;
         display: flex;
         align-items: center;
         flex-direction: column;
     }
-    .socialCards{
+
+    .socialCards {
         margin: 0;
+        align-items: center;
     }
-    .phoneCard{
+
+    .phoneCard {
         width: 100%;
         display: flex;
         align-items: center;
-       flex-direction: column;
+        flex-direction: column;
+        text-align: center;
     }
-   .cardFooter{
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   }
-   .items{
-    flex-direction: column;
-    align-items: center;
-   }
+
+    .cardFooter {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .items {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .socialSVG {
+        width: 100%;
+        justify-content: center;
+
+        svg {
+            margin: 8px;
+        }
+    }
+
+    .assets {
+        h1 {
+            font-size: 18px;
+        }
+
+        span {
+            font-size: 10px;
+        }
+    }
+
+    .subcard {
+        span {
+            font-size: 14px;
+        }
+
+        h2 {
+            font-size: 14px;
+        }
+    }
+
+    .phoneCard {
+        h1 {
+            font-size: 18px;
+        }
+
+        span {
+            font-size: 14px;
+        }
+    }
+
+    .socialCards {
+        h2:first-child {
+            font-size: 18px;
+        }
+
+        h2 {
+            font-size: 14px;
+        }
+    }
 }

@@ -11,11 +11,11 @@
   transition: all 2s ease-in-out;
   background-color: #121314;
   text-align: left;
-  .categoryTitle{
+
+  .categoryTitle {
     color: #F4F4F4;
   }
 }
-
 
 .portfolioContainer .titleItem {
   display: flex;
@@ -33,105 +33,84 @@
   margin: 36px 0 36px 0;
   font-size: 36px;
 }
-.filters{
-  width: 56%;
+
+.filters {
+  width: 100%;
+  max-width: 56%;
   margin-bottom: 4em;
-  button{
-    width: 12em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+
+  button {
+    width: 10em;
     height: 2.5em;
     border: none;
     background-color: #FFFF;
-    margin-left:  8px;
     border-radius: 8px;
     font-size: 12px;
     font-weight: 600;
     transition: all .3s ease-in-out;
-    &:Hover{
+
+    &:hover {
       background-color: #FF0000;
       color: #FFFF;
-      
     }
   }
-  .active{
+
+  .active {
     background-color: #FF0000;
     color: #FFFF;
   }
 }
+
 .portfolioComponent {
-  width: 77%;
+  width: 100%;
+  max-width: 77%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  height: auto; 
+  height: auto;
   transition: opacity 0.4s ease-in-out;
+
   &.fading {
     opacity: 0;
   }
 }
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 
-@keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-.portfolioComponent.expanded {
-  animation: heightTransition .8s forwards;
-}
-
-@keyframes heightTransition{
-  from{
-    height: 28em;
-  }
-  to{
-    height: 48em;
-  }
-}
-@keyframes heightTransitionReverse{
-  from{
-    height: 48em;
-  }
-  to{
-    height: 28em;
-  }
-}
 .portCard {
   position: relative;
   border-radius: 16px;
   width: auto;
   height: 100%;
   background-size: cover;
-  margin: 0  8px 0;
+  margin: 0 8px 0;
   overflow: hidden;
-  display: flex;
+  display: flex
+;
   flex-direction: column;
   justify-content: center;
-  transition: all .4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   z-index: 1;
   padding: 16px;
-  span{
+
+  span {
     font-size: 22px;
     margin-bottom: 8px;
     color: #FFFFFF;
   }
-  p{
+
+  p {
     font-weight: 400;
     font-size: 12px;
     color: #FFFFFF;
   }
-  &:hover{
+
+  &:hover {
     cursor: pointer;
+    transform: scale(1.1);
+    z-index: 5;
   }
 }
 
@@ -153,16 +132,6 @@
   font-size: 12px;
 }
 
-.portCard:hover {
-  transform: scale(1.1);
-  position: unset;
-  z-index: 5;
-  span{
-  }
-  p{
-  }
-}
-
 .portCard:hover .titleText {
   position: absolute;
   animation: cardDown .8s forwards;
@@ -176,7 +145,8 @@
 }
 
 .loadingButton {
-  width: 16%;
+  width: 100%;
+  max-width: 16%;
   height: 2em;
   background-color: var(--colors-neutral-900);
   color: #FFFF;
@@ -190,22 +160,23 @@
   width: 24px;
   height: 24px;
 }
+
 .buttons {
   display: flex;
   margin-bottom: 18px;
   margin-top: 16px;
   justify-content: end;
+
   .design {
     width: 4em;
     height: 28px;
-   
     background-color: #00AA2D;
     border: none;
     border-radius: 4px;
     transition: background-color 0.3s, transform 0.2s;
 
     a {
-        font-size: 14px;
+      font-size: 14px;
       color: white;
       text-decoration: none;
       font-weight: bold;
@@ -226,8 +197,9 @@
     background-color: #8B0000;
     border: none;
     border-radius: 4px;
-    transition: background-color 0.3s, transform 0.2s; 
+    transition: background-color 0.3s, transform 0.2s;
     margin-right: 8px;
+
     a {
       color: white;
       text-decoration: none;
@@ -239,10 +211,11 @@
     }
 
     &:hover {
-      transform: translateY(-2px); 
+      transform: translateY(-2px);
     }
   }
 }
+
 @keyframes backgroundMove {
   0% {
     top: 0%;
@@ -294,55 +267,56 @@
 }
 
 @media (max-width: 1100px) {
-  .portfolioContainer .portfolioComponent .portifolioCard .portItens {
-    width: 100%;
-  }
-  .portCard{
-    width: 40%;
+  .portCard {
+    width: 45%;
     height: auto;
   }
 }
 
 @media (max-width: 780px) {
-  .portfolioContainer .portfolioComponent .portifolioCard {
+  .filters {
     width: 100%;
-    display: flex;
+    max-width: 100%;
     flex-direction: column;
+    align-items: center;
+
+    button {
+      width: 40%;
+    }
   }
-  .filters{
+
+  .portfolioComponent {
     width: 100%;
+    max-width: 100%;
   }
-  .portfolioComponent{
-    width: 100%;
-  }
-  .portCard{
+
+  .portCard {
     width: 80%;
     height: auto;
   }
-  .portfolioContainer .portfolioComponent .portifolioCard .portItens {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 24px;
+
+  .loadingButton {
+    width: 80%;
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolioContainer h1 {
+    font-size: 24px;
   }
 
-  .portfolioContainer .portfolioComponent .portifolioCard .portCard {
-    width: 12em;
-    height: 8em;
-    margin: 8px 16px;
+  .portfolioContainer .titleItem span {
+    font-size: 24px;
   }
 
-  .portfolioContainer .portfolioComponent .portifolioCard .portCard:hover .titleText {
-    position: absolute;
-    animation: cardDownResponsive .8s forwards;
+  .portCard {
+    width: 90%;
+    height: auto;
   }
-  .loadingButton{
-    width: 50%;
+
+  .loadingButton {
+    width: 90%;
+    max-width: 90%;
   }
- 
-  .containerPlus{
-    height: 80em;
-  }
-} 
+}

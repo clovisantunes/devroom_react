@@ -10,10 +10,12 @@ interface InputProps {
     label?: string;
     value?: string;
     labelName?: string;
+    read?: boolean;
+    mouse?: string;
     onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
 }
 
-export default function InputUi({ id, name, placeholder, type, label, value,labelName, onChange, inputMode }: InputProps) {
+export default function InputUi({ id, name, placeholder, type, label, value,labelName, onChange, inputMode, read,mouse }: InputProps) {
     return (
         <div className={styles.inputButton}>
             <label htmlFor={label}>{labelName}</label>
@@ -26,6 +28,8 @@ export default function InputUi({ id, name, placeholder, type, label, value,labe
                 required={true}
                 value={value}
                 inputMode={inputMode}
+                readOnly={read}
+                style= {{cursor: mouse}}
             />
         </div>
     );

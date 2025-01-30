@@ -12,8 +12,10 @@ import Footer from "../Footer";
 import ContactForm from "../ContactForm";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 interface ProductsKeyProps {
+  name: string;
   titleMain: string;
   title: string;
   select: string;
@@ -35,6 +37,7 @@ const toRoman = (num: number): string => {
 const backgroundFooter = "var(--colors-secondary-700)";
 
 const ProductsList: React.FC<ProductsKeyProps> = ({
+  name,
   titleMain,
   title,
   subTitles,
@@ -71,6 +74,7 @@ const ProductsList: React.FC<ProductsKeyProps> = ({
       <div className={styles.productsContainer} data-aos="fade-up" >
         {subTitles.map((subTitle, index) => (
           <ProductsCard
+            nameItem={name}
             key={index}
             title={title}
             subTitle={subTitle}
@@ -89,6 +93,7 @@ const ProductsList: React.FC<ProductsKeyProps> = ({
 };
 
 const ProductsCard: React.FC<{
+  nameItem: string;
   title: string;
   subTitle: string;
   value: string;
@@ -106,8 +111,7 @@ const ProductsCard: React.FC<{
   select,
   util,
   index,
-  setShowContactEmail,
-  setSelectedPlanTitle,
+  nameItem
 }) => {
   const romanNumber = toRoman(index + 1);
 
@@ -153,19 +157,15 @@ const ProductsCard: React.FC<{
         )}
       </div>
       <div className={styles.productButton}>
-        <ButtonServices
-          fontSize="16px"
-          height={"100%"}
-          width={"100%"}
-          text={'Comprar agora'}
-          key={"plan"}
-          contact="#contact"
-          click={() => {
-            setShowContactEmail(true);
-            setSelectedPlanTitle(titlePlan);
+      <Link to={`/services#${nameItem}#${title+romanNumber}`} >
+  <ButtonServices
+    fontSize="16px"
+    height="100%"
+    width="100%"
+    text="Comprar agora"
+  />
+</Link>
 
-          }}
-        />
       </div>
     </div>
   );

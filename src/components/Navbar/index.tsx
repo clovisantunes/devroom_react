@@ -54,7 +54,7 @@ export default function NavBar({
       }}
       >
       <div className={styles.logoCard}>
-        <LogoUi alt={"Logo DevRoom"} width={280} height={180} priority={true} />
+        <LogoUi alt={"Logo DevRoom"} width={480} height={180} priority={true} />
       </div>
 
       <div className={styles.itemsContainer}>
@@ -63,9 +63,9 @@ export default function NavBar({
           contact={contact}
           home={home}
           services={services}
+         // shop="/shop"
         />
       </div>
-      <LanguageSelector />
       <div className={styles.instaCard}>
         <a href="https://www.instagram.com/devroom_oficial/" target="blank">
           <FaInstagram />
@@ -93,6 +93,7 @@ export default function NavBar({
             contact={contact}
             home={home}
             services={services}
+            //shop="/shop"
           />
           <div className={styles.instaCardHamburger}>
             <a href="https://www.instagram.com/devroom_oficial/" target="blank">

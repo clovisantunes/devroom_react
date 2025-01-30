@@ -18,6 +18,10 @@ import styles from "./styles/styles.module.scss";
 import Team from "./components/Team";
 import WhyDevroom from "./components/WhyDevRoom";
 import Questions from "./components/QuestionComponent";
+import NavBarEcommerce from "./Pages/ecommerce/components/navbar";
+import informations from "./Pages/ecommerce/utils/informations.json";
+import MoreSellComponent from "./components/MoreSellComponent";
+import NavBar from "./components/Navbar/index";
 
 export default function App() {
   useEffect(() => {
@@ -96,9 +100,9 @@ export default function App() {
         <meta name="theme-color" content="#ffffff" />
       </Helmet>
 
-      <Navbar
+      <NavBar
         home="/"
-        about="#about"
+        about="#portifolio"
         contact="/contact"
         services="#services"
         portfolio="#portfolio"
@@ -106,8 +110,7 @@ export default function App() {
       <Main id="home" />
       <Services id="services" />
       <WhyDevroom />
-      <Portfolio id="portfolio" />
-      <About buttonRender={true} id="about" />
+      <Portfolio id="portifolio" />
       <Banner />
       <Questions />
       <Team />

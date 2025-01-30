@@ -10,6 +10,9 @@ import App from './App';
 import Contact from './Pages/contact/page';
 import Details from './Pages/details/index';
 import DetailService from './Pages/detailsService/index';
+import HomeEcommerce from  './Pages/ecommerce/pages/index';
+import UserAccount from './Pages/ecommerce/pages/userAccount/index';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -24,6 +27,8 @@ root.render(
           <Route path='send' element={<Send />} />
           <Route path='details' element={<Details />} />
           <Route path='detailService' element={<DetailService />} />
+          <Route path='shop' element={<HomeEcommerce />} />
+          <Route path='my-account' element={<UserAccount />} />
         </Routes>
       </Router>
     </I18nextProvider>

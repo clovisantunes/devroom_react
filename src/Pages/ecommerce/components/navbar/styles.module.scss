@@ -1,0 +1,125 @@
+.navContainer{
+    width: 100%;
+    height: 14em;
+}
+.headerContainer{
+    width: 100%;
+    height: 48px;
+    padding: 0 4%;
+    display: flex;
+    justify-content: space-around;
+}
+.itemsHeader{
+    width: 25%;
+    height: 100%;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    span{
+        font-size: 12px;
+        font-weight: 500;
+        filter: blur(0.35px);
+        cursor: pointer;
+        
+        svg{
+            width: 20px;
+            height: 16px;
+            margin-right: 4px;
+        }
+    }
+}
+.userItem{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    span{
+        margin-left: 16px;
+        :hover{
+        }
+        filter: blur(0.35px);
+        svg{
+            margin-right: 8px;
+        }
+    }
+}
+.navContainerItems{
+    width: 100%;
+    height: 6em;
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.categoriesContainer{
+    width: 100%;
+    height: 4em;
+    border-top: solid 3px #4200FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.signContainer{
+    position: absolute;
+    width: 240px;
+    height: 360px;
+    background-color: white;
+    left: 71%;
+    top: 38px;
+    z-index: 4;
+    border-radius: 12px;
+    border: none;
+    overflow: hidden;
+}
+@keyframes openFromTopLeft {
+    0% {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    100% {
+      opacity: 1;
+      width: 240px;
+      height: 360px;
+    }
+  }
+  
+  @keyframes closeToTopLeft {
+    0% {
+        opacity: 1;
+      width: 240px;
+      height: 360px;
+    }
+    100% {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+  }
+  
+  .signContainer {
+    position: absolute;
+    width: 240px;
+    height: 360px;
+    background-color: white;
+    right: 324px;
+    top: 38px;
+    z-index: 4;
+    border-radius: 12px;
+    border: none;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  
+    &.open {
+      animation-name: openFromTopLeft;
+    }
+  
+    &.close {
+      animation-name: closeToTopLeft;
+    }
+  }
+  

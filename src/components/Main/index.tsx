@@ -67,7 +67,7 @@ export default function Main({ id }: MainProps) {
                 fontSize="24px"
                 height="35px"
                 width="200px"
-                localPath="/services"
+                localPath="/contact"
                 text="Entre em contato"
               />
             </div>

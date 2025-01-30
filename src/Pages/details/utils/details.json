@@ -1,7 +1,7 @@
 [{
     "project": "clovis",
     "type": "Desenvolvimento de Sites",
-    "name": "Portifolio Clovis",
+    "name": "Portifolio desenvolvedor",
     "subText": "Um projeto de portifolio para um desenvolvedor FullStack, com um design moderno e inovador.",
     "mainImage": "portifolioClovis.png",
     "aboutProject": "Este projeto foi desenvolvido para apresentar o trabalho de um desenvolvedor Front-end, utilizando as tecnologias React, SASS e TypeScript. Focado na criação de uma interface moderna e interativa, o site oferece uma experiência visual atrativa, destacando-se pela responsividade e adaptação a diversos dispositivos. Com React, o projeto possui uma estrutura modular e organizada, enquanto SASS permite um controle refinado dos estilos, garantindo personalização e consistência. O uso de TypeScript contribui para a segurança e a manutenção do código, reforçando as melhores práticas em desenvolvimento web.",
@@ -13,7 +13,7 @@
 "plans": [
   {
     "title": "Plano",
-    "value": ["30", "250", "600", "1500"],
+    "value": ["30", "100", "450", "800"],
     "subTitle": {
       "api": "Template de design pronto",
       "multi": "Template pronto e site funcional",
@@ -35,7 +35,7 @@
   {
     "project": "dandara",
     "type": "Desenvolvimento de Sites",
-    "name": "Portifolio Dandara",
+    "name": "Portifolio Designer",
     "subText": "Um projeto inovador para portfólio",
     "mainImage": "portifoliodandara.png",
     "aboutProject": "Este projeto foi desenvolvido para exibir minhas habilidades em design e desenvolvimento front-end.",
@@ -47,7 +47,7 @@
 "plans": [
   {
     "title": "Plano",
-    "value": ["30", "250", "600", "1500"],
+    "value": ["30", "100", "450", "800"],
     "subTitle": {
       "api": "Template de design pronto",
       "multi": "Template pronto e site funcional",
@@ -69,7 +69,7 @@
   {
     "project": "multiserv",
     "type": "Design",
-    "name": "MultiServ",
+    "name": "MultiServ Business",
     "subText": "Design estratégico para uma plataforma multi-serviços.",
     "mainImage": "MultiServ.png",
     "aboutProject": "O projeto MultiServ foi criado para uma plataforma que oferece diversos serviços de suporte e manutenção. Utilizando Figma, o design priorizou clareza e eficiência, permitindo que os usuários naveguem facilmente entre as seções e localizem as informações relevantes com rapidez.",
@@ -81,7 +81,7 @@
  "plans": [
   {
     "title": "Plano",
-    "value": ["30", "250", "600", "1500"],
+    "value": ["45", "200", "600", "1200"],
     "subTitle": {
       "api": "Template de design pronto",
       "multi": "Template pronto e site funcional",
@@ -102,7 +102,7 @@
   {
     "project": "contabilidade",
     "type": "Design",
-    "name": "Contabilidade",
+    "name": "Contabilidade Business",
     "subText": "Design clean e funcional para uma empresa de contabilidade.",
     "mainImage": "contabilidade.png",
     "aboutProject": "Este projeto foi desenvolvido para uma empresa de contabilidade, com o objetivo de transmitir confiança e profissionalismo. A interface foi criada no Figma, com ênfase em uma apresentação clara e organizada das informações financeiras.",
@@ -115,7 +115,7 @@
   "plans": [
   {
     "title": "Plano",
-    "value": ["30", "250", "600", "1500"],
+    "value": ["45", "200", "600", "1200"],
     "subTitle": {
       "api": "Template de design pronto",
       "multi": "Template pronto e site funcional",
@@ -137,7 +137,7 @@
   {
     "project": "advocacia",
     "type": "Design",
-    "name": "Advocacia",
+    "name": "Advocacia Business",
     "subText": "Design elegante para um escritório de advocacia.",
     "mainImage": "Advocacia.png",
     "aboutProject": "Este projeto foi criado para um escritório de advocacia, com foco em um design sofisticado e minimalista que reflita a seriedade e profissionalismo da área jurídica.",
@@ -149,7 +149,7 @@
 "plans": [
   {
     "title": "Plano",
-    "value": ["30", "250", "600", "1500"],
+    "value": ["45", "200", "600", "1200"],
     "subTitle": {
       "api": "Template de design pronto",
       "multi": "Template pronto e site funcional",
@@ -170,7 +170,7 @@
   {
     "project": "technova",
     "type": "Design",
-    "name": "TechNova",
+    "name": "TechNova Business",
     "subText": "Inovação e tecnologia em um design moderno.",
     "mainImage": "technova.png",
     "aboutProject": "Desenvolvido para uma empresa de tecnologia, o projeto TechNova apresenta um design futurista e inovador. Com a criação no Figma, a interface destaca-se por sua aparência moderna e interação dinâmica.",
@@ -178,8 +178,27 @@
     "images": ["technova2.png"],
     "soluction": "Construção de um layout inovador que combina funcionalidade com elementos visuais modernos, ideal para uma marca de tecnologia.",
     "layout": "Design responsivo, otimizado para proporcionar uma experiência interativa e moderna em qualquer dispositivo.",
-    "content": "Conteúdo aborda as etapas do projeto, tecnologias, soluções de design e o layout final."
-  
+    "content": "Conteúdo aborda as etapas do projeto, tecnologias, soluções de design e o layout final.",
+  "plans": [
+  {
+    "title": "Plano",
+    "value": ["45", "200", "600", "1200"],
+    "subTitle": {
+      "api": "Template de design pronto",
+      "multi": "Template pronto e site funcional",
+      "blog": "Inclui hospedagem e registro de domínio",
+      "ecommerce": "Suporte contínuo por 3 meses"
+    },
+    "utils": [
+      "Template de design pronto",
+      "Site funcional e pronto para uso",
+      "Responsivo em dispositivos móveis",
+      "Registro de domínio (1 ano)",
+      "Hospedagem inclusa",
+      "Suporte contínuo por 3 meses"
+    ]
+  }
+]
   },
   {
     "project": "links1",
@@ -196,7 +215,7 @@
 "plans": [
   {
     "title": "Plano",
-    "value": ["30", "250", "600", "1500"],
+    "value": ["10", "50", "350", "600"],
     "subTitle": {
       "api": "Template de design pronto",
       "multi": "Template pronto e site funcional",

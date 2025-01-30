@@ -1,0 +1,24 @@
+{
+    "navTexts":{
+        "number": "(51) 98139-9275",
+        "mail": "sac@devroom.tech",
+        "country": "RS"
+    },
+    "navColors":{
+        "backgroundNavContainer": "#090c12", 
+        "backgroundHeaderContainer": "#0f151f",
+        "backgroundCategoriesContainer": "ffffff",
+        "backgroundCategoriesBorder": "#FF0000 3px solid"
+    },
+    "span":{
+        "color": "#fff",
+        "svgColor": "#fff",
+        "hoverColor": "#FF0000"
+    },
+    "inputSearchCollor": "#FF0000",
+    
+    "buttonFavoriteColors":{
+        "text":"#fff",
+        "svg": "#FFF"
+    }
+}

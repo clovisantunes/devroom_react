@@ -14,6 +14,7 @@ export default function NavList({
   port,
   services,
   contact,
+  
 }: NavListProps) {
   const { t } = useTranslation();
 
@@ -37,6 +38,8 @@ export default function NavList({
       <li onClick={handleScrollToTop} >
         <a href={services}>{t("services")}</a>
       </li>
+     
+      
     </ul>
   );
 }

@@ -158,6 +158,7 @@
             }
         }
     }
+    
 
     .card {
         width: 100%;
@@ -176,7 +177,13 @@
             }
         }
     }
-
+    .selectProjetct{
+        width: 100%;
+        height: 20%;
+        .textButons{
+            height: 6em;
+        }
+    }
     .textareaCard {
         display: flex;
         flex-direction: column;
