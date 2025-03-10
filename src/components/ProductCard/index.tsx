@@ -72,21 +72,37 @@ const ProductsList: React.FC<ProductsKeyProps> = ({
     <div className={styles.container}>
     
       <div className={styles.productsContainer} data-aos="fade-up" >
-        {subTitles.map((subTitle, index) => (
-          <ProductsCard
-            nameItem={name}
-            key={index}
-            title={title}
-            subTitle={subTitle}
-            value={values[index]}
-            coin={coin}
-            select={select}
-            util={utils}
-            index={index}
-            setShowContactEmail={setShowContactEmail}
-            setSelectedPlanTitle={setSelectedPlanTitle}
-          />
-        ))}
+     {values.length === 1
+          ? // Se houver apenas um value, renderiza apenas o primeiro item
+            <ProductsCard
+              nameItem={name}
+              key={0}
+              title={title}
+              subTitle={subTitles[0]}
+              value={values[0]}
+              coin={coin}
+              select={select}
+              util={utils}
+              index={0}
+              setShowContactEmail={setShowContactEmail}
+              setSelectedPlanTitle={setSelectedPlanTitle}
+            />
+          : 
+            subTitles.map((subTitle, index) => (
+              <ProductsCard
+                nameItem={name}
+                key={index}
+                title={title}
+                subTitle={subTitle}
+                value={values[index]}
+                coin={coin}
+                select={select}
+                util={utils}
+                index={index}
+                setShowContactEmail={setShowContactEmail}
+                setSelectedPlanTitle={setSelectedPlanTitle}
+              />
+            ))}
       </div>
     </div>
   );

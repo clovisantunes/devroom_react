@@ -16,7 +16,7 @@
         transition: all 1s ease-in-out;
         flex-direction: row;
         width: 80%;
-        height: 60em;
+        height: auto; 
         margin-top: 2em;
         justify-content: space-around;
 
@@ -51,12 +51,14 @@
             }
         }
     }
-    .phoneCard{
+
+    .phoneCard {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        .DDDItem{
+
+        .DDDItem {
             padding: 8px;
             margin-top: 8px;
             margin-right: 8px;
@@ -78,18 +80,19 @@
         border: none;
         transition: all ease-in-out .5s;
         animation: blockUpDown 5s ease-in infinite;
+
         h1 {
             margin-bottom: 2em;
             font-weight: 800;
             font-size: 28px;
-            
         }
 
         h2 {
             font-size: 16px;
         }
     }
-    .textContactForm:hover{
+
+    .textContactForm:hover {
         box-shadow: 0px 0px 16px 0px #d6d6d6;
         transform: scale(1.1);
     }
@@ -98,10 +101,10 @@
         0% {
             transform: translateY(0);
         }
-        50%{
+        50% {
             transform: translateY(10px);
         }
-        100%{
+        100% {
             transform: translateY(0);
         }
     }
@@ -113,17 +116,19 @@
         overflow: hidden;
         align-items: center;
         position: relative;
-        label{
+
+        label {
             margin-top: 8px;
             color: #FFFF;
         }
-        input{
+
+        input {
             border-radius: 4px;
-            border:solid 1px  #4200FF;
+            border: solid 1px #4200FF;
             animation: fadeTop 1s ease-in-out;
         }
-        .buttonContainer {
 
+        .buttonContainer {
             .textButons {
                 display: flex;
                 flex-direction: row;
@@ -151,6 +156,7 @@
                 padding: 16px;
                 gap: 10px;
                 justify-content: space-around;
+
                 .buttonCard {
                     width: 28%;
                     height: 4em;
@@ -158,7 +164,6 @@
             }
         }
     }
-    
 
     .card {
         width: 100%;
@@ -177,17 +182,20 @@
             }
         }
     }
-    .selectProjetct{
+
+    .selectProjetct {
         width: 100%;
-        height: 20%;
-        .textButons{
+
+        .textButons {
             height: 6em;
         }
     }
+
     .textareaCard {
         display: flex;
         flex-direction: column;
         width: 80%;
+
         label {
             color: var(--colors-neutral-100);
         }
@@ -214,6 +222,7 @@
         margin: 1em;
         display: flex;
         justify-content: center;
+
         .submitButton {
             display: flex;
             align-items: center;
@@ -228,13 +237,16 @@
             transition: all 0.5s;
             text-decoration: none;
             color: white;
+
             a {
                 color: #FFFF;
             }
         }
-        .submitButton:hover{
+
+        .submitButton:hover {
             background-color: #FFFFFF;
-            a{
+
+            a {
                 color: #000;
             }
         }
@@ -249,57 +261,65 @@
         }
     }
 }
-.buttonCardContact{
+
+.buttonCardContact {
     width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 16px 0;
-    h2{
+
+    h2 {
         margin-top: 8px;
         font-size: 16px;
         font-weight: 600;
         color: #FFFF;
     }
-    .buttonOptions{
+
+    .buttonOptions {
         width: 30%;
         margin-left: 8px;
     }
 }
-@keyframes fadeTop{
-    from{
+
+@keyframes fadeTop {
+    from {
         opacity: 0;
         transform: translateY(50px);
     }
-    to{
+    to {
         opacity: 1;
         transform: translateY(0);
     }
 }
-@media(max-width: 1666px){
+
+@media (max-width: 1666px) {
     .contactContainer {
-    .contactForm{
-        width: 100%;
+        .contactForm {
+            width: 100%;
+        }
     }
 }
-}
-@media(max-width: 1366px){
-    .contactContainer{
-        form{
-            .buttonContainer{
 
-                .buttonsCard{
+@media (max-width: 1366px) {
+    .contactContainer {
+        form {
+            .buttonContainer {
+                .buttonsCard {
                     gap: 4px;
-                    .buttonCard{
+
+                    .buttonCard {
                         width: 36%;
                     }
                 }
             }
         }
     }
-    .buttonCardContact{
+
+    .buttonCardContact {
         flex-direction: column;
-        .buttonOptions{
+
+        .buttonOptions {
             width: 40%;
             margin-top: 8px;
         }
@@ -307,34 +327,42 @@
 }
 
 @media (max-width: 980px) {
-    .contactContainer{
+    .contactContainer {
+        align-items: center;
         .textContactForm {
-            width: 40%;
+            width: 60%;
         }
     }
 }
+
 @media (max-width: 768px) {
     .contactContainer {
-        .contactForm{
-            height: 100%;
-            .logoCard{
-                width: 100%;
-            }       
-            .textTitle{
+        .contactForm {
+            height: auto;
+            flex-direction: column;
+            align-items: center;
+            .logoCard {
                 width: 80%;
             }
-            .textSubTitle{
+
+            .textTitle {
+                width: 80%;
+            }
+
+            .textSubTitle {
                 width: 80%;
                 text-align: center;
             }
         }
-        .textContactForm{
-            
+        .selectProjetct{
+            width: 80%;
         }
+
         form {
             width: 100%;
             margin-top: 4em;
-            height: 70em;
+            height: auto;
+
             .card {
                 width: 80%;
             }
@@ -342,31 +370,25 @@
             .textareaCard {
                 width: 80%;
             }
-            .buttonContainer{
-                    .buttonsCard{
-                        .buttonCard{
-                            width: 48%;
-                        }
+
+            .buttonContainer {
+                .buttonsCard {
+                    .buttonCard {
+                        width: 48%;
                     }
-                h1{
+                }
+
+                h1 {
                     text-align: center;
                 }
-                h1{
-                    text-align: center;
-                }
-                .textButons{
+
+                .textButons {
                     flex-direction: column;
                 }
             }
-            
-        }
-
-        .contactForm {
-            flex-direction: column;
         }
 
         .textContactForm {
-            width: 100%;
 
             h1 {
                 margin-bottom: 1em;
@@ -384,16 +406,58 @@
                 width: 100%;
             }
         }
-        .phoneCard{
-            .DDDItem{
+
+        .phoneCard {
+            .DDDItem {
                 width: 35%;
             }
         }
     }
-    .buttonCardContact{
+
+    .buttonCardContact {
         flex-direction: column;
-        .buttonOptions{
+
+        .buttonOptions {
             width: 100%;
+        }
+    }
+ 
+}
+
+@media (max-width: 480px) {
+    .contactContainer {
+        .contactForm {
+            .textTitle, .textSubTitle {
+                width: 100%;
+                font-size: 18px; 
+            }
+        }
+
+        .textContactForm {
+            height: auto;
+            padding: 1em;
+
+            h1 {
+                font-size: 24px; 
+            }
+
+            h2 {
+                font-size: 14px; 
+            }
+        }
+
+        form {
+            .buttonContainer {
+                .buttonsCard {
+                    .buttonCard {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        .submitContainer {
+            width: 80%; 
         }
     }
 }

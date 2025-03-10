@@ -67,7 +67,7 @@ export default function NavBar({
         />
       </div>
       <div className={styles.instaCard}>
-        <a href="https://www.instagram.com/devroom_oficial/" target="blank">
+        <a href="https://www.instagram.com/clovisantunes_tech/" target="blank">
           <FaInstagram />
         </a>
       </div>

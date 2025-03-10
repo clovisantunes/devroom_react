@@ -14,6 +14,10 @@
   width: 100%;
   align-items: center;
   justify-content: center;
+  @media(max-width: 1080px){
+    flex-direction: column;
+    margin-top: 12%;
+  }
 }
 .main_box {
   width: 40%;
@@ -76,6 +80,9 @@
   color: white;
   font-weight: 700;
   font-family: jaldi;
+  @media(max-width: 1180px){
+    font-size: 36px;
+  }
 }
 
 .main_box h2 {
@@ -116,7 +123,9 @@
   width: 48%;
   height: 44em;
   margin-top: 4%;
-
+  @media(max-width: 1080px){
+    height: 24em;
+  }
   img {
     position: absolute;
     width: 400px;
@@ -203,9 +212,7 @@
       font-size: 24px;
     }
   }
-  .cardMain{
-    flex-direction: row;
-  }
+
   .imagesMain{
     img{
       width: 280px;

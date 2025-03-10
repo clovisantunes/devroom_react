@@ -76,6 +76,8 @@ export default function Details() {
   const utils = selectedProject?.plans?.[0]?.utils ?? [];
   const descriptionTitle = "Contrate agora";
 
+  
+
   return (
     <>
       <Navbar

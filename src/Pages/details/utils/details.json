@@ -13,7 +13,7 @@
 "plans": [
   {
     "title": "Plano",
-    "value": ["30", "100", "450", "800"],
+    "value": ["30", "100", "200", "800"],
     "subTitle": {
       "api": "Template de design pronto",
       "multi": "Template pronto e site funcional",
@@ -47,7 +47,7 @@
 "plans": [
   {
     "title": "Plano",
-    "value": ["30", "100", "450", "800"],
+    "value": ["30", "100", "200", "800"],
     "subTitle": {
       "api": "Template de design pronto",
       "multi": "Template pronto e site funcional",
@@ -81,7 +81,7 @@
  "plans": [
   {
     "title": "Plano",
-    "value": ["45", "200", "600", "1200"],
+    "value": ["45"],
     "subTitle": {
       "api": "Template de design pronto",
       "multi": "Template pronto e site funcional",
@@ -115,7 +115,7 @@
   "plans": [
   {
     "title": "Plano",
-    "value": ["45", "200", "600", "1200"],
+    "value": ["45", "80", "200", "800"],
     "subTitle": {
       "api": "Template de design pronto",
       "multi": "Template pronto e site funcional",
@@ -149,7 +149,7 @@
 "plans": [
   {
     "title": "Plano",
-    "value": ["45", "200", "600", "1200"],
+    "value": ["45"],
     "subTitle": {
       "api": "Template de design pronto",
       "multi": "Template pronto e site funcional",
@@ -182,7 +182,7 @@
   "plans": [
   {
     "title": "Plano",
-    "value": ["45", "200", "600", "1200"],
+    "value": ["45"],
     "subTitle": {
       "api": "Template de design pronto",
       "multi": "Template pronto e site funcional",
@@ -215,7 +215,7 @@
 "plans": [
   {
     "title": "Plano",
-    "value": ["10", "50", "350", "600"],
+    "value": ["10", "50", "200", "600"],
     "subTitle": {
       "api": "Template de design pronto",
       "multi": "Template pronto e site funcional",

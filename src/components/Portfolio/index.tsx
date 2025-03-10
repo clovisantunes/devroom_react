@@ -25,7 +25,7 @@ const projects = {
     deploy: "Website_1",
     category: "portifolio",
     backgroundImage: website1,
-    online: "https://www.figma.com/design/DqT6M5WTb2o2OiAz9p6BGM/Contabilidade?node-id=0-1&t=HztxmjzYsEyGaFdl-1",
+    online: "https://www.figma.com/design/oNGNgwOACnYostyhI0cFjk/Portifolio-clovis?node-id=0-1&t=hrZe2ar1MJDLIkwX-1",
     design: "",
     descriptions: {
       title: "Portfólio programador",
@@ -37,7 +37,7 @@ const projects = {
     name: "Portifolio Designer UI/Ux",
     deploy: "Website_2",
     category: "portifolio",
-    online: 'https://www.figma.com/design/DqT6M5WTb2o2OiAz9p6BGM/Contabilidade?node-id=0-1&t=HztxmjzYsEyGaFdl-1',
+    online: 'https://www.figma.com/design/QQsiqDEyYVDGSQ3SyET07T/Portifolio-dandara?node-id=0-1&t=T1KHci4AcKaUe6gC-1',
     design: "",
     backgroundImage: website2,
     descriptions: {
@@ -50,7 +50,7 @@ const projects = {
     name: "MultiServ",
     deploy: "Website_6",
     category: "Design",
-    online: 'https://www.figma.com/design/DqT6M5WTb2o2OiAz9p6BGM/Contabilidade?node-id=0-1&t=HztxmjzYsEyGaFdl-1',
+    online: 'https://www.figma.com/design/5WP50NA9OHt2VBnmseOUQE/multserv?node-id=0-1&t=HToz34s1glLL4QRm-1',
     design: "",
     backgroundImage: design1,
     descriptions: {
@@ -76,7 +76,7 @@ const projects = {
     name: "Advocacia",
     deploy: "Website_9",
     category: "Design",
-    online: 'https://www.figma.com/design/DqT6M5WTb2o2OiAz9p6BGM/Contabilidade?node-id=0-1&t=HztxmjzYsEyGaFdl-1',
+    online: 'https://www.figma.com/design/GINVthAGpVvToTErOjCSnK/advocacia?node-id=0-1&t=awqjadOqVmIlmzmI-1',
     design: "",
     backgroundImage: design3,
     descriptions: {
@@ -89,7 +89,7 @@ const projects = {
     name: "TechNova",
     deploy: "Website_9",
     category: "Design",
-    online: 'https://www.figma.com/design/DqT6M5WTb2o2OiAz9p6BGM/Contabilidade?node-id=0-1&t=HztxmjzYsEyGaFdl-1',
+    online: 'https://www.figma.com/design/q5AKEFELv8nhqFt9WWvgx5/TechNova?node-id=0-1&t=IQXJq56TBhkjZ0aT-1',
     design: "",
     backgroundImage: design4,
     descriptions: {
@@ -102,7 +102,7 @@ const projects = {
     name: "Pagina de Link's",
     deploy: "Website_9",
     category: "links",
-    online: 'https://www.figma.com/design/DqT6M5WTb2o2OiAz9p6BGM/Contabilidade?node-id=0-1&t=HztxmjzYsEyGaFdl-1',
+    online: 'https://www.figma.com/design/jBBwtNYhusF4YnZSIn1gj9/Paga-links?node-id=0-1&t=B5eUoBLK3Cr6oyx3-1',
     design: "",
     backgroundImage: links1,
     descriptions: {

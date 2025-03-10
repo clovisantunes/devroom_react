@@ -56,9 +56,9 @@ export default function Footer({
       <div className={styles.copyrightCard}>
         <div className={styles.copyCard}>
 
-        <SubTexts colorText="white"  text={"Copyright By:"} />
+        <SubTexts colorText="white"  text={"@2025 Devroom.tech."} />
         <span>
-          DevRoom.tech
+        All rights reserved
         </span>
         </div>
         <div className={styles.items}>
